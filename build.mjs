@@ -166,7 +166,7 @@ const SITE_NAV_CSS = `
 :root{--fkr-bg:#0C0704;--fkr-bg2:#160D07;--fkr-surface:#1D130A;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-gold-deep:#9C7A1E;--fkr-ink:#160D07;--fkr-text:#F6EFE1;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22);--fkr-line-soft:rgba(246,239,225,.08)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--fkr-bg);color:var(--fkr-text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased;padding-bottom:80px!important}
+body{margin:0;background:var(--fkr-bg);color:var(--fkr-text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
 main,#main-content{display:block;max-width:760px;margin:0 auto;padding:0 20px}
 article{overflow-wrap:break-word}
 a{color:var(--fkr-gold2);text-decoration:none}
@@ -217,11 +217,6 @@ tbody tr:last-child td{border-bottom:0}
 .article-footer{margin:36px 0 0;padding-top:18px;border-top:1px solid var(--fkr-line);color:var(--fkr-muted);font-size:.86rem}
 .article-footer p{margin:.3em 0}
 .article-footer strong{color:var(--fkr-gold-deep)}
-.fkrnav{position:fixed;left:0;right:0;bottom:0;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(4,1fr);z-index:9999;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px 10px;font-size:10px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
-.fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
-.fkrnav a svg{width:20px;height:20px;color:var(--fkr-gold)}
-.fkrnav a[aria-current="page"]{color:var(--fkr-gold2)}
 .fkr-related{max-width:760px;margin:40px auto 0;padding:20px;border:1px solid var(--fkr-line);border-radius:14px;background:var(--fkr-ink)}
 .fkr-related h2{margin:0 0 14px;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:var(--fkr-gold2);border:0;padding:0;font-family:system-ui,sans-serif}
 .fkr-related ul{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--fkr-line);border:1px solid var(--fkr-line);border-radius:10px;overflow:hidden}
@@ -231,17 +226,49 @@ tbody tr:last-child td{border-bottom:0}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>`;
 
+/* Frozen top header + frozen bottom nav, injected on EVERY page. */
+const CHROME_CSS = `
+<style id="fkr-chrome">
+:root{--fkr-bg:#0C0704;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-ink:#160D07;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22)}
+body{padding-top:46px!important;padding-bottom:64px!important}
+.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 14px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.fkrhdr-logo img{height:21px;width:auto;display:block}
+.fkrhdr-grp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;line-height:1.15;letter-spacing:.05em;color:var(--fkr-gold2);border:1px solid var(--fkr-line);border-radius:6px;padding:5px 7px;text-align:center;white-space:nowrap;text-decoration:none;flex:none}
+.fkrnav{position:fixed;inset:auto 0 0 0;z-index:10000;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(5,1fr);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 3px 9px;font-size:9.5px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
+.fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
+.fkrnav a svg{width:19px;height:19px;color:var(--fkr-gold)}
+.fkrnav a[aria-current="page"]{color:var(--fkr-gold2)}
+</style>`;
+
 const navSvg = {
   home: '<svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-6 8 6v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
   guide: '<svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8h7M9 12h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
+  offers: '<svg viewBox="0 0 24 24" fill="none"><path d="M4 9h16v10a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5V9H3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 5v15" stroke="currentColor" stroke-width="1.6"/></svg>',
   blog: '<svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>',
   register: '<svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>',
 };
 
+function siteHeader() {
+  return `<header class="fkrhdr">` +
+    `<a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>` +
+    `<a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a>` +
+    `</header>`;
+}
+
 function siteNav(current) {
-  const item = (href, key, label, ext) =>
-    `<a href="${href}"${current === key ? ' aria-current="page"' : ""}${ext ? ' target="_blank" rel="noopener"' : ""}>${navSvg[key]}${label}</a>`;
-  return `<nav class="fkrnav" aria-label="Site">${item("/", "home", "Home")}${item("/" + GUIDE_PATH + "/", "guide", "Guide")}${item("/blog/", "blog", "Blog")}${item("https://jadiking.my", "register", "Register", true)}</nav>`;
+  const items = [
+    ["/", "home", "Home", false],
+    ["/" + GUIDE_PATH + "/", "guide", "Guide", false],
+    ["https://jadiking.my/promotion", "offers", "Offers", true],
+    ["/blog/", "blog", "Blog", false],
+    ["https://jadiking.my/", "register", "Register", true],
+  ];
+  return `<nav class="fkrnav" aria-label="Site">` +
+    items.map(([href, key, label, ext]) =>
+      `<a href="${href}"${current === key ? ' aria-current="page"' : ""}${ext ? ' target="_blank" rel="noopener"' : ""}>${navSvg[key]}${label}</a>`
+    ).join("") + `</nav>`;
 }
 
 /* choose related links: prefer targets the article already links to, top up by group */
@@ -331,10 +358,11 @@ for (const [file, path] of Object.entries(PATHMAP)) {
     else body = body.replace(/<\/body>/i, block + "</body>");
   }
 
-  // --- inject shared bottom nav + css ---
+  // --- inject frozen header + frozen bottom nav + css ---
   const current = path === GUIDE_PATH ? "guide" : "blog";
+  body = body.replace(/(<body[^>]*>)/i, `$1\n${siteHeader()}`);
   body = body.replace(/<\/body>/i, `${siteNav(current)}\n</body>`);
-  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n</head>`);
+  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n${CHROME_CSS}\n</head>`);
 
   writeOut(path, head + body);
 }
@@ -400,13 +428,11 @@ header.top p{margin:0;color:var(--muted);font-size:13.5px}
 .cards .t{display:block;color:var(--text);font-weight:600;font-size:14px}
 .cards .d{display:block;color:var(--muted);font-size:12px;margin-top:4px;line-height:1.5}
 footer.f{padding:24px 18px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px}
-.fkrnav{position:fixed;left:0;right:0;bottom:0;max-width:520px;margin:0 auto;background:var(--ink);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);z-index:60}
-.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px 10px;font-size:10px;color:var(--muted);text-decoration:none}
-.fkrnav a svg{width:20px;height:20px;color:var(--gold)}
-.fkrnav a[aria-current="page"]{color:var(--gold2)}
 </style>
+${CHROME_CSS}
 </head>
 <body>
+${siteHeader()}
 <div class="wrap">
 <header class="top">
 <div class="kick">FreeKreditRM10 Blog</div>
@@ -417,12 +443,7 @@ footer.f{padding:24px 18px 40px;border-top:1px solid var(--line);color:var(--mut
 ${groupsHtml}
 <footer class="f">FreeKreditRM10 is an informational resource. Bonus terms, eligibility, turnover and game availability change often. Always review the current operator terms before claiming. 18+. Play responsibly.</footer>
 </div>
-<nav class="fkrnav" aria-label="Site">
-<a href="/">${navSvg.home}Home</a>
-<a href="/${GUIDE_PATH}/">${navSvg.guide}Guide</a>
-<a href="/blog/" aria-current="page">${navSvg.blog}Blog</a>
-<a href="https://jadiking.my" target="_blank" rel="noopener">${navSvg.register}Register</a>
-</nav>
+${siteNav("blog")}
 </body>
 </html>`;
 writeOut("blog", blogHtml);
@@ -463,23 +484,17 @@ ul.cards a{display:block;padding:14px 15px;text-decoration:none}
 ul.cards a:hover{background:var(--ink)}
 ul.cards .t{display:block;color:var(--text);font-weight:600;font-size:14px}
 ul.cards .d{display:block;color:var(--muted);font-size:12px;margin-top:4px}
-.fkrnav{position:fixed;left:0;right:0;bottom:0;max-width:520px;margin:0 auto;background:var(--ink);border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);z-index:60}
-.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:9px 4px 10px;font-size:10px;color:var(--muted);text-decoration:none}
-.fkrnav a svg{width:20px;height:20px;color:var(--gold)}
 </style>
+${CHROME_CSS}
 </head>
 <body>
+${siteHeader()}
 <div class="wrap">
 <header class="top"><div class="kick">FreeKreditRM10</div><h1>${esc(info.title)}</h1><p>${esc(info.blurb)}</p></header>
 <nav class="crumb" aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/blog/">Blog</a> / ${esc(info.title)}</nav>
 <ul class="cards">${list}</ul>
 </div>
-<nav class="fkrnav" aria-label="Site">
-<a href="/">${navSvg.home}Home</a>
-<a href="/${GUIDE_PATH}/">${navSvg.guide}Guide</a>
-<a href="/blog/">${navSvg.blog}Blog</a>
-<a href="https://jadiking.my" target="_blank" rel="noopener">${navSvg.register}Register</a>
-</nav>
+${siteNav("")}
 </body>
 </html>`;
   writeOut(seg, html);
@@ -566,6 +581,12 @@ function buildDoorway(opts = {}) {
       '<p class="disclaimer">FreeKreditRM10 is an independent information resource. Bonus value, eligibility, turnover requirements, eligible games and withdrawal terms change often and vary by promotion. Always read the current operator terms before you claim. 18+. Play responsibly.</p>')
     .replace(/<div class="foot-bottom">[\s\S]*?<\/div>/i,
       '<div class="foot-bottom">&copy; 2026 FreeKreditRM10 &middot; Free credit &amp; no deposit guide for Malaysia</div>');
+
+  // --- drop the doorway's own chrome; the shared frozen header + nav replace it ---
+  markup = markup
+    .replace(/<input type="checkbox" id="drawer-toggle">[\s\S]*?<\/nav>\s*/i, "")
+    .replace(/<div class="topbar">[\s\S]*?<\/div>\n\n  <header class="hero">/i, '<header class="hero">')
+    .replace(/<nav class="bottomnav">[\s\S]*?<\/nav>/i, "");
 
   // --- nav: FAQ -> Blog (bottom sticky nav, per request) ---
   markup = markup.replace(
@@ -654,11 +675,13 @@ function buildDoorway(opts = {}) {
 ${JSON.stringify(jsonld)}
 </script>
 ${styleBlock}
+${CHROME_CSS}
 </head>
-<body>${previewBanner}`;
+<body>${previewBanner}
+${siteHeader()}`;
 
   // markup currently ends with the page markup then a trailing newline
-  return head + "\n" + markup.trimEnd() + "\n</body>\n</html>\n";
+  return head + "\n" + markup.trimEnd() + "\n" + siteNav("home") + "\n</body>\n</html>\n";
 }
 
 /* =========================================================================
@@ -688,22 +711,21 @@ function buildHomepage() {
     ".link-list a{padding:13px 14px;font-size:13px;color:var(--text);border-top:1px solid var(--border-soft)}\n" +
     ".link-list a:first-child{border-top:0}\n" +
     ".link-list a:hover{background:var(--surface);color:var(--gold-2)}\n" +
-    /* topbar + hero trim (approx 35% shorter header) */
-    ".burger::before,.burger::after{display:none}\n" +
-    ".topbar{padding:8px 14px}\n" +
-    ".brandmark{text-decoration:none}\n" +
-    ".brand-logo{height:23px;width:auto;display:block}\n" +
-    ".hero{padding:12px 16px 12px}\n" +
+    /* hero trim */
+    ".hero{padding:14px 16px 14px}\n" +
     ".hero-crown{width:100px;height:100px;top:-6px}\n" +
     ".hero .kicker-row{margin-bottom:7px}\n" +
     ".hero h1{font-size:27px;margin-bottom:8px}\n" +
     ".hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}\n" +
     ".hero .dual-cta{margin-top:12px}\n" +
-    /* red conversion CTA: high contrast + shine sweep */
-    ".cta-get{background:linear-gradient(135deg,var(--crimson-2),var(--crimson));color:#fff;border:1px solid rgba(255,255,255,0.20);box-shadow:0 12px 26px -8px rgba(156,31,46,0.85);position:relative;overflow:hidden;letter-spacing:.03em}\n" +
-    ".cta-get::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.42),transparent);transform:skewX(-20deg);animation:cta-shine 3s ease-in-out infinite}\n" +
-    "@keyframes cta-shine{0%,55%{left:-70%}100%{left:140%}}\n" +
-    "@media (prefers-reduced-motion:reduce){.cta-get::after{display:none}}\n" +
+    /* conversion CTA: flowing rainbow gradient + shine sweep */
+    ".cta-get{position:relative;overflow:hidden;color:#fff;border:1px solid rgba(255,255,255,0.28);letter-spacing:.03em;text-shadow:0 1px 3px rgba(0,0,0,0.55);background:linear-gradient(90deg,#ff2d75,#ff7a1a,#ffd23f,#3ddc97,#2f9bff,#a24bff,#ff2d75);background-size:340% 100%;animation:cta-flow 7s linear infinite;box-shadow:0 12px 30px -8px rgba(255,45,117,0.55),0 0 0 1px rgba(255,255,255,0.06) inset}\n" +
+    "@keyframes cta-flow{to{background-position:340% 50%}}\n" +
+    ".cta-get::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.16)}\n" +
+    ".cta-get::after{content:'';position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);transform:skewX(-20deg);animation:cta-shine 3.2s ease-in-out infinite}\n" +
+    "@keyframes cta-shine{0%,58%{left:-75%}100%{left:150%}}\n" +
+    ".cta-get span{position:relative;z-index:1}\n" +
+    "@media (prefers-reduced-motion:reduce){.cta-get{animation:none;background-position:0 50%}.cta-get::after{display:none}}\n" +
     "</style>";
 
   const faq = [
@@ -779,37 +801,12 @@ ${JSON.stringify(jsonld)}
 </script>
 ${style}
 ${supplement}
+${CHROME_CSS}
 </head>
 <body>
-
-<input type="checkbox" id="drawer-toggle">
-<label for="drawer-toggle" class="scrim"></label>
-<nav class="drawer">
-  <div class="drawer-head">
-    <div class="word" style="font-family:'Anton'; color:var(--gold-2); font-size:16px;">FREE KREDIT RM10</div>
-    <label for="drawer-toggle" class="drawer-close">&times;</label>
-  </div>
-  <div class="drawer-list">
-    <a href="#start">${crown}Start here</a>
-    <a href="/${GUIDE_PATH}/">${crown}Full RM10 guide</a>
-    <a href="/blog/">${crown}All guides</a>
-    <a href="#types">${crown}Free credit by amount</a>
-    <a href="#checklist">${crown}What we check</a>
-    <a href="/about-us-jadiking-2-0/">${crown}Jadiking88 review</a>
-    <a href="https://jadiking.my" target="_blank" rel="noopener" class="highlight">${crown}Register at Jadiking.my</a>
-  </div>
-</nav>
+${siteHeader()}
 
 <div class="page">
-
-  <div class="topbar">
-    <label for="drawer-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
-    <a class="brandmark" href="/" aria-label="FreeKreditRM10 home">
-      <img class="brand-logo" src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140">
-      <div class="tag">Malaysia Free Credit Guide</div>
-    </a>
-    <div class="group-badge">JADIKING<br>GROUP</div>
-  </div>
 
   <header class="hero" id="top">
     <svg class="hero-crown" viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="var(--gold)" stroke-width="0.8"/></svg>
@@ -818,7 +815,7 @@ ${supplement}
     <p class="sub">FreeKreditRM10 follows free credit and no deposit promotions in Malaysia and records what each one asks for before a withdrawal is possible. Use the full guide to learn the mechanics, compare offers by amount, or go straight to the pick we send readers to.</p>
     <div class="dual-cta">
       <a class="btn-gold" href="/${GUIDE_PATH}/">Read the full guide</a>
-      <a class="btn-outline cta-get" href="https://jadiking.my/" target="_blank" rel="noopener">Get free credit RM10</a>
+      <a class="btn-outline cta-get" href="https://jadiking.my/" target="_blank" rel="noopener"><span>Get free credit RM10</span></a>
     </div>
   </header>
 
@@ -912,15 +909,9 @@ ${faqHtml}
     <p class="disclaimer">FreeKreditRM10 is an independent information resource. Bonus value, eligibility, turnover requirements, eligible games and withdrawal terms change often and vary by promotion. Always read the current operator terms before you claim. 18+. Play responsibly.</p>
   </footer>
 
-  <nav class="bottomnav">
-    <a href="#top" class="active">${navSvg.home}Home</a>
-    <a href="/${GUIDE_PATH}/">${navSvg.guide}Guide</a>
-    <a href="#types">${crown}Offers</a>
-    <a href="/blog/">${navSvg.blog}Blog</a>
-    <a href="https://jadiking.my" target="_blank" rel="noopener">${navSvg.register}Register</a>
-  </nav>
 </div>
 
+${siteNav("home")}
 </body>
 </html>
 `;

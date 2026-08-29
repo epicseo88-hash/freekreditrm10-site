@@ -243,52 +243,39 @@
 .link-list a{padding:13px 14px;font-size:13px;color:var(--text);border-top:1px solid var(--border-soft)}
 .link-list a:first-child{border-top:0}
 .link-list a:hover{background:var(--surface);color:var(--gold-2)}
-.burger::before,.burger::after{display:none}
-.topbar{padding:8px 14px}
-.brandmark{text-decoration:none}
-.brand-logo{height:23px;width:auto;display:block}
-.hero{padding:12px 16px 12px}
+.hero{padding:14px 16px 14px}
 .hero-crown{width:100px;height:100px;top:-6px}
 .hero .kicker-row{margin-bottom:7px}
 .hero h1{font-size:27px;margin-bottom:8px}
 .hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}
 .hero .dual-cta{margin-top:12px}
-.cta-get{background:linear-gradient(135deg,var(--crimson-2),var(--crimson));color:#fff;border:1px solid rgba(255,255,255,0.20);box-shadow:0 12px 26px -8px rgba(156,31,46,0.85);position:relative;overflow:hidden;letter-spacing:.03em}
-.cta-get::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.42),transparent);transform:skewX(-20deg);animation:cta-shine 3s ease-in-out infinite}
-@keyframes cta-shine{0%,55%{left:-70%}100%{left:140%}}
-@media (prefers-reduced-motion:reduce){.cta-get::after{display:none}}
+.cta-get{position:relative;overflow:hidden;color:#fff;border:1px solid rgba(255,255,255,0.28);letter-spacing:.03em;text-shadow:0 1px 3px rgba(0,0,0,0.55);background:linear-gradient(90deg,#ff2d75,#ff7a1a,#ffd23f,#3ddc97,#2f9bff,#a24bff,#ff2d75);background-size:340% 100%;animation:cta-flow 7s linear infinite;box-shadow:0 12px 30px -8px rgba(255,45,117,0.55),0 0 0 1px rgba(255,255,255,0.06) inset}
+@keyframes cta-flow{to{background-position:340% 50%}}
+.cta-get::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.16)}
+.cta-get::after{content:'';position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);transform:skewX(-20deg);animation:cta-shine 3.2s ease-in-out infinite}
+@keyframes cta-shine{0%,58%{left:-75%}100%{left:150%}}
+.cta-get span{position:relative;z-index:1}
+@media (prefers-reduced-motion:reduce){.cta-get{animation:none;background-position:0 50%}.cta-get::after{display:none}}
+</style>
+
+<style id="fkr-chrome">
+:root{--fkr-bg:#0C0704;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-ink:#160D07;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22)}
+body{padding-top:46px!important;padding-bottom:64px!important}
+.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 14px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.fkrhdr-logo img{height:21px;width:auto;display:block}
+.fkrhdr-grp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;line-height:1.15;letter-spacing:.05em;color:var(--fkr-gold2);border:1px solid var(--fkr-line);border-radius:6px;padding:5px 7px;text-align:center;white-space:nowrap;text-decoration:none;flex:none}
+.fkrnav{position:fixed;inset:auto 0 0 0;z-index:10000;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(5,1fr);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 3px 9px;font-size:9.5px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
+.fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
+.fkrnav a svg{width:19px;height:19px;color:var(--fkr-gold)}
+.fkrnav a[aria-current="page"]{color:var(--fkr-gold2)}
 </style>
 </head>
 <body>
-
-<input type="checkbox" id="drawer-toggle">
-<label for="drawer-toggle" class="scrim"></label>
-<nav class="drawer">
-  <div class="drawer-head">
-    <div class="word" style="font-family:'Anton'; color:var(--gold-2); font-size:16px;">FREE KREDIT RM10</div>
-    <label for="drawer-toggle" class="drawer-close">&times;</label>
-  </div>
-  <div class="drawer-list">
-    <a href="#start"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Start here</a>
-    <a href="/free-kredit-rm10-malaysia-guide/"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Full RM10 guide</a>
-    <a href="/blog/"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>All guides</a>
-    <a href="#types"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Free credit by amount</a>
-    <a href="#checklist"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>What we check</a>
-    <a href="/about-us-jadiking-2-0/"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Jadiking88 review</a>
-    <a href="https://jadiking.my" target="_blank" rel="noopener" class="highlight"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Register at Jadiking.my</a>
-  </div>
-</nav>
+<header class="fkrhdr"><a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a><a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a></header>
 
 <div class="page">
-
-  <div class="topbar">
-    <label for="drawer-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
-    <a class="brandmark" href="/" aria-label="FreeKreditRM10 home">
-      <img class="brand-logo" src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140">
-      <div class="tag">Malaysia Free Credit Guide</div>
-    </a>
-    <div class="group-badge">JADIKING<br>GROUP</div>
-  </div>
 
   <header class="hero" id="top">
     <svg class="hero-crown" viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="var(--gold)" stroke-width="0.8"/></svg>
@@ -297,7 +284,7 @@
     <p class="sub">FreeKreditRM10 follows free credit and no deposit promotions in Malaysia and records what each one asks for before a withdrawal is possible. Use the full guide to learn the mechanics, compare offers by amount, or go straight to the pick we send readers to.</p>
     <div class="dual-cta">
       <a class="btn-gold" href="/free-kredit-rm10-malaysia-guide/">Read the full guide</a>
-      <a class="btn-outline cta-get" href="https://jadiking.my/" target="_blank" rel="noopener">Get free credit RM10</a>
+      <a class="btn-outline cta-get" href="https://jadiking.my/" target="_blank" rel="noopener"><span>Get free credit RM10</span></a>
     </div>
   </header>
 
@@ -412,14 +399,8 @@
     <p class="disclaimer">FreeKreditRM10 is an independent information resource. Bonus value, eligibility, turnover requirements, eligible games and withdrawal terms change often and vary by promotion. Always read the current operator terms before you claim. 18+. Play responsibly.</p>
   </footer>
 
-  <nav class="bottomnav">
-    <a href="#top" class="active"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-6 8 6v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Home</a>
-    <a href="/free-kredit-rm10-malaysia-guide/"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8h7M9 12h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Guide</a>
-    <a href="#types"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Offers</a>
-    <a href="/blog/"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Blog</a>
-    <a href="https://jadiking.my" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Register</a>
-  </nav>
 </div>
 
+<nav class="fkrnav" aria-label="Site"><a href="/" aria-current="page"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-6 8 6v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Home</a><a href="/free-kredit-rm10-malaysia-guide/"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8h7M9 12h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Guide</a><a href="https://jadiking.my/promotion" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h16v10a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5V9H3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 5v15" stroke="currentColor" stroke-width="1.6"/></svg>Offers</a><a href="/blog/"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Blog</a><a href="https://jadiking.my/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Register</a></nav>
 </body>
 </html>
