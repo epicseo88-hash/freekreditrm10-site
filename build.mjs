@@ -673,10 +673,12 @@ function buildHomepage() {
 
   const supplement =
     "\n<style>\n" +
-    ".qa-box{background:var(--surface);border-left:3px solid var(--gold);border-radius:8px;padding:14px 16px;margin-top:14px}\n" +
-    ".qa-box p{margin:.35em 0;font-size:13.5px;color:var(--text)}\n" +
-    ".qa-box ul{margin:.5em 0 0;padding-left:1.1em;color:var(--text-muted);font-size:12.5px}\n" +
-    ".qa-box li{margin:.2em 0}\n" +
+    ".start-grid{display:flex;flex-direction:column;gap:10px;margin-top:14px}\n" +
+    ".start-grid a{display:block;background:var(--surface);border:1px solid var(--border-soft);border-radius:12px;padding:14px 16px;color:var(--text)}\n" +
+    ".start-grid a:hover{border-color:var(--gold);color:var(--gold-2)}\n" +
+    ".start-grid .n{font-family:'Anton';font-size:13px;color:var(--gold-deep);display:block}\n" +
+    ".start-grid strong{display:block;font-size:14px;margin:2px 0 4px;color:var(--text)}\n" +
+    ".start-grid .d{display:block;font-size:12px;color:var(--text-muted)}\n" +
     ".pick-tag{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#2A1D06;background:linear-gradient(180deg,var(--gold-2),var(--gold));border-radius:999px;padding:4px 10px;margin-bottom:10px}\n" +
     ".type-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}\n" +
     ".type-grid a{display:block;background:var(--surface);border:1px solid var(--border-soft);border-radius:12px;padding:13px 14px;color:var(--text)}\n" +
@@ -689,11 +691,11 @@ function buildHomepage() {
     "</style>";
 
   const faq = [
-    ["What is free kredit RM10?", "Promotional credit with a stated value of RM10, given under the conditions of a specific campaign. Turnover and withdrawal conditions usually apply before winnings can be cashed out."],
-    ["Is free credit RM10 really no deposit?", "Some RM10 offers are no deposit, others require a qualifying deposit. Check the specific promotion. A no deposit offer still normally carries turnover and a withdrawal cap."],
-    ["Can I withdraw free credit RM10 straight away?", "Usually no. Most promotions require you to wager the credit a set number of times on eligible games first, and winnings are often capped."],
-    ["Which games count toward the turnover?", "Only selected games, and often only slots. Table and live games may contribute little or nothing. The promotion terms list the eligible games."],
-    ["Where does FreeKreditRM10 point readers?", "Our featured pick is Jadiking88, which offers RM10 to RM30 free credit with no deposit for new accounts plus a Monthly Mission multiplier. Registration and play happen at jadiking.my."],
+    ["How does FreeKreditRM10 pick a featured offer?", "We read each promotion against the same four points: eligibility, turnover, eligible games and withdrawal cap. The offer that is clearest on all four, and usable without a deposit, becomes the featured pick. Right now that is Jadiking88."],
+    ["Is free credit really free?", "The credit costs nothing to claim, but it is not the same as cash. It normally has to be wagered several times on set games before any winnings can be withdrawn, and those winnings are often capped. The full guide works through an example."],
+    ["How often are the offers updated?", "Promotions change without notice. Treat every amount, condition and claim window on this site as a starting point and confirm it on the operator page before you claim."],
+    ["Do you earn anything if I sign up?", "Yes. If you register through our link to the featured pick we may receive a referral fee. It does not change the offer you get, and it is not the reason an offer is featured. The checklist decides that."],
+    ["Which guide should I read first?", "If you have never claimed free credit, start with the full RM10 guide. If you already know the mechanics and want a shortlist, go to the RM10 no deposit comparison."],
   ];
 
   const jsonld = {
@@ -738,7 +740,7 @@ function buildHomepage() {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide</title>
-<meta name="description" content="How free kredit RM10 works in Malaysia: free credit RM10, free kredit no deposit, slot free kredit, eligibility, turnover and withdrawal terms, plus our featured RM10 to RM30 pick.">
+<meta name="description" content="FreeKreditRM10 tracks free credit and no deposit promotions in Malaysia and reads every one against a fixed checklist: eligibility, turnover, eligible games and withdrawal cap. Start with the full RM10 guide or go to the featured pick.">
 <meta name="keywords" content="free kredit RM10, free credit RM10, free kredit Malaysia, free kredit no deposit, slot free kredit, free credit casino Malaysia, no deposit bonus Malaysia">
 <link rel="canonical" href="${SITE}/">
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
@@ -749,12 +751,12 @@ function buildHomepage() {
 <meta property="og:locale" content="en_MY">
 <meta property="og:site_name" content="FreeKreditRM10">
 <meta property="og:title" content="Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide">
-<meta property="og:description" content="How free kredit RM10 works in Malaysia, including no deposit offers, slot free kredit, bonus terms, eligibility and turnover.">
+<meta property="og:description" content="Free credit and no deposit promotions in Malaysia, each read against the same checklist. Start with the full RM10 guide or go to the featured pick.">
 <meta property="og:url" content="${SITE}/">
 <meta property="og:image" content="${SITE}/brand/cover.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Free Kredit RM10 Malaysia 2026: Complete Guide">
-<meta name="twitter:description" content="Free credit RM10, free kredit no deposit, slot free kredit, eligibility, turnover and bonus terms in Malaysia.">
+<meta name="twitter:description" content="Free credit and no deposit promotions in Malaysia, each checked for eligibility, turnover, eligible games and withdrawal cap.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">
 ${JSON.stringify(jsonld)}
@@ -772,10 +774,11 @@ ${supplement}
     <label for="drawer-toggle" class="drawer-close">&times;</label>
   </div>
   <div class="drawer-list">
-    <a href="#what">${crown}What is free kredit RM10</a>
+    <a href="#start">${crown}Start here</a>
     <a href="/${GUIDE_PATH}/">${crown}Full RM10 guide</a>
     <a href="/blog/">${crown}All guides</a>
     <a href="#types">${crown}Free credit by amount</a>
+    <a href="#checklist">${crown}What we check</a>
     <a href="/about-us-jadiking-2-0/">${crown}Jadiking88 review</a>
     <a href="https://jadiking.my" target="_blank" rel="noopener" class="highlight">${crown}Register at Jadiking.my</a>
   </div>
@@ -796,25 +799,20 @@ ${supplement}
     <svg class="hero-crown" viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="var(--gold)" stroke-width="0.8"/></svg>
     <div class="kicker-row">${crown}<span>Malaysia Free Credit Guide</span></div>
     <h1>Free Kredit RM10<br>Malaysia</h1>
-    <p class="sub">Free kredit RM10 is promotional credit worth RM10 offered under specific bonus conditions. Some offers need a deposit, some are no deposit. Turnover, eligible games and withdrawal limits usually apply before winnings can be cashed out.</p>
+    <p class="sub">FreeKreditRM10 follows free credit and no deposit promotions in Malaysia and records what each one asks for before a withdrawal is possible. Use the full guide to learn the mechanics, compare offers by amount, or go straight to the pick we send readers to.</p>
     <div class="dual-cta">
       <a class="btn-gold" href="/${GUIDE_PATH}/">Read the full guide</a>
       <a class="btn-outline" href="/blog/">Browse all guides</a>
     </div>
   </header>
 
-  <section id="what">
-    <div class="kicker">Quick answer</div>
-    <h2 class="h-section">What is free kredit RM10?</h2>
-    <div class="qa-box">
-      <p><strong>Free kredit RM10 is promotional gaming credit with a stated value of RM10, given under the terms of a specific campaign.</strong> The word free does not mean the RM10 is instantly withdrawable.</p>
-      <ul>
-        <li>The promotional value is commonly RM10.</li>
-        <li>Some offers require a deposit, some are no deposit.</li>
-        <li>Promotional credit is often not directly withdrawable.</li>
-        <li>Turnover or wagering conditions usually apply.</li>
-        <li>Only selected games qualify, and there may be an expiry period.</li>
-      </ul>
+  <section id="start">
+    <div class="kicker">Start here</div>
+    <h2 class="h-section">Three ways in</h2>
+    <div class="start-grid">
+      <a href="/${GUIDE_PATH}/"><span class="n">01</span><strong>New to free credit</strong><span class="d">Read the full RM10 guide for how claiming, turnover and withdrawal actually work.</span></a>
+      <a href="/best-online-casinos-offering-free-credit-10-no-deposit-in-malaysia/"><span class="n">02</span><strong>Comparing offers</strong><span class="d">See which platforms run RM10 no deposit credit and what each one attaches to it.</span></a>
+      <a href="#pick"><span class="n">03</span><strong>Ready to play</strong><span class="d">Go to the featured pick and register.</span></a>
     </div>
   </section>
 
@@ -822,7 +820,7 @@ ${supplement}
     <div class="kicker">Our top pick</div>
     <span class="pick-tag">${crown} Featured recommendation</span>
     <h2 class="h-section">Jadiking88 (Jadiking 2.0)</h2>
-    <p class="lede">The RM10 offer we point readers to. E-wallet deposits and withdrawals, RM10 to RM30 free credit with no deposit for new accounts, and a Monthly Mission deposit multiplier that scales up to 3.5x.</p>
+    <p class="lede">Of the RM10 offers we have looked at, Jadiking88 is the one we send readers to. It settles through e-wallet instead of bank transfer, the sign up credit of RM10 to RM30 needs no deposit, and the Monthly Mission multiplier rewards steady play rather than paying out once and stopping.</p>
     <div class="credit-panel">
       <div class="credit-medal">${crown}</div>
       <div class="body">
@@ -845,7 +843,7 @@ ${supplement}
   <section id="types">
     <div class="kicker">By amount</div>
     <h2 class="h-section">Free credit by amount</h2>
-    <p class="lede">The evaluation is the same at every value. Only the headline number and the conditions change.</p>
+    <p class="lede">The headline number is the part people search for. The conditions attached to it are the part that decides whether the credit is worth claiming. Each guide takes one amount and works through both.</p>
     <div class="type-grid">
       ${types.map(([amt, p, lbl]) => `<a href="${rel(p)}"><span class="amt">${amt}</span><span class="lbl">${esc(lbl)}</span></a>`).join("\n      ")}
     </div>
@@ -861,25 +859,15 @@ ${supplement}
     </div>
   </section>
 
-  <section id="how">
-    <div class="kicker">How it works</div>
-    <h2 class="h-section">How free credit works</h2>
-    <div class="steps">
-      <div class="step"><div class="num">01</div><div><h3>Claim</h3><p>Register and meet the promotion condition, such as verification, new user status or a qualifying deposit.</p></div></div>
-      <div class="step"><div class="num">02</div><div><h3>Turnover</h3><p>Wager the credit the required number of times before any winnings can be withdrawn.</p></div></div>
-      <div class="step"><div class="num">03</div><div><h3>Eligible games</h3><p>Only selected games count toward the turnover, and often only slots.</p></div></div>
-      <div class="step"><div class="num">04</div><div><h3>Withdraw</h3><p>Cash out once the turnover is cleared, within any winnings cap set by the promotion.</p></div></div>
-    </div>
-  </section>
-
-  <section id="why">
-    <div class="kicker">Why check first</div>
-    <h2 class="h-section">Read the terms before you claim</h2>
+  <section id="checklist">
+    <div class="kicker">Our method</div>
+    <h2 class="h-section">What we check in every review</h2>
+    <p class="lede">Every offer on this site is read against the same four points. If a promotion hides any of them, that goes in the review.</p>
     <div class="why-grid">
-      <div class="why-item">${check}<h3>Eligibility</h3><p>New user only, region, verified account or minimum deposit.</p></div>
-      <div class="why-item">${check}<h3>Turnover</h3><p>How many times the credit must be wagered, and by when.</p></div>
-      <div class="why-item">${check}<h3>Eligible games</h3><p>Which games count, and how much each contributes.</p></div>
-      <div class="why-item">${check}<h3>Withdrawal cap</h3><p>The most you can take out from free credit winnings.</p></div>
+      <div class="why-item">${check}<h3>Eligibility</h3><p>Who can claim: new accounts only, region limits, verification, or a minimum deposit first.</p></div>
+      <div class="why-item">${check}<h3>Turnover</h3><p>How many times the credit has to be wagered, on what, and inside what time window.</p></div>
+      <div class="why-item">${check}<h3>Eligible games</h3><p>Which titles count toward that turnover and how much each one contributes.</p></div>
+      <div class="why-item">${check}<h3>Withdrawal cap</h3><p>The ceiling on what can be cashed out from credit that started as a bonus.</p></div>
     </div>
   </section>
 
@@ -892,7 +880,7 @@ ${faqHtml}
   <footer>
     <div class="foot-block">
       <h4>FreeKreditRM10</h4>
-      <p>An independent guide to free credit RM10 and no deposit bonuses in Malaysia. We explain how the offers work and point readers to a featured pick.</p>
+      <p>Tracks free credit and no deposit promotions in Malaysia and reviews each one against a fixed checklist. We are not an operator. Registration and play happen on the sites we link to.</p>
     </div>
     <div class="foot-block">
       <h4>Guides</h4>
