@@ -486,10 +486,12 @@ ul.cards .d{display:block;color:var(--muted);font-size:12px;margin-top:4px}
 }
 
 /* ---------------------------------------------------------------------------
- * 8. doorway homepage (adapted from jadiking88-mobile-v2.html)
+ * 8. homepage — TWO versions for comparison
+ *    /                          -> category-first homepage (recommended, live)
+ *    /preview/jadiking-doorway/ -> Jadiking88 brand doorway (noindex, kept for review)
  * ------------------------------------------------------------------------- */
-const doorway = buildDoorway();
-writeOut("", doorway);
+writeOut("", buildHomepage());
+writeOut("preview/jadiking-doorway", buildDoorway({ preview: true }));
 
 /* ---------------------------------------------------------------------------
  * 9. sitemap + robots + headers
@@ -500,7 +502,7 @@ const urls = [...new Set(allPaths)]
   .join("\n");
 writeFileSync(join(ROOT, "sitemap.xml"),
 `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
-writeFileSync(join(ROOT, "robots.txt"), `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
+writeFileSync(join(ROOT, "robots.txt"), `User-agent: *\nAllow: /\nDisallow: /preview/\n\nSitemap: ${SITE}/sitemap.xml\n`);
 writeFileSync(join(ROOT, "_headers"),
 `/brand/*\n  Cache-Control: public, max-age=31536000, immutable\n/favicon.svg\n  Cache-Control: public, max-age=604800\n`);
 
@@ -531,7 +533,17 @@ a{display:inline-block;margin-top:8px;padding:11px 20px;border:1px solid #E7B92E
 console.log(`Built ${OUTDIRS.size} pages -> ${ROOT}`);
 
 /* ========================================================================= */
-function buildDoorway() {
+var _jadikingStyle = null;
+function getJadikingStyle() {
+  if (_jadikingStyle) return _jadikingStyle;
+  const src = readFileSync(join(ROOT, "..", "Seo breif", "jadiking88-mobile-v2.html"), "utf8").replace(/\r\n/g, "\n");
+  _jadikingStyle = src.slice(src.indexOf("<style>"), src.indexOf("</style>") + 8);
+  return _jadikingStyle;
+}
+
+function buildDoorway(opts = {}) {
+  const preview = !!opts.preview;
+  const selfUrl = preview ? `${SITE}/preview/jadiking-doorway/` : `${SITE}/`;
   const srcPath = join(ROOT, "..", "Seo breif", "jadiking88-mobile-v2.html");
   let src = readFileSync(srcPath, "utf8");
 
@@ -607,9 +619,13 @@ function buildDoorway() {
     "@graph": [
       { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.svg" },
       { "@type": "WebSite", "@id": SITE + "/#website", url: SITE + "/", name: "FreeKreditRM10", publisher: { "@id": SITE + "/#organization" }, inLanguage: "en-MY" },
-      { "@type": "WebPage", "@id": SITE + "/#webpage", url: SITE + "/", name: "Jadiking88 Free Credit RM10: Official Brand Guide", isPartOf: { "@id": SITE + "/#website" }, inLanguage: "en-MY" },
+      { "@type": "WebPage", "@id": selfUrl + "#webpage", url: selfUrl, name: "Jadiking88 Free Credit RM10: Official Brand Guide", isPartOf: { "@id": SITE + "/#website" }, inLanguage: "en-MY" },
     ],
   };
+
+  const previewBanner = preview
+    ? `<div style="background:#9C1F2E;color:#fff;font:600 12px/1.4 system-ui,sans-serif;padding:10px 14px;text-align:center">Design option B &middot; Jadiking88 brand doorway. The live homepage is the <a href="/" style="color:#F5D46B">category version</a>.</div>`
+    : "";
 
   const head = `<!DOCTYPE html>
 <html lang="en-MY">
@@ -619,8 +635,8 @@ function buildDoorway() {
 <title>Jadiking88 Free Credit RM10 Malaysia: Official Brand Guide</title>
 <meta name="description" content="Jadiking88 (Jadiking 2.0) brand guide for Malaysia: free credit RM10 to RM30 with no deposit, the Monthly Mission multiplier, the games on offer and how to register.">
 <meta name="keywords" content="Jadiking88, Jadiking 2.0, free kredit RM10, free credit RM10, free credit no deposit, e-wallet casino Malaysia">
-<link rel="canonical" href="${SITE}/">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="${selfUrl}">
+<meta name="robots" content="${preview ? "noindex,follow" : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"}">
 <meta http-equiv="content-language" content="en-MY">
 <meta name="geo.region" content="MY">
 <meta property="og:type" content="website">
@@ -628,7 +644,7 @@ function buildDoorway() {
 <meta property="og:site_name" content="FreeKreditRM10">
 <meta property="og:title" content="Jadiking88 Free Credit RM10 Malaysia: Official Brand Guide">
 <meta property="og:description" content="Free credit RM10 to RM30 with no deposit, the Monthly Mission multiplier, games and registration for Jadiking88 (Jadiking 2.0).">
-<meta property="og:url" content="${SITE}/">
+<meta property="og:url" content="${selfUrl}">
 <meta property="og:image" content="${SITE}/brand/cover.svg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jadiking88 Free Credit RM10 Malaysia: Official Brand Guide">
@@ -639,8 +655,269 @@ ${JSON.stringify(jsonld)}
 </script>
 ${styleBlock}
 </head>
-<body>`;
+<body>${previewBanner}`;
 
   // markup currently ends with the page markup then a trailing newline
   return head + "\n" + markup.trimEnd() + "\n</body>\n</html>\n";
+}
+
+/* =========================================================================
+ * Category-first homepage (recommended). Reuses the Jadiking doorway's
+ * visual system (same <style>, tokens, fonts, components) but leads with
+ * the "free kredit RM10" category promise and positions Jadiking88 as the
+ * featured recommendation rather than the whole page.
+ * ===================================================================== */
+function buildHomepage() {
+  const style = getJadikingStyle();
+  const L = (p) => esc(META[p].label);
+
+  const supplement =
+    "\n<style>\n" +
+    ".qa-box{background:var(--surface);border-left:3px solid var(--gold);border-radius:8px;padding:14px 16px;margin-top:14px}\n" +
+    ".qa-box p{margin:.35em 0;font-size:13.5px;color:var(--text)}\n" +
+    ".qa-box ul{margin:.5em 0 0;padding-left:1.1em;color:var(--text-muted);font-size:12.5px}\n" +
+    ".qa-box li{margin:.2em 0}\n" +
+    ".pick-tag{display:inline-flex;align-items:center;gap:6px;font-family:'IBM Plex Mono';font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#2A1D06;background:linear-gradient(180deg,var(--gold-2),var(--gold));border-radius:999px;padding:4px 10px;margin-bottom:10px}\n" +
+    ".type-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}\n" +
+    ".type-grid a{display:block;background:var(--surface);border:1px solid var(--border-soft);border-radius:12px;padding:13px 14px;color:var(--text)}\n" +
+    ".type-grid a .amt{font-family:'Anton';font-size:18px;color:var(--gold-2);display:block;line-height:1.1}\n" +
+    ".type-grid a .lbl{font-size:11px;color:var(--text-muted)}\n" +
+    ".link-list{display:flex;flex-direction:column;margin-top:12px;border:1px solid var(--border-soft);border-radius:12px;overflow:hidden}\n" +
+    ".link-list a{padding:13px 14px;font-size:13px;color:var(--text);border-top:1px solid var(--border-soft)}\n" +
+    ".link-list a:first-child{border-top:0}\n" +
+    ".link-list a:hover{background:var(--surface);color:var(--gold-2)}\n" +
+    "</style>";
+
+  const faq = [
+    ["What is free kredit RM10?", "Promotional credit with a stated value of RM10, given under the conditions of a specific campaign. Turnover and withdrawal conditions usually apply before winnings can be cashed out."],
+    ["Is free credit RM10 really no deposit?", "Some RM10 offers are no deposit, others require a qualifying deposit. Check the specific promotion. A no deposit offer still normally carries turnover and a withdrawal cap."],
+    ["Can I withdraw free credit RM10 straight away?", "Usually no. Most promotions require you to wager the credit a set number of times on eligible games first, and winnings are often capped."],
+    ["Which games count toward the turnover?", "Only selected games, and often only slots. Table and live games may contribute little or nothing. The promotion terms list the eligible games."],
+    ["Where does FreeKreditRM10 point readers?", "Our featured pick is Jadiking88, which offers RM10 to RM30 free credit with no deposit for new accounts plus a Monthly Mission multiplier. Registration and play happen at jadiking.my."],
+  ];
+
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.svg" },
+      { "@type": "WebSite", "@id": SITE + "/#website", url: SITE + "/", name: "FreeKreditRM10", publisher: { "@id": SITE + "/#organization" }, inLanguage: "en-MY" },
+      { "@type": "WebPage", "@id": SITE + "/#webpage", url: SITE + "/", name: "Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide", isPartOf: { "@id": SITE + "/#website" }, inLanguage: "en-MY", about: "Free credit RM10 Malaysia" },
+      { "@type": "FAQPage", "@id": SITE + "/#faq", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+      { "@type": "BreadcrumbList", "@id": SITE + "/#breadcrumb", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: SITE + "/" }] },
+    ],
+  };
+
+  const featured = [
+    "free-kredit-rm10-malaysia-guide",
+    "best-online-casinos-offering-free-credit-10-no-deposit-in-malaysia",
+    "top-10-slot-games-to-play-using-free-kredit-rm10",
+    "top-7-slot-malaysia-platform-to-claim-free-credit-no-deposit-rm10",
+    "how-to-register-dapat-free-credit-e-wallet",
+    "joylink-free-credit",
+    "game/golden-empire",
+    "about-us-jadiking-2-0",
+  ];
+  const types = [
+    ["RM3", "how-to-claim-link-free-credit-rm3", "Link free kredit RM3"],
+    ["RM5", "why-link-free-credit-rm5-matters-understanding-the-benefits-for-players", "Link free credit RM5"],
+    ["RM10", "best-online-casinos-offering-free-credit-10-no-deposit-in-malaysia", "No deposit RM10"],
+    ["RM88", "need-luck-and-strategy-get-our-free-kredit-88-today", "Free kredit 88"],
+    ["RM100", "maximize-your-wins-how-to-claim-joy-link-free-credit-rm100-no-deposit", "Joy Link RM100"],
+    ["RM1000", "bonus/rm1000-rebate-bonus-free-kredit-rm10", "Rebate bonus"],
+  ];
+
+  const crown = '<svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>';
+  const check = '<svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const faqHtml = faq
+    .map(([q, a], i) => `    <details class="faq-item"${i === 0 ? " open" : ""}><summary class="faq-q">${esc(q)} <span class="plus">+</span></summary><p class="faq-a">${esc(a)}</p></details>`)
+    .join("\n");
+
+  return `<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide</title>
+<meta name="description" content="How free kredit RM10 works in Malaysia: free credit RM10, free kredit no deposit, slot free kredit, eligibility, turnover and withdrawal terms, plus our featured RM10 to RM30 pick.">
+<meta name="keywords" content="free kredit RM10, free credit RM10, free kredit Malaysia, free kredit no deposit, slot free kredit, free credit casino Malaysia, no deposit bonus Malaysia">
+<link rel="canonical" href="${SITE}/">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta http-equiv="content-language" content="en-MY">
+<meta name="geo.region" content="MY">
+<meta name="geo.placename" content="Malaysia">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_MY">
+<meta property="og:site_name" content="FreeKreditRM10">
+<meta property="og:title" content="Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide">
+<meta property="og:description" content="How free kredit RM10 works in Malaysia, including no deposit offers, slot free kredit, bonus terms, eligibility and turnover.">
+<meta property="og:url" content="${SITE}/">
+<meta property="og:image" content="${SITE}/brand/cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Kredit RM10 Malaysia 2026: Complete Guide">
+<meta name="twitter:description" content="Free credit RM10, free kredit no deposit, slot free kredit, eligibility, turnover and bonus terms in Malaysia.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+${JSON.stringify(jsonld)}
+</script>
+${style}
+${supplement}
+</head>
+<body>
+
+<input type="checkbox" id="drawer-toggle">
+<label for="drawer-toggle" class="scrim"></label>
+<nav class="drawer">
+  <div class="drawer-head">
+    <div class="word" style="font-family:'Anton'; color:var(--gold-2); font-size:16px;">FREE KREDIT RM10</div>
+    <label for="drawer-toggle" class="drawer-close">&times;</label>
+  </div>
+  <div class="drawer-list">
+    <a href="#what">${crown}What is free kredit RM10</a>
+    <a href="/${GUIDE_PATH}/">${crown}Full RM10 guide</a>
+    <a href="/blog/">${crown}All guides</a>
+    <a href="#types">${crown}Free credit by amount</a>
+    <a href="/about-us-jadiking-2-0/">${crown}Jadiking88 review</a>
+    <a href="https://jadiking.my" target="_blank" rel="noopener" class="highlight">${crown}Register at Jadiking.my</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <div class="topbar">
+    <label for="drawer-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
+    <div class="brandmark">
+      <div class="word">${crown} FREE KREDIT RM10</div>
+      <div class="tag">Malaysia Free Credit Guide</div>
+    </div>
+    <div class="group-badge">EST.<br>2026</div>
+  </div>
+
+  <header class="hero" id="top">
+    <svg class="hero-crown" viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="var(--gold)" stroke-width="0.8"/></svg>
+    <div class="kicker-row">${crown}<span>Malaysia Free Credit Guide</span></div>
+    <h1>Free Kredit RM10<br>Malaysia</h1>
+    <p class="sub">Free kredit RM10 is promotional credit worth RM10 offered under specific bonus conditions. Some offers need a deposit, some are no deposit. Turnover, eligible games and withdrawal limits usually apply before winnings can be cashed out.</p>
+    <div class="dual-cta">
+      <a class="btn-gold" href="/${GUIDE_PATH}/">Read the full guide</a>
+      <a class="btn-outline" href="/blog/">Browse all guides</a>
+    </div>
+  </header>
+
+  <section id="what">
+    <div class="kicker">Quick answer</div>
+    <h2 class="h-section">What is free kredit RM10?</h2>
+    <div class="qa-box">
+      <p><strong>Free kredit RM10 is promotional gaming credit with a stated value of RM10, given under the terms of a specific campaign.</strong> The word free does not mean the RM10 is instantly withdrawable.</p>
+      <ul>
+        <li>The promotional value is commonly RM10.</li>
+        <li>Some offers require a deposit, some are no deposit.</li>
+        <li>Promotional credit is often not directly withdrawable.</li>
+        <li>Turnover or wagering conditions usually apply.</li>
+        <li>Only selected games qualify, and there may be an expiry period.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="pick">
+    <div class="kicker">Our top pick</div>
+    <span class="pick-tag">${crown} Featured recommendation</span>
+    <h2 class="h-section">Jadiking88 (Jadiking 2.0)</h2>
+    <p class="lede">The RM10 offer we point readers to. E-wallet deposits and withdrawals, RM10 to RM30 free credit with no deposit for new accounts, and a Monthly Mission deposit multiplier that scales up to 3.5x.</p>
+    <div class="credit-panel">
+      <div class="credit-medal">${crown}</div>
+      <div class="body">
+        <div class="amt">RM10 TO RM30 FREE CREDIT</div>
+        <div class="note">No deposit needed for new players</div>
+      </div>
+      <a class="collect-btn" href="https://jadiking.my" target="_blank" rel="noopener">CLAIM</a>
+    </div>
+    <div class="ledger-scroll">
+      <div class="receipt"><span class="tag">No deposit</span><div class="amount">RM10<small> to 30</small></div><p>Free credit for new players registering for the first time.</p></div>
+      <div class="receipt"><span class="tag">Recurring</span><div class="amount">3.5<small>x</small></div><p>Monthly Mission deposit multiplier based on activity.</p></div>
+      <div class="receipt"><span class="tag">E-wallet</span><div class="amount">Fast</div><p>Deposits and withdrawals through e-wallet rather than bank queues.</p></div>
+    </div>
+    <div class="dual-cta">
+      <a class="btn-gold" href="https://jadiking.my" target="_blank" rel="noopener">Register at Jadiking</a>
+      <a class="btn-outline" href="/about-us-jadiking-2-0/">Read the review</a>
+    </div>
+  </section>
+
+  <section id="types">
+    <div class="kicker">By amount</div>
+    <h2 class="h-section">Free credit by amount</h2>
+    <p class="lede">The evaluation is the same at every value. Only the headline number and the conditions change.</p>
+    <div class="type-grid">
+      ${types.map(([amt, p, lbl]) => `<a href="${rel(p)}"><span class="amt">${amt}</span><span class="lbl">${esc(lbl)}</span></a>`).join("\n      ")}
+    </div>
+  </section>
+
+  <section id="guides">
+    <div class="sec-head">
+      <div class="title">${crown}<h2>Popular guides</h2></div>
+      <a class="view-all" href="/blog/">View all</a>
+    </div>
+    <div class="link-list">
+      ${featured.map((p) => `<a href="${rel(p)}">${L(p)}</a>`).join("\n      ")}
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="kicker">How it works</div>
+    <h2 class="h-section">How free credit works</h2>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><div><h3>Claim</h3><p>Register and meet the promotion condition, such as verification, new user status or a qualifying deposit.</p></div></div>
+      <div class="step"><div class="num">02</div><div><h3>Turnover</h3><p>Wager the credit the required number of times before any winnings can be withdrawn.</p></div></div>
+      <div class="step"><div class="num">03</div><div><h3>Eligible games</h3><p>Only selected games count toward the turnover, and often only slots.</p></div></div>
+      <div class="step"><div class="num">04</div><div><h3>Withdraw</h3><p>Cash out once the turnover is cleared, within any winnings cap set by the promotion.</p></div></div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="kicker">Why check first</div>
+    <h2 class="h-section">Read the terms before you claim</h2>
+    <div class="why-grid">
+      <div class="why-item">${check}<h3>Eligibility</h3><p>New user only, region, verified account or minimum deposit.</p></div>
+      <div class="why-item">${check}<h3>Turnover</h3><p>How many times the credit must be wagered, and by when.</p></div>
+      <div class="why-item">${check}<h3>Eligible games</h3><p>Which games count, and how much each contributes.</p></div>
+      <div class="why-item">${check}<h3>Withdrawal cap</h3><p>The most you can take out from free credit winnings.</p></div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="kicker">FAQ</div>
+    <h2 class="h-section">Frequently asked questions</h2>
+${faqHtml}
+  </section>
+
+  <footer>
+    <div class="foot-block">
+      <h4>FreeKreditRM10</h4>
+      <p>An independent guide to free credit RM10 and no deposit bonuses in Malaysia. We explain how the offers work and point readers to a featured pick.</p>
+    </div>
+    <div class="foot-block">
+      <h4>Guides</h4>
+      ${featured.slice(0, 6).map((p) => `<a href="${rel(p)}">${L(p)}</a>`).join("\n      ")}
+      <a href="/blog/">All guides &rarr;</a>
+    </div>
+    <div class="foot-block" id="contact">
+      <h4>Contact</h4>
+      <p class="mono">+60 11-2063 1805</p>
+      <p>Malaysia</p>
+    </div>
+    <div class="foot-bottom">&copy; 2026 FreeKreditRM10 &middot; Free credit and no deposit guide for Malaysia</div>
+    <p class="disclaimer">FreeKreditRM10 is an independent information resource. Bonus value, eligibility, turnover requirements, eligible games and withdrawal terms change often and vary by promotion. Always read the current operator terms before you claim. 18+. Play responsibly.</p>
+  </footer>
+
+  <nav class="bottomnav">
+    <a href="#top" class="active">${navSvg.home}Home</a>
+    <a href="/${GUIDE_PATH}/">${navSvg.guide}Guide</a>
+    <a href="#types">${crown}Offers</a>
+    <a href="/blog/">${navSvg.blog}Blog</a>
+    <a href="https://jadiking.my" target="_blank" rel="noopener">${navSvg.register}Register</a>
+  </nav>
+</div>
+
+</body>
+</html>
+`;
 }
