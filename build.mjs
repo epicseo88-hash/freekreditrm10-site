@@ -746,6 +746,9 @@ function buildHomepage() {
     ".hero h1{font-size:27px;margin-bottom:8px}\n" +
     ".hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}\n" +
     ".hero .dual-cta{margin-top:12px}\n" +
+    /* secondary CTA: quiet outline so the rainbow CTA leads */
+    ".hero .dual-cta .btn-gold{background:transparent;border:1px solid var(--border);color:var(--text-muted);text-shadow:none}\n" +
+    ".hero .dual-cta .btn-gold:hover{color:var(--gold-2);border-color:var(--gold)}\n" +
     /* conversion CTA: flowing rainbow gradient + shine sweep */
     ".cta-get{position:relative;overflow:hidden;border:0;color:#0a0500;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,0.45);background:linear-gradient(90deg,#ffd23f,#ff9d2e,#ff5ea8,#c77dff,#5ee7ff,#7cffb2,#ffd23f);background-size:300% 100%;animation:cta-flow 4.5s linear infinite,cta-pulse 1.9s ease-in-out infinite}\n" +
     "@keyframes cta-flow{to{background-position:300% 50%}}\n" +
