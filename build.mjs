@@ -231,10 +231,23 @@ const CHROME_CSS = `
 <style id="fkr-chrome">
 :root{--fkr-bg:#0C0704;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-ink:#160D07;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22)}
 body{padding-top:46px!important;padding-bottom:64px!important}
-.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 14px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;gap:10px;padding:7px 12px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none;margin:0 auto 0 4px}
 .fkrhdr-logo img{height:21px;width:auto;display:block}
 .fkrhdr-grp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;line-height:1.15;letter-spacing:.05em;color:var(--fkr-gold2);border:1px solid var(--fkr-line);border-radius:6px;padding:5px 7px;text-align:center;white-space:nowrap;text-decoration:none;flex:none}
+.fkr-burger{display:flex;flex-direction:column;gap:4px;padding:6px 4px;cursor:pointer;flex:none}
+.fkr-burger i{display:block;width:20px;height:2px;background:var(--fkr-gold);border-radius:2px}
+#fkr-drawer{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.fkr-scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:10001}
+.fkr-drawer{position:fixed;top:0;bottom:0;left:0;width:82%;max-width:300px;background:var(--fkr-bg);border-right:1px solid var(--fkr-line);transform:translateX(-100%);transition:transform .28s ease;z-index:10002;display:flex;flex-direction:column;padding-bottom:20px;overflow-y:auto;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#fkr-drawer:checked~.fkr-drawer{transform:none}
+#fkr-drawer:checked~.fkr-scrim{opacity:1;pointer-events:auto}
+.fkr-dh{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--fkr-line)}
+.fkr-dh img{height:20px;width:auto;display:block}
+.fkr-x{color:var(--fkr-muted);font-size:22px;line-height:1;cursor:pointer;text-decoration:none;padding:0 4px}
+.fkr-drawer a.item{display:block;padding:13px 16px;font-size:14px;font-weight:500;color:var(--fkr-text);text-decoration:none;border-bottom:1px solid rgba(246,239,225,.06)}
+.fkr-drawer a.item:hover{background:var(--fkr-ink);color:var(--fkr-gold2)}
+.fkr-drawer a.hl{color:var(--fkr-gold2);font-weight:700}
 .fkrnav{position:fixed;inset:auto 0 0 0;z-index:10000;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(5,1fr);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 3px 9px;font-size:9.5px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
 .fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
@@ -251,10 +264,25 @@ const navSvg = {
 };
 
 function siteHeader() {
-  return `<header class="fkrhdr">` +
-    `<a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>` +
-    `<a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a>` +
-    `</header>`;
+  return `<input id="fkr-drawer" type="checkbox">
+<label class="fkr-scrim" for="fkr-drawer" aria-hidden="true"></label>
+<nav class="fkr-drawer" aria-label="Menu">
+<div class="fkr-dh"><img src="/brand/logo.png" alt="FreeKreditRM10"><label class="fkr-x" for="fkr-drawer" aria-label="Close menu">&times;</label></div>
+<a class="item" href="/">Home</a>
+<a class="item" href="/${GUIDE_PATH}/">Free Kredit RM10 Guide</a>
+<a class="item" href="/blog/">All Guides</a>
+<a class="item" href="/game/">Slot Games</a>
+<a class="item" href="/bonus/">Bonus Offers</a>
+<a class="item" href="/winningtips/">Winning Tips</a>
+<a class="item" href="/about-us-jadiking-2-0/">Jadiking88 Review</a>
+<a class="item" href="https://jadiking.my/promotion" target="_blank" rel="noopener">Offers</a>
+<a class="item hl" href="https://jadiking.my/" target="_blank" rel="noopener">Register at Jadiking</a>
+</nav>
+<header class="fkrhdr">
+<label class="fkr-burger" for="fkr-drawer" aria-label="Open menu"><i></i><i></i><i></i></label>
+<a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>
+<a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a>
+</header>`;
 }
 
 function siteNav(current) {
@@ -719,11 +747,11 @@ function buildHomepage() {
     ".hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}\n" +
     ".hero .dual-cta{margin-top:12px}\n" +
     /* conversion CTA: flowing rainbow gradient + shine sweep */
-    ".cta-get{position:relative;overflow:hidden;color:#fff;border:1px solid rgba(255,255,255,0.28);letter-spacing:.03em;text-shadow:0 1px 3px rgba(0,0,0,0.55);background:linear-gradient(90deg,#ff2d75,#ff7a1a,#ffd23f,#3ddc97,#2f9bff,#a24bff,#ff2d75);background-size:340% 100%;animation:cta-flow 7s linear infinite;box-shadow:0 12px 30px -8px rgba(255,45,117,0.55),0 0 0 1px rgba(255,255,255,0.06) inset}\n" +
-    "@keyframes cta-flow{to{background-position:340% 50%}}\n" +
-    ".cta-get::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.16)}\n" +
-    ".cta-get::after{content:'';position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.5),transparent);transform:skewX(-20deg);animation:cta-shine 3.2s ease-in-out infinite}\n" +
-    "@keyframes cta-shine{0%,58%{left:-75%}100%{left:150%}}\n" +
+    ".cta-get{position:relative;overflow:hidden;border:0;color:#0a0500;letter-spacing:.02em;text-shadow:0 1px 0 rgba(255,255,255,0.45);background:linear-gradient(90deg,#ffd23f,#ff9d2e,#ff5ea8,#c77dff,#5ee7ff,#7cffb2,#ffd23f);background-size:300% 100%;animation:cta-flow 4.5s linear infinite,cta-pulse 1.9s ease-in-out infinite}\n" +
+    "@keyframes cta-flow{to{background-position:300% 50%}}\n" +
+    "@keyframes cta-pulse{0%,100%{box-shadow:0 10px 24px -6px rgba(255,94,168,.5),0 0 0 0 rgba(255,210,63,.55)}50%{box-shadow:0 14px 32px -6px rgba(255,94,168,.7),0 0 0 12px rgba(255,210,63,0)}}\n" +
+    ".cta-get::after{content:'';position:absolute;top:0;left:-75%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.75),transparent);transform:skewX(-20deg);animation:cta-shine 2.5s ease-in-out infinite}\n" +
+    "@keyframes cta-shine{0%,55%{left:-75%}100%{left:150%}}\n" +
     ".cta-get span{position:relative;z-index:1}\n" +
     "@media (prefers-reduced-motion:reduce){.cta-get{animation:none;background-position:0 50%}.cta-get::after{display:none}}\n" +
     "</style>";

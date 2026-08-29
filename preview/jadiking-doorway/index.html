@@ -229,10 +229,23 @@
 <style id="fkr-chrome">
 :root{--fkr-bg:#0C0704;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-ink:#160D07;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22)}
 body{padding-top:46px!important;padding-bottom:64px!important}
-.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 14px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;gap:10px;padding:7px 12px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none;margin:0 auto 0 4px}
 .fkrhdr-logo img{height:21px;width:auto;display:block}
 .fkrhdr-grp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;line-height:1.15;letter-spacing:.05em;color:var(--fkr-gold2);border:1px solid var(--fkr-line);border-radius:6px;padding:5px 7px;text-align:center;white-space:nowrap;text-decoration:none;flex:none}
+.fkr-burger{display:flex;flex-direction:column;gap:4px;padding:6px 4px;cursor:pointer;flex:none}
+.fkr-burger i{display:block;width:20px;height:2px;background:var(--fkr-gold);border-radius:2px}
+#fkr-drawer{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+.fkr-scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:10001}
+.fkr-drawer{position:fixed;top:0;bottom:0;left:0;width:82%;max-width:300px;background:var(--fkr-bg);border-right:1px solid var(--fkr-line);transform:translateX(-100%);transition:transform .28s ease;z-index:10002;display:flex;flex-direction:column;padding-bottom:20px;overflow-y:auto;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+#fkr-drawer:checked~.fkr-drawer{transform:none}
+#fkr-drawer:checked~.fkr-scrim{opacity:1;pointer-events:auto}
+.fkr-dh{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--fkr-line)}
+.fkr-dh img{height:20px;width:auto;display:block}
+.fkr-x{color:var(--fkr-muted);font-size:22px;line-height:1;cursor:pointer;text-decoration:none;padding:0 4px}
+.fkr-drawer a.item{display:block;padding:13px 16px;font-size:14px;font-weight:500;color:var(--fkr-text);text-decoration:none;border-bottom:1px solid rgba(246,239,225,.06)}
+.fkr-drawer a.item:hover{background:var(--fkr-ink);color:var(--fkr-gold2)}
+.fkr-drawer a.hl{color:var(--fkr-gold2);font-weight:700}
 .fkrnav{position:fixed;inset:auto 0 0 0;z-index:10000;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(5,1fr);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 3px 9px;font-size:9.5px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
 .fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
@@ -241,7 +254,25 @@ body{padding-top:46px!important;padding-bottom:64px!important}
 </style>
 </head>
 <body><div style="background:#9C1F2E;color:#fff;font:600 12px/1.4 system-ui,sans-serif;padding:10px 14px;text-align:center">Design option B &middot; Jadiking88 brand doorway. The live homepage is the <a href="/" style="color:#F5D46B">category version</a>.</div>
-<header class="fkrhdr"><a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a><a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a></header>
+<input id="fkr-drawer" type="checkbox">
+<label class="fkr-scrim" for="fkr-drawer" aria-hidden="true"></label>
+<nav class="fkr-drawer" aria-label="Menu">
+<div class="fkr-dh"><img src="/brand/logo.png" alt="FreeKreditRM10"><label class="fkr-x" for="fkr-drawer" aria-label="Close menu">&times;</label></div>
+<a class="item" href="/">Home</a>
+<a class="item" href="/free-kredit-rm10-malaysia-guide/">Free Kredit RM10 Guide</a>
+<a class="item" href="/blog/">All Guides</a>
+<a class="item" href="/game/">Slot Games</a>
+<a class="item" href="/bonus/">Bonus Offers</a>
+<a class="item" href="/winningtips/">Winning Tips</a>
+<a class="item" href="/about-us-jadiking-2-0/">Jadiking88 Review</a>
+<a class="item" href="https://jadiking.my/promotion" target="_blank" rel="noopener">Offers</a>
+<a class="item hl" href="https://jadiking.my/" target="_blank" rel="noopener">Register at Jadiking</a>
+</nav>
+<header class="fkrhdr">
+<label class="fkr-burger" for="fkr-drawer" aria-label="Open menu"><i></i><i></i><i></i></label>
+<a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>
+<a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a>
+</header>
 
 
 <div class="page">
