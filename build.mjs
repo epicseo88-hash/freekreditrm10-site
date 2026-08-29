@@ -688,6 +688,16 @@ function buildHomepage() {
     ".link-list a{padding:13px 14px;font-size:13px;color:var(--text);border-top:1px solid var(--border-soft)}\n" +
     ".link-list a:first-child{border-top:0}\n" +
     ".link-list a:hover{background:var(--surface);color:var(--gold-2)}\n" +
+    /* topbar + hero trim (approx 35% shorter header) */
+    ".burger::before,.burger::after{display:none}\n" +
+    ".topbar{padding:8px 14px}\n" +
+    ".brandmark .word{white-space:nowrap;font-size:17px}\n" +
+    ".hero{padding:12px 16px 12px}\n" +
+    ".hero-crown{width:100px;height:100px;top:-6px}\n" +
+    ".hero .kicker-row{margin-bottom:7px}\n" +
+    ".hero h1{font-size:27px;margin-bottom:8px}\n" +
+    ".hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}\n" +
+    ".hero .dual-cta{margin-top:12px}\n" +
     "</style>";
 
   const faq = [
@@ -789,10 +799,10 @@ ${supplement}
   <div class="topbar">
     <label for="drawer-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
     <div class="brandmark">
-      <div class="word">${crown} FREE KREDIT RM10</div>
+      <div class="word">FREE KREDIT RM10</div>
       <div class="tag">Malaysia Free Credit Guide</div>
     </div>
-    <div class="group-badge">EST.<br>2026</div>
+    <div class="group-badge">JADIKING<br>GROUP</div>
   </div>
 
   <header class="hero" id="top">
@@ -802,7 +812,7 @@ ${supplement}
     <p class="sub">FreeKreditRM10 follows free credit and no deposit promotions in Malaysia and records what each one asks for before a withdrawal is possible. Use the full guide to learn the mechanics, compare offers by amount, or go straight to the pick we send readers to.</p>
     <div class="dual-cta">
       <a class="btn-gold" href="/${GUIDE_PATH}/">Read the full guide</a>
-      <a class="btn-outline" href="/blog/">Browse all guides</a>
+      <a class="btn-outline" href="https://jadiking.my/" target="_blank" rel="noopener">Get free credit RM10</a>
     </div>
   </header>
 
