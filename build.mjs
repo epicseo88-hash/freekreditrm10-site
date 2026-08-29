@@ -11,7 +11,7 @@
  *
  * Run:  node build.mjs
  */
-import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
 const ROOT = dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
@@ -276,7 +276,7 @@ function writeOut(path, html) {
 
 // clean stale build output (keep repo meta + source + this script)
 for (const entry of readdirSync(ROOT)) {
-  if (["_source", "build.mjs", ".git", ".gitignore", "README.md", "node_modules"].includes(entry)) continue;
+  if (["_source", "brand-src", "build.mjs", ".git", ".gitignore", "README.md", "node_modules"].includes(entry)) continue;
   rmSync(join(ROOT, entry), { recursive: true, force: true });
 }
 
@@ -297,7 +297,7 @@ for (const [file, path] of Object.entries(PATHMAP)) {
     .replace(/\s*<link\s+rel="preload"[^>]*as="image"[^>]*>/gi, "");
   // point remaining wp-content refs (JSON-LD logo/image) at real brand assets
   head = head
-    .replace(/https:\/\/freekreditrm10\.com\/wp-content\/uploads\/freekreditrm10-logo(\.[a-z0-9]+)?/gi, `${SITE}/brand/logo.svg`)
+    .replace(/https:\/\/freekreditrm10\.com\/wp-content\/uploads\/freekreditrm10-logo(\.[a-z0-9]+)?/gi, `${SITE}/brand/logo.png`)
     .replace(/https:\/\/freekreditrm10\.com\/wp-content\/uploads\/[^"'\s)]+/gi, `${SITE}/brand/cover.svg`);
   body = body.replace(/https:\/\/freekreditrm10\.com\/wp-content\/uploads\/[^"'\s)]+/gi, `${SITE}/brand/cover.svg`);
 
@@ -343,8 +343,8 @@ for (const [file, path] of Object.entries(PATHMAP)) {
  * 5. brand assets
  * ------------------------------------------------------------------------- */
 mkdirSync(join(ROOT, "brand"), { recursive: true });
-writeFileSync(join(ROOT, "brand", "logo.svg"),
-`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="96" fill="#0C0704"/><path d="M96 168l48 48 112-136 112 136 48-48-40 224H136z" fill="none" stroke="#E7B92E" stroke-width="20" stroke-linejoin="round"/><text x="256" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="86" fill="#F5D46B">RM10</text></svg>`);
+// real wordmark logo (master lives in brand-src/, copied into the build output)
+copyFileSync(join(ROOT, "brand-src", "logo.png"), join(ROOT, "brand", "logo.png"));
 writeFileSync(join(ROOT, "brand", "cover.svg"),
 `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#0C0704"/><rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="#E7B92E" stroke-opacity="0.35" stroke-width="3"/><text x="600" y="300" text-anchor="middle" font-family="Georgia,serif" font-size="96" fill="#F5D46B">Free Kredit RM10</text><text x="600" y="380" text-anchor="middle" font-family="system-ui,sans-serif" font-size="34" fill="#B7A688">Malaysia free credit &amp; no deposit guide</text></svg>`);
 writeFileSync(join(ROOT, "favicon.svg"),
@@ -617,7 +617,7 @@ function buildDoorway(opts = {}) {
   const jsonld = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.svg" },
+      { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.png" },
       { "@type": "WebSite", "@id": SITE + "/#website", url: SITE + "/", name: "FreeKreditRM10", publisher: { "@id": SITE + "/#organization" }, inLanguage: "en-MY" },
       { "@type": "WebPage", "@id": selfUrl + "#webpage", url: selfUrl, name: "Jadiking88 Free Credit RM10: Official Brand Guide", isPartOf: { "@id": SITE + "/#website" }, inLanguage: "en-MY" },
     ],
@@ -691,13 +691,19 @@ function buildHomepage() {
     /* topbar + hero trim (approx 35% shorter header) */
     ".burger::before,.burger::after{display:none}\n" +
     ".topbar{padding:8px 14px}\n" +
-    ".brandmark .word{white-space:nowrap;font-size:17px}\n" +
+    ".brandmark{text-decoration:none}\n" +
+    ".brand-logo{height:23px;width:auto;display:block}\n" +
     ".hero{padding:12px 16px 12px}\n" +
     ".hero-crown{width:100px;height:100px;top:-6px}\n" +
     ".hero .kicker-row{margin-bottom:7px}\n" +
     ".hero h1{font-size:27px;margin-bottom:8px}\n" +
     ".hero p.sub{max-width:none;font-size:13px;margin-bottom:12px}\n" +
     ".hero .dual-cta{margin-top:12px}\n" +
+    /* red conversion CTA: high contrast + shine sweep */
+    ".cta-get{background:linear-gradient(135deg,var(--crimson-2),var(--crimson));color:#fff;border:1px solid rgba(255,255,255,0.20);box-shadow:0 12px 26px -8px rgba(156,31,46,0.85);position:relative;overflow:hidden;letter-spacing:.03em}\n" +
+    ".cta-get::after{content:'';position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.42),transparent);transform:skewX(-20deg);animation:cta-shine 3s ease-in-out infinite}\n" +
+    "@keyframes cta-shine{0%,55%{left:-70%}100%{left:140%}}\n" +
+    "@media (prefers-reduced-motion:reduce){.cta-get::after{display:none}}\n" +
     "</style>";
 
   const faq = [
@@ -711,7 +717,7 @@ function buildHomepage() {
   const jsonld = {
     "@context": "https://schema.org",
     "@graph": [
-      { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.svg" },
+      { "@type": "Organization", "@id": SITE + "/#organization", name: "FreeKreditRM10", url: SITE + "/", logo: SITE + "/brand/logo.png" },
       { "@type": "WebSite", "@id": SITE + "/#website", url: SITE + "/", name: "FreeKreditRM10", publisher: { "@id": SITE + "/#organization" }, inLanguage: "en-MY" },
       { "@type": "WebPage", "@id": SITE + "/#webpage", url: SITE + "/", name: "Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide", isPartOf: { "@id": SITE + "/#website" }, inLanguage: "en-MY", about: "Free credit RM10 Malaysia" },
       { "@type": "FAQPage", "@id": SITE + "/#faq", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
@@ -798,10 +804,10 @@ ${supplement}
 
   <div class="topbar">
     <label for="drawer-toggle" class="burger" aria-label="Open menu"><span></span><span></span><span></span></label>
-    <div class="brandmark">
-      <div class="word">FREE KREDIT RM10</div>
+    <a class="brandmark" href="/" aria-label="FreeKreditRM10 home">
+      <img class="brand-logo" src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140">
       <div class="tag">Malaysia Free Credit Guide</div>
-    </div>
+    </a>
     <div class="group-badge">JADIKING<br>GROUP</div>
   </div>
 
@@ -812,7 +818,7 @@ ${supplement}
     <p class="sub">FreeKreditRM10 follows free credit and no deposit promotions in Malaysia and records what each one asks for before a withdrawal is possible. Use the full guide to learn the mechanics, compare offers by amount, or go straight to the pick we send readers to.</p>
     <div class="dual-cta">
       <a class="btn-gold" href="/${GUIDE_PATH}/">Read the full guide</a>
-      <a class="btn-outline" href="https://jadiking.my/" target="_blank" rel="noopener">Get free credit RM10</a>
+      <a class="btn-outline cta-get" href="https://jadiking.my/" target="_blank" rel="noopener">Get free credit RM10</a>
     </div>
   </header>
 

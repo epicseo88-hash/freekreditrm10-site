@@ -14,7 +14,7 @@ serves the repo root as-is.
 | `<slug>/` | 38 recovered articles at their original recovered URL paths, including nested `game/`, `game-category/`, `bonus/`, `winningtips/`, `tag/`. |
 | `game/`, `game-category/`, `bonus/`, `winningtips/` | Section landing pages so those hub links never 404. |
 | `sitemap.xml`, `robots.txt`, `404.html`, `_headers` | Standard static-site plumbing. |
-| `brand/` | `logo.svg` + `cover.svg`, the only image assets (recovered `wp-content` images were stripped). |
+| `brand/` | `logo.png` (copied from `brand-src/` at build time) + generated `cover.svg`. Recovered `wp-content` images were stripped. |
 
 ## Internal linking
 
