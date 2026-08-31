@@ -13,8 +13,9 @@
  */
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, rmSync, existsSync, copyFileSync } from "node:fs";
 import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
-const ROOT = dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
+const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, "_source");
 const SITE = "https://freekreditrm10.com";
 const TODAY = "2026-08-29";
@@ -588,7 +589,7 @@ console.log(`Built ${OUTDIRS.size} pages -> ${ROOT}`);
 var _jadikingStyle = null;
 function getJadikingStyle() {
   if (_jadikingStyle) return _jadikingStyle;
-  const src = readFileSync(join(ROOT, "..", "Seo breif", "jadiking88-mobile-v2.html"), "utf8").replace(/\r\n/g, "\n");
+  const src = readFileSync(join(ROOT, "..", "jadiking88-mobile-v2.html"), "utf8").replace(/\r\n/g, "\n");
   _jadikingStyle = src.slice(src.indexOf("<style>"), src.indexOf("</style>") + 8);
   return _jadikingStyle;
 }
@@ -596,7 +597,7 @@ function getJadikingStyle() {
 function buildDoorway(opts = {}) {
   const preview = !!opts.preview;
   const selfUrl = preview ? `${SITE}/preview/jadiking-doorway/` : `${SITE}/`;
-  const srcPath = join(ROOT, "..", "Seo breif", "jadiking88-mobile-v2.html");
+  const srcPath = join(ROOT, "..", "jadiking88-mobile-v2.html");
   let src = readFileSync(srcPath, "utf8");
 
   src = src.replace(/\r\n/g, "\n");

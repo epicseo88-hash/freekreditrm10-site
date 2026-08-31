@@ -14,8 +14,9 @@ import { execSync } from "node:child_process";
 import { cpSync, rmSync, mkdirSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { tmpdir } from "node:os";
+import { fileURLToPath } from "node:url";
 
-const ROOT = dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
+const ROOT = dirname(fileURLToPath(import.meta.url));
 const STAGE = join(tmpdir(), "fkr10-deploy");
 const DROP = new Set(["_source", "brand-src", "build.mjs", "deploy.mjs", "wrangler.jsonc", "README.md", ".git", ".gitignore", ".assetsignore", "node_modules"]);
 
