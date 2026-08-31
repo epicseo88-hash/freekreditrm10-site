@@ -336,7 +336,7 @@ function writeOut(path, html) {
 
 // clean stale build output (keep repo meta + source + this script)
 for (const entry of readdirSync(ROOT)) {
-  if (["_source", "brand-src", "build.mjs", ".git", ".gitignore", "README.md", "node_modules"].includes(entry)) continue;
+  if (["_source", "brand-src", "build.mjs", "deploy.mjs", "wrangler.jsonc", ".assetsignore", ".git", ".gitignore", "README.md", "node_modules"].includes(entry)) continue;
   rmSync(join(ROOT, entry), { recursive: true, force: true });
 }
 
