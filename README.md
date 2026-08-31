@@ -41,9 +41,20 @@ image meta, fixes the pillar-guide canonical), rewrites links, injects the nav +
 related block, and hand-authors `index.html` and `blog/index.html` in the shared
 dark/gold theme. Re-run it after editing anything in `_source/` or `build.mjs`.
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Pages, Direct Upload)
 
-1. Push this repo to GitHub.
-2. Cloudflare Pages → Create project → connect the repo.
-3. Framework preset: **None**. Build command: *(empty)*. Build output directory: `/`.
-4. Add the custom domain `freekreditrm10.com`.
+Live at **https://freekreditrm10-site.pages.dev** (Pages project `freekreditrm10-site`,
+account `Admin@jadiking88.org`). It is **not** Git-connected — the dashboard Git flow
+needs an Administrator role this account lacks — so `git push` does not deploy.
+
+To publish after a content change:
+
+```
+node deploy.mjs
+```
+
+That runs `build.mjs`, stages the site without the build tooling, and
+`wrangler pages deploy`s it. Still push to GitHub too so the source stays current.
+
+Custom domain `freekreditrm10.com` is added in the dashboard: Workers & Pages →
+freekreditrm10-site → Custom domains.
