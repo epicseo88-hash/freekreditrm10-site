@@ -19,6 +19,11 @@ const SRC = join(ROOT, "_source");
 const SITE = "https://freekreditrm10.com";
 const TODAY = "2026-08-29";
 
+// Lock page zoom. Meta covers Android Chrome + desktop pinch; the script blocks
+// iOS Safari pinch + double-tap zoom (iOS ignores user-scalable=no).
+const VIEWPORT = '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">';
+const ZOOM_LOCK = '<script>(function(){function p(e){e.preventDefault()}document.addEventListener("gesturestart",p,{passive:false});document.addEventListener("gesturechange",p,{passive:false});document.addEventListener("gestureend",p,{passive:false});document.addEventListener("touchmove",function(e){if(e.touches.length>1||(e.scale&&e.scale!==1))e.preventDefault()},{passive:false});var t=0;document.addEventListener("touchend",function(e){var n=Date.now();if(n-t<=350)e.preventDefault();t=n},{passive:false});})();</script>';
+
 /* ---------------------------------------------------------------------------
  * 1. filename -> clean URL path
  * ------------------------------------------------------------------------- */
@@ -390,7 +395,8 @@ for (const [file, path] of Object.entries(PATHMAP)) {
   const current = path === GUIDE_PATH ? "guide" : "blog";
   body = body.replace(/(<body[^>]*>)/i, `$1\n${siteHeader()}`);
   body = body.replace(/<\/body>/i, `${siteNav(current)}\n</body>`);
-  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n${CHROME_CSS}\n</head>`);
+  head = head.replace(/<meta\s+name="viewport"[^>]*>/i, VIEWPORT);
+  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n${CHROME_CSS}\n${ZOOM_LOCK}\n</head>`);
 
   writeOut(path, head + body);
 }
@@ -421,7 +427,7 @@ const blogHtml = `<!DOCTYPE html>
 <html lang="en-MY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${VIEWPORT}
 <title>Blog: Free Kredit RM10 Guides, Bonuses & Slot Games | FreeKreditRM10</title>
 <meta name="description" content="Every FreeKreditRM10 guide in one place: free credit RM10 and no deposit explainers, bonus offer breakdowns, slot game guides and winning tips for Malaysia.">
 <link rel="canonical" href="${SITE}/blog/">
@@ -458,6 +464,7 @@ header.top p{margin:0;color:var(--muted);font-size:13.5px}
 footer.f{padding:24px 18px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px}
 </style>
 ${CHROME_CSS}
+${ZOOM_LOCK}
 </head>
 <body>
 ${siteHeader()}
@@ -488,7 +495,7 @@ for (const [seg, info] of Object.entries(SECTIONS)) {
 <html lang="en-MY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${VIEWPORT}
 <title>${esc(info.title)} | FreeKreditRM10</title>
 <meta name="description" content="${esc(info.blurb)}">
 <link rel="canonical" href="${SITE}/${seg}/">
@@ -514,6 +521,7 @@ ul.cards .t{display:block;color:var(--text);font-weight:600;font-size:14px}
 ul.cards .d{display:block;color:var(--muted);font-size:12px;margin-top:4px}
 </style>
 ${CHROME_CSS}
+${ZOOM_LOCK}
 </head>
 <body>
 ${siteHeader()}
@@ -553,7 +561,7 @@ writeFileSync(join(ROOT, "404.html"), `<!DOCTYPE html>
 <html lang="en-MY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${VIEWPORT}
 <title>Page not found | FreeKreditRM10</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -563,6 +571,7 @@ h1{font-family:Georgia,serif;color:#F5D46B;font-size:1.6rem;margin:0}
 p{color:#B7A688;margin:0}
 a{display:inline-block;margin-top:8px;padding:11px 20px;border:1px solid #E7B92E;border-radius:10px;color:#F5D46B;text-decoration:none;font-size:.9rem}
 </style>
+${ZOOM_LOCK}
 </head>
 <body>
 <h1>Page not found</h1>
@@ -680,7 +689,7 @@ function buildDoorway(opts = {}) {
 <html lang="en-MY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${VIEWPORT}
 <title>Jadiking88 Free Credit RM10 Malaysia: Official Brand Guide</title>
 <meta name="description" content="Jadiking88 (Jadiking 2.0) brand guide for Malaysia: free credit RM10 to RM30 with no deposit, the Monthly Mission multiplier, the games on offer and how to register.">
 <meta name="keywords" content="Jadiking88, Jadiking 2.0, free kredit RM10, free credit RM10, free credit no deposit, e-wallet casino Malaysia">
@@ -704,6 +713,7 @@ ${JSON.stringify(jsonld)}
 </script>
 ${styleBlock}
 ${CHROME_CSS}
+${ZOOM_LOCK}
 </head>
 <body>${previewBanner}
 ${siteHeader()}`;
@@ -807,7 +817,7 @@ function buildHomepage() {
 <html lang="en-MY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+${VIEWPORT}
 <title>Free Kredit RM10 Malaysia 2026: Free Credit & No Deposit Guide</title>
 <meta name="description" content="FreeKreditRM10 tracks free credit and no deposit promotions in Malaysia and reads every one against a fixed checklist: eligibility, turnover, eligible games and withdrawal cap. Start with the full RM10 guide or go to the featured pick.">
 <meta name="keywords" content="free kredit RM10, free credit RM10, free kredit Malaysia, free kredit no deposit, slot free kredit, free credit casino Malaysia, no deposit bonus Malaysia">
@@ -833,6 +843,7 @@ ${JSON.stringify(jsonld)}
 ${style}
 ${supplement}
 ${CHROME_CSS}
+${ZOOM_LOCK}
 </head>
 <body>
 ${siteHeader()}
