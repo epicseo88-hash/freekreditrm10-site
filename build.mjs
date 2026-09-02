@@ -287,7 +287,7 @@ function siteHeader() {
 <header class="fkrhdr">
 <label class="fkr-burger" for="fkr-drawer" aria-label="Open menu"><i></i><i></i><i></i></label>
 <a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>
-<a class="fkrhdr-grp" href="http://jadikinggroup.com/" target="_blank" rel="noopener">JADIKING<br>GROUP</a>
+<a class="fkrhdr-grp" href="https://jadiking.my/" target="_blank" rel="noopener">REGISTER<br>HERE</a>
 </header>`;
 }
 
