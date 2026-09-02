@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact & Support | FreeKreditRM10 Malaysia</title>
+
+  <meta name="description" content="Contact and support information for FreeKreditRM10 readers. Access Jadiking support for account, registration, deposit, withdrawal and platform-related assistance.">
+
+  <meta name="keywords" content="free kredit RM10, free kredit 10, RM10 free credit casino, free kredit casino, casino free kredit, slot free credit RM10, free kredit tanpa deposit, free kredit RM3, link free kredit RM3, link free kredit RM10, free slot RM100, freekredit88, free kredit ewallet, free kredit jackpot, slot online free kredit, best free credit slot Malaysia, JILI free kredit, free kredit JILI, free credit JILI, JILI slot free kredit, Jadiking, Jadiking88, Jadiking 2.0, AceWinCuci, AceWin free credit, 100Cuci free kredit, Joylink88, Joker free credit, Joker free RM10, free credit no deposit, free credit no deposit RM10, free credit RM10 no deposit, free credit tanpa deposit, kredit percuma tanpa deposit, free kredit tanpa deposit Malaysia, register free kredit, register dapat free credit, new register free RM3, claim free credit RM3, free kredit slot promotion, free kredit slot for new users">
+
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+  <link rel="canonical" href="https://freekreditrm10.com/contact-us/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact & Support | FreeKreditRM10">
+  <meta property="og:description" content="Find FreeKreditRM10 contact guidance, Jadiking support access, editorial correction information and current campaign links.">
+  <meta property="og:url" content="https://freekreditrm10.com/contact-us/">
+  <meta property="og:site_name" content="FreeKreditRM10">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact & Support | FreeKreditRM10">
+  <meta name="twitter:description" content="FreeKreditRM10 contact guidance and access to Jadiking platform support.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://freekreditrm10.com/#organization",
+        "name": "FreeKreditRM10",
+        "url": "https://freekreditrm10.com/",
+        "description": "FreeKreditRM10 is a Malaysia-focused informational website covering free credit terminology, promotional conditions, providers, eligibility, wagering and withdrawal considerations."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://freekreditrm10.com/#website",
+        "url": "https://freekreditrm10.com/",
+        "name": "FreeKreditRM10",
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "ContactPage",
+        "@id": "https://freekreditrm10.com/contact-us/#webpage",
+        "url": "https://freekreditrm10.com/contact-us/",
+        "name": "Contact & Support | FreeKreditRM10",
+        "description": "Contact guidance for FreeKreditRM10 readers, including editorial corrections and links to official platform support.",
+        "isPartOf": {
+          "@id": "https://freekreditrm10.com/#website"
+        },
+        "about": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://freekreditrm10.com/contact-us/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "FreeKreditRM10",
+            "item": "https://freekreditrm10.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact & Support",
+            "item": "https://freekreditrm10.com/contact-us/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .contact-page {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 30px 20px 60px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    .contact-page h1,
+    .contact-page h2,
+    .contact-page h3 {
+      line-height: 1.3;
+    }
+
+    .contact-page h2 {
+      margin-top: 42px;
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .lead {
+      font-size: 1.15rem;
+    }
+
+    .quick-answer,
+    .contact-box,
+    .help-box,
+    .editorial-note,
+    .info-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 24px 0;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 22px 0;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 13px 22px;
+      border: 2px solid currentColor;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact-page table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 22px 0;
+    }
+
+    .contact-page th,
+    .contact-page td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .contact-page details {
+      border-bottom: 1px solid #ddd;
+      padding: 14px 0;
+    }
+
+    .contact-page summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .contact-page a:focus,
+    .cta-button:focus {
+      outline: 3px solid currentColor;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 640px) {
+      .cta-group {
+        flex-direction: column;
+      }
+
+      .cta-button {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main id="main-content">
+
+<article class="contact-page">
+
+<header>
+
+  <p class="eyebrow">CONTACT • SUPPORT • EDITORIAL HELP</p>
+
+  <h1>Contact & Support</h1>
+
+  <p class="lead">
+    FreeKreditRM10 is an informational website built to help Malaysian readers understand free credit, promotional conditions, game providers, eligibility, wagering and withdrawal requirements.
+  </p>
+
+  <p>
+    Our coverage includes topics such as
+    <a href="https://freekreditrm10.com/">free kredit RM10</a>,
+    free kredit 10, RM10 free credit casino,
+    free kredit casino, casino free kredit,
+    slot free credit RM10 and
+    <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">free kredit tanpa deposit</a>.
+  </p>
+
+  <p>
+    Use this page to determine whether you should use FreeKreditRM10 for editorial information or go directly to the relevant platform for account and transaction support.
+  </p>
+
+</header>
+
+
+<section class="quick-answer" id="quick-answer">
+
+  <h2>How Can I Get Support?</h2>
+
+  <p>
+    <strong>
+      FreeKreditRM10 provides informational content. We do not directly manage third-party player accounts, deposits, withdrawals, passwords, OTP codes or account verification.
+    </strong>
+  </p>
+
+  <p>
+    For Jadiking account, registration, deposit, withdrawal or platform-related assistance, use the official support chatroom.
+  </p>
+
+  <div class="cta-group">
+    <a class="cta-button"
+       href="https://jadiking.my/chatroom"
+       rel="external"
+       aria-label="Open Jadiking customer support chatroom">
+      Contact Support
+    </a>
+  </div>
+
+</section>
+
+
+<section id="jadiking-support">
+
+  <h2>Jadiking Support and Registration</h2>
+
+  <p>
+    FreeKreditRM10 may discuss
+    <a href="https://jadiking.my/"
+       rel="external"
+       title="Jadiking Malaysia">Jadiking</a>
+    and related search terms including Jadiking88 and Jadiking 2.0 when they are relevant to our research.
+  </p>
+
+  <p>
+    For current registration or platform-specific support, use the official Jadiking website or support destination rather than relying on FreeKreditRM10 for account administration.
+  </p>
+
+  <div class="cta-group">
+
+    <a class="cta-button"
+       href="https://jadiking.my/"
+       rel="external"
+       aria-label="Register at Jadiking">
+      Register at Jadiking
+    </a>
+
+    <a class="cta-button"
+       href="https://jadiking.my/chatroom"
+       rel="external"
+       aria-label="Contact Jadiking support">
+      Chat With Support
+    </a>
+
+  </div>
+
+  <aside class="editorial-note">
+    <p>
+      <strong>Important:</strong>
+      Registration does not automatically guarantee free credit, a bonus or withdrawal eligibility. Always check the current promotion terms and platform requirements.
+    </p>
+  </aside>
+
+</section>
+
+
+<section id="angpao-rain">
+
+  <h2>Looking for Angpao Rain?</h2>
+
+  <p>
+    If you are looking for the current Angpao Rain experience, participation process or campaign information, use the live destination below.
+  </p>
+
+  <div class="cta-group">
+    <a class="cta-button"
+       href="https://gengcuci.com/"
+       rel="external"
+       aria-label="Visit Angpao Rain">
+      Play Angpao Rain
+    </a>
+  </div>
+
+  <p>
+    Campaign availability, schedules, participation requirements and reward mechanics can change. Check the live campaign page for current information.
+  </p>
+
+</section>
+
+
+<section id="what-we-cover">
+
+  <h2>What FreeKreditRM10 Can Help Explain</h2>
+
+  <p>
+    FreeKreditRM10 focuses on explaining search topics and promotional concepts rather than administering gaming accounts.
+  </p>
+
+  <p>Our editorial coverage includes:</p>
+
+  <ul>
+    <li><a href="https://freekreditrm10.com/">free kredit RM10</a></li>
+    <li>free kredit 10</li>
+    <li>RM10 free credit casino</li>
+    <li>free kredit casino</li>
+    <li>casino free kredit</li>
+    <li>slot free credit RM10</li>
+    <li><a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">free kredit tanpa deposit</a></li>
+    <li><a href="https://freekreditrm10.com/free-kredit-rm3/">free kredit RM3</a></li>
+    <li><a href="https://freekreditrm10.com/how-to-claim-link-free-credit-rm3/">link free kredit RM3</a></li>
+    <li><a href="https://freekreditrm10.com/joy-link-free-credit-rm10/">link free kredit RM10</a></li>
+    <li><a href="https://freekreditrm10.com/free-kredit-rm100/">free slot RM100</a></li>
+    <li><a href="https://freekreditrm10.com/free-kredit-rm88/">freekredit88</a></li>
+    <li>free kredit ewallet</li>
+    <li>free kredit jackpot</li>
+    <li>slot online free kredit</li>
+    <li>best free credit slot Malaysia</li>
+  </ul>
+
+</section>
+
+
+<section id="no-deposit-help">
+
+  <h2>Questions About No-Deposit Free Credit</h2>
+
+  <p>
+    Readers often reach FreeKreditRM10 through searches such as
+    <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">free credit no deposit</a>,
+    free credit no deposit RM10,
+    free credit RM10 no deposit,
+    free credit tanpa deposit,
+    kredit percuma tanpa deposit and
+    free kredit tanpa deposit Malaysia.
+  </p>
+
+  <p>
+    These phrases can describe related search intent, but they do not prove that every promotion has identical conditions.
+  </p>
+
+  <div class="info-box">
+
+    <p>
+      <strong>No deposit does not automatically mean no conditions.</strong>
+    </p>
+
+    <p>
+      A promotion may still include eligibility, verification, wagering, expiry, game or withdrawal requirements.
+    </p>
+
+  </div>
+
+  <p>
+    Read our
+    <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">Free Kredit Tanpa Deposit Malaysia</a>
+    guide for more information.
+  </p>
+
+</section>
+
+
+<section id="registration-help">
+
+  <h2>Registration and Free Credit Questions</h2>
+
+  <p>
+    FreeKreditRM10 may explain searches such as
+    <a href="https://freekreditrm10.com/free-kredit-eligibility/">register free kredit</a>,
+    register dapat free credit,
+    new register free RM3,
+    claim free credit RM3 and
+    free kredit slot for new users.
+  </p>
+
+  <p>
+    Registration alone should not be interpreted as proof that a reward is guaranteed.
+  </p>
+
+  <p>
+    Depending on the platform and promotion, users may need to satisfy:
+  </p>
+
+  <ul>
+    <li>new-member requirements;</li>
+    <li>phone or account verification;</li>
+    <li>campaign validity requirements;</li>
+    <li>deposit conditions;</li>
+    <li>wagering requirements; or</li>
+    <li>other promotion-specific rules.</li>
+  </ul>
+
+</section>
+
+
+<section id="provider-brand-help">
+
+  <h2>Brand and Game Provider Information</h2>
+
+  <p>
+    FreeKreditRM10 separates the platform offering a promotion from the provider supplying the game.
+  </p>
+
+  <p>Our coverage can include:</p>
+
+  <ul>
+    <li><a href="https://freekreditrm10.com/providers/jili-free-kredit/">JILI free kredit</a></li>
+    <li>free kredit JILI</li>
+    <li>free credit JILI</li>
+    <li>JILI slot free kredit</li>
+    <li>AceWinCuci</li>
+    <li><a href="https://freekreditrm10.com/providers/acewin-free-kredit/">AceWin free credit</a></li>
+    <li>100Cuci free kredit</li>
+    <li>Joylink88</li>
+    <li><a href="https://freekreditrm10.com/providers/joker-gaming-free-kredit/">Joker free credit</a></li>
+    <li>Joker free RM10</li>
+  </ul>
+
+  <p>
+    A provider being available on a platform does not automatically mean every game from that provider qualifies for a particular promotion.
+  </p>
+
+</section>
+
+
+<section id="account-support-boundary">
+
+  <h2>What FreeKreditRM10 Cannot Do</h2>
+
+  <div class="help-box">
+    <p>
+      FreeKreditRM10 does not directly control third-party gaming accounts or transactions.
+    </p>
+  </div>
+
+  <p>Contact the relevant platform directly if you need help with:</p>
+
+  <ul>
+    <li>account passwords;</li>
+    <li>OTP verification;</li>
+    <li>account registration;</li>
+    <li>deposit status;</li>
+    <li>withdrawal status;</li>
+    <li>account verification;</li>
+    <li>promotion claiming;</li>
+    <li>bonus balances;</li>
+    <li>game-loading problems;</li>
+    <li>account suspension; or</li>
+    <li>payment-method issues.</li>
+  </ul>
+
+  <p>
+    Never send passwords, OTP codes, banking passwords or other private login credentials to FreeKreditRM10.
+  </p>
+
+  <div class="cta-group">
+    <a class="cta-button"
+       href="https://jadiking.my/chatroom"
+       rel="external"
+       aria-label="Open Jadiking support chat">
+      Contact Jadiking Support
+    </a>
+  </div>
+
+</section>
+
+
+<section id="editorial-feedback">
+
+  <h2>How to Handle Incorrect or Outdated Information</h2>
+
+  <p>
+    FreeKreditRM10 aims to keep material information accurate and understandable. If you identify an outdated or incorrect statement, compare it with a current first-party or official source.
+  </p>
+
+  <p>Our correction process focuses on four things:</p>
+
+  <ol>
+
+    <li>
+      <strong>Identify the page.</strong>
+      Determine which FreeKreditRM10 URL contains the information.
+    </li>
+
+    <li>
+      <strong>Identify the statement.</strong>
+      Determine exactly which claim may be incorrect or outdated.
+    </li>
+
+    <li>
+      <strong>Check a reliable source.</strong>
+      Prefer current first-party or official information where available.
+    </li>
+
+    <li>
+      <strong>Determine what changed.</strong>
+      Separate information that was always incorrect from information that has simply become outdated.
+    </li>
+
+  </ol>
+
+  <p>
+    Our approach to factual updates is explained in the
+    <a href="https://freekreditrm10.com/corrections-policy/">Corrections Policy</a>.
+  </p>
+
+</section>
+
+
+<section id="editorial-method">
+
+  <h2>How FreeKreditRM10 Evaluates Information</h2>
+
+  <p>
+    Search popularity alone is not treated as evidence that a promotion exists.
+  </p>
+
+  <p>
+    When reviewing topics such as free credit no deposit RM10, free kredit slot promotion or free kredit slot for new users, our editorial process considers:
+  </p>
+
+  <ul>
+    <li>who is responsible for the offer;</li>
+    <li>what promotional amount is advertised;</li>
+    <li>whether a deposit is required;</li>
+    <li>who is eligible;</li>
+    <li>whether verification is required;</li>
+    <li>what wagering conditions apply;</li>
+    <li>which games are eligible;</li>
+    <li>whether the promotion expires; and</li>
+    <li>what withdrawal conditions apply.</li>
+  </ul>
+
+  <p>
+    See our
+    <a href="https://freekreditrm10.com/methodology/">Research Methodology</a>
+    for the complete process.
+  </p>
+
+</section>
+
+
+<section id="who-to-contact">
+
+  <h2>Who Should You Contact?</h2>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th scope="col">Question</th>
+        <th scope="col">Best Destination</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td>Understanding free credit terminology</td>
+        <td>FreeKreditRM10 guides</td>
+      </tr>
+
+      <tr>
+        <td>Incorrect or outdated information on FreeKreditRM10</td>
+        <td>
+          <a href="https://freekreditrm10.com/corrections-policy/">
+            FreeKreditRM10 Corrections Policy
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Jadiking registration</td>
+        <td>
+          <a href="https://jadiking.my/" rel="external">
+            Official Jadiking website
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Jadiking account support</td>
+        <td>
+          <a href="https://jadiking.my/chatroom" rel="external">
+            Official Jadiking chatroom
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Deposit or withdrawal status</td>
+        <td>Relevant gaming platform support</td>
+      </tr>
+
+      <tr>
+        <td>Angpao Rain participation</td>
+        <td>
+          <a href="https://gengcuci.com/" rel="external">
+            Current Angpao Rain destination
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>JILI or provider eligibility</td>
+        <td>Check the relevant promotion and provider guide</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+<section id="common-questions">
+
+  <h2>Contact and Support Questions</h2>
+
+  <details>
+
+    <summary>Can FreeKreditRM10 help with my withdrawal?</summary>
+
+    <p>
+      No. FreeKreditRM10 does not process third-party gaming withdrawals. Contact the platform responsible for your account.
+    </p>
+
+  </details>
+
+  <details>
+
+    <summary>Where can I contact Jadiking support?</summary>
+
+    <p>
+      Use the official Jadiking support chatroom linked on this page for account and platform-specific assistance.
+    </p>
+
+  </details>
+
+  <details>
+
+    <summary>Does registering at Jadiking guarantee free credit?</summary>
+
+    <p>
+      No. Registration and promotional eligibility are separate. Check the current terms of the relevant promotion.
+    </p>
+
+  </details>
+
+  <details>
+
+    <summary>Can FreeKreditRM10 confirm whether a no-deposit promotion is active?</summary>
+
+    <p>
+      Our articles can explain available information, but current promotional availability should ultimately be verified with the platform responsible for the offer.
+    </p>
+
+  </details>
+
+  <details>
+
+    <summary>Can I use FreeKreditRM10 for JILI free kredit information?</summary>
+
+    <p>
+      Yes. We publish informational guides explaining provider-related searches, but promotion eligibility should be verified against the relevant platform terms.
+    </p>
+
+  </details>
+
+  <details>
+
+    <summary>Should I send my password or OTP to FreeKreditRM10?</summary>
+
+    <p>
+      No. Never submit passwords, OTP codes or sensitive financial login information to FreeKreditRM10.
+    </p>
+
+  </details>
+
+</section>
+
+
+<section id="editorial-transparency">
+
+  <h2>FreeKreditRM10 Editorial Transparency</h2>
+
+  <p>
+    Learn how FreeKreditRM10 researches, publishes and maintains its content:
+  </p>
+
+  <nav aria-label="FreeKreditRM10 editorial pages">
+
+    <ul>
+      <li><a href="https://freekreditrm10.com/about-us/">About FreeKreditRM10</a></li>
+      <li><a href="https://freekreditrm10.com/editorial-policy/">Editorial Policy</a></li>
+      <li><a href="https://freekreditrm10.com/methodology/">Research Methodology</a></li>
+      <li><a href="https://freekreditrm10.com/corrections-policy/">Corrections Policy</a></li>
+      <li><a href="https://freekreditrm10.com/affiliate-disclosure/">Affiliate Disclosure</a></li>
+      <li><a href="https://freekreditrm10.com/privacy-policy/">Privacy Policy</a></li>
+      <li><a href="https://freekreditrm10.com/terms-and-conditions/">Terms and Conditions</a></li>
+      <li><a href="https://freekreditrm10.com/authors/">Authors & Editorial Team</a></li>
+      <li><a href="https://freekreditrm10.com/responsible-gaming/">Responsible Gaming</a></li>
+    </ul>
+
+  </nav>
+
+</section>
+
+
+<section id="responsible-gaming">
+
+  <h2>Responsible Gaming</h2>
+
+  <p>
+    Free credit should not be treated as guaranteed income, an investment or a reliable way to recover financial losses.
+  </p>
+
+  <p>
+    Gaming outcomes involve uncertainty even when promotional credit is available.
+  </p>
+
+  <p>
+    Readers should participate only where legally permitted, meet applicable age requirements and use discretionary funds they can afford to lose.
+  </p>
+
+  <p>
+    Read our
+    <a href="https://freekreditrm10.com/responsible-gaming/">Responsible Gaming</a>
+    information for more guidance.
+  </p>
+
+</section>
+
+
+<footer class="editorial-footer">
+
+  <hr>
+
+  <h2>Contact & Support Summary</h2>
+
+  <table>
+
+    <tbody>
+
+      <tr>
+        <th scope="row">Website</th>
+        <td>FreeKreditRM10</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Primary Purpose</th>
+        <td>Free credit information and research</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Audience</th>
+        <td>Malaysia-focused readers</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Jadiking Registration</th>
+        <td>
+          <a href="https://jadiking.my/" rel="external">
+            Official Jadiking website
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Jadiking Support</th>
+        <td>
+          <a href="https://jadiking.my/chatroom" rel="external">
+            Official Jadiking chatroom
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Angpao Rain</th>
+        <td>
+          <a href="https://gengcuci.com/" rel="external">
+            Current Angpao Rain destination
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <th scope="row">Account Support</th>
+        <td>Handled by the relevant third-party platform</td>
+      </tr>
+
+      <tr>
+        <th scope="row">Sensitive Information</th>
+        <td>Never submit passwords, OTP codes or financial login credentials</td>
+      </tr>
+
+    </tbody>
+
+  </table>
+
+  <p>
+    <strong>Published by:</strong> FreeKreditRM10<br>
+    <strong>Page type:</strong> Contact & Support<br>
+    <strong>Primary audience:</strong> Malaysia<br>
+    <strong>Language:</strong> English (Malaysia)
+  </p>
+
+  <p>
+    <small>
+      FreeKreditRM10 provides informational content and does not administer third-party gaming accounts. For Jadiking account, registration, deposit or withdrawal support, use the official Jadiking support chatroom. Promotional conditions and campaign availability can change, so verify current information with the responsible platform before participating.
+    </small>
+  </p>
+
+</footer>
+
+</article>
+
+</main>
+
+</body>
+</html>

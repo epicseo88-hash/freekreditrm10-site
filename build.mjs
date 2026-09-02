@@ -18,7 +18,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, "_source");
 const SITE = "https://freekreditrm10.com";
-const TODAY = "2026-08-29";
+const TODAY = "2026-09-02";
 
 // Lock page zoom. Meta covers Android Chrome + desktop pinch; the script blocks
 // iOS Safari pinch + double-tap zoom (iOS ignores user-scalable=no).
@@ -68,6 +68,47 @@ const PATHMAP = {
   "jadiking88-exclusive-unleash-january-thrills-with-rm10-free-credit-and-exciting-promotions.txt": "jadiking88-exclusive-unleash-january-thrills-with-rm10-free-credit-and-exciting-promotions",
   "need-luck-and-strategy-get-our-free-kredit-88-today.txt": "need-luck-and-strategy-get-our-free-kredit-88-today",
   "100cuci-in-depth-review-benefits-and-a-similar-alternative.txt": "100cuci-in-depth-review-benefits-and-a-similar-alternative",
+
+  /* --- batch added 2026-09-02 (topic guides + provider pages + site info) --- */
+  "how-free-kredit-works-malaysia.txt": "how-free-kredit-works-malaysia",
+  "free-kredit-no-deposit-malaysia.txt": "free-kredit-no-deposit-malaysia",
+  "no-deposit-bonus-vs-free-kredit.txt": "no-deposit-bonus-vs-free-kredit",
+  "can-you-withdraw-free-kredit.txt": "can-you-withdraw-free-kredit",
+  "free-kredit-eligibility.txt": "free-kredit-eligibility",
+  "free-kredit-expiry.txt": "free-kredit-expiry",
+  "free-kredit-terms-conditions.txt": "free-kredit-terms-conditions",
+  "free-kredit-turnover-requirements.txt": "free-kredit-turnover-requirements",
+  "free-kredit-withdrawal-limits.txt": "free-kredit-withdrawal-limits",
+  "free-kredit-wagering-calculator.txt": "free-kredit-wagering-calculator",
+  "free-kredit-checklist.txt": "free-kredit-checklist",
+  "free-kredit-glossary.txt": "free-kredit-glossary",
+  "free-kredit-malaysia-faq.txt": "free-kredit-malaysia-faq",
+  "free-kredit-scams-red-flags.txt": "free-kredit-scams-red-flags",
+  "free-kredit-by-amount.txt": "free-kredit-by-amount",
+  "free-kredit-rm3.txt": "free-kredit-rm3",
+  "free-kredit-rm5.txt": "free-kredit-rm5",
+  "free-kredit-rm5-vs-rm10.txt": "free-kredit-rm5-vs-rm10",
+  "free-kredit-rm88.txt": "free-kredit-rm88",
+  "free-kredit-rm100.txt": "free-kredit-rm100",
+  "compare-free-kredit-malaysia.txt": "compare-free-kredit-malaysia",
+  "free-kredit-by-provider.txt": "free-kredit-by-provider",
+  "providers-jili-free-kredit.txt": "providers/jili-free-kredit",
+  "providers-pragmatic-play-free-kredit.txt": "providers/pragmatic-play-free-kredit",
+  "providers-joker-gaming-free-kredit.txt": "providers/joker-gaming-free-kredit",
+  "providers-playtech-free-kredit.txt": "providers/playtech-free-kredit",
+  "providers-golden-empire-free-kredit.txt": "providers/golden-empire-free-kredit",
+  "providers-vpower-free-kredit.txt": "providers/vpower-free-kredit",
+  "providers-acewin-free-kredit.txt": "providers/acewin-free-kredit",
+  "about-us.txt": "about-us",
+  "authors.txt": "authors",
+  "editorial-policy.txt": "editorial-policy",
+  "methodology.txt": "methodology",
+  "corrections-policy.txt": "corrections-policy",
+  "affiliate-disclosure.txt": "affiliate-disclosure",
+  "responsible-gaming.txt": "responsible-gaming",
+  "privacy-policy.txt": "privacy-policy",
+  "terms-and-conditions.txt": "terms-and-conditions",
+  "contact-us.txt": "contact-us",
 };
 
 const HOMEPAGE_FILE = "freekreditrm10.com - Homepage.txt";
@@ -134,6 +175,65 @@ const GROUPS = [
       "winningtips/joylink88-x-vpower-sea-realms",
     ],
   },
+  {
+    title: "Free Kredit Explained",
+    paths: [
+      "how-free-kredit-works-malaysia",
+      "free-kredit-no-deposit-malaysia",
+      "no-deposit-bonus-vs-free-kredit",
+      "can-you-withdraw-free-kredit",
+      "free-kredit-eligibility",
+      "free-kredit-expiry",
+      "free-kredit-terms-conditions",
+      "free-kredit-turnover-requirements",
+      "free-kredit-withdrawal-limits",
+      "free-kredit-wagering-calculator",
+      "free-kredit-checklist",
+      "free-kredit-glossary",
+      "free-kredit-malaysia-faq",
+      "free-kredit-scams-red-flags",
+    ],
+  },
+  {
+    title: "Free Kredit by Amount",
+    paths: [
+      "free-kredit-by-amount",
+      "free-kredit-rm3",
+      "free-kredit-rm5",
+      "free-kredit-rm5-vs-rm10",
+      "free-kredit-rm88",
+      "free-kredit-rm100",
+      "compare-free-kredit-malaysia",
+    ],
+  },
+  {
+    title: "Free Kredit by Provider",
+    paths: [
+      "free-kredit-by-provider",
+      "providers/jili-free-kredit",
+      "providers/pragmatic-play-free-kredit",
+      "providers/joker-gaming-free-kredit",
+      "providers/playtech-free-kredit",
+      "providers/golden-empire-free-kredit",
+      "providers/vpower-free-kredit",
+      "providers/acewin-free-kredit",
+    ],
+  },
+  {
+    title: "Site Information",
+    paths: [
+      "about-us",
+      "authors",
+      "editorial-policy",
+      "methodology",
+      "corrections-policy",
+      "affiliate-disclosure",
+      "responsible-gaming",
+      "privacy-policy",
+      "terms-and-conditions",
+      "contact-us",
+    ],
+  },
 ];
 
 /* section landing pages to synthesise so /game/ /bonus/ etc never 404 */
@@ -142,6 +242,7 @@ const SECTIONS = {
   "game-category": { title: "Demo Slots", blurb: "Free-play demo slot guides by provider, with RTP and volatility notes." },
   bonus: { title: "Bonus Offers", blurb: "How each free-credit and rebate bonus works, with eligibility and turnover terms." },
   winningtips: { title: "Winning Tips", blurb: "Gameplay walkthroughs and mechanics notes for popular titles." },
+  providers: { title: "Free Kredit by Provider", blurb: "What a JILI, Pragmatic Play, Joker, Playtech, Golden Empire, VPower or AceWin free kredit search actually points to, and how to read the terms." },
 };
 
 /* ---------------------------------------------------------------------------

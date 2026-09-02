@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About FreeKreditRM10 | Free Kredit RM10 Malaysia Guide</title>
+
+  <meta name="description"
+        content="Learn about FreeKreditRM10, an independent Malaysia-focused guide covering free kredit RM10, free credit no deposit, slot bonuses, providers, eligibility, wagering and withdrawal terms.">
+
+  <meta name="keywords"
+        content="free kredit RM10, free kredit 10, RM10 free credit casino, free kredit casino, casino free kredit, slot free credit RM10, free kredit tanpa deposit, free kredit RM3, JILI free kredit, Jadiking, Jadiking88">
+
+  <meta name="robots"
+        content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+  <link rel="canonical" href="https://freekreditrm10.com/about-us/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About FreeKreditRM10 | Malaysia Free Credit Guide">
+  <meta property="og:description"
+        content="How FreeKreditRM10 researches and explains free credit offers, no-deposit bonuses, providers, eligibility, wagering and withdrawal conditions in Malaysia.">
+  <meta property="og:url" content="https://freekreditrm10.com/about-us/">
+  <meta property="og:site_name" content="FreeKreditRM10">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="About FreeKreditRM10">
+  <meta name="twitter:description"
+        content="Learn how FreeKreditRM10 researches Malaysia free credit offers, providers, bonus conditions and player requirements.">
+
+  <!-- =========================================================
+       STRUCTURED DATA
+       AboutPage + Organization + WebSite + BreadcrumbList
+
+       No Review, AggregateRating or Offer schema is used because
+       this page does not represent a verified individual offer
+       or first-hand review.
+       ========================================================= -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://freekreditrm10.com/#organization",
+        "name": "FreeKreditRM10",
+        "url": "https://freekreditrm10.com/",
+        "description": "FreeKreditRM10 is a Malaysia-focused informational website covering free credit terminology, bonus conditions, providers, eligibility, wagering requirements and withdrawal considerations."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://freekreditrm10.com/#website",
+        "url": "https://freekreditrm10.com/",
+        "name": "FreeKreditRM10",
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://freekreditrm10.com/about-us/#webpage",
+        "url": "https://freekreditrm10.com/about-us/",
+        "name": "About FreeKreditRM10",
+        "description": "About FreeKreditRM10 and how the website researches and explains free credit, no-deposit bonuses, providers, eligibility, wagering and withdrawal terms for Malaysian readers.",
+        "isPartOf": {
+          "@id": "https://freekreditrm10.com/#website"
+        },
+        "about": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY",
+        "mainEntity": {
+          "@id": "https://freekreditrm10.com/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://freekreditrm10.com/about-us/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "FreeKreditRM10",
+            "item": "https://freekreditrm10.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Us",
+            "item": "https://freekreditrm10.com/about-us/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<main id="main-content">
+
+  <article class="about-page">
+
+    <!-- ======================================================
+         HERO / ENTITY DEFINITION
+         ====================================================== -->
+
+    <header>
+      <p class="eyebrow">ABOUT FREEKREDITRM10</p>
+
+      <h1>About FreeKreditRM10</h1>
+
+      <p class="lead">
+        FreeKreditRM10 is an independent informational resource built to
+        help Malaysian readers understand free credit offers, bonus
+        terminology, provider-related promotions and the conditions that
+        can determine whether an offer is genuinely useful.
+      </p>
+
+      <p>
+        Our coverage includes searches such as
+        <a href="https://freekreditrm10.com/">free kredit RM10</a>,
+        free kredit 10, RM10 free credit casino,
+        free kredit casino, casino free kredit,
+        slot free credit RM10 and free kredit tanpa deposit.
+        Instead of treating every promotion as equivalent, we focus on
+        explaining what the amount means, who may qualify and which
+        conditions should be checked before a reader acts on an offer.
+      </p>
+    </header>
+
+
+    <!-- ======================================================
+         QUICK ANSWER — AEO / GEO
+         ====================================================== -->
+
+    <section id="quick-answer" aria-labelledby="quick-answer-title">
+      <h2 id="quick-answer-title">What Is FreeKreditRM10?</h2>
+
+      <p>
+        <strong>FreeKreditRM10 is a Malaysia-focused free credit information
+        and research website.</strong> We publish guides about promotional
+        credit amounts, no-deposit conditions, registration requirements,
+        game providers, wagering requirements, expiry rules and withdrawal
+        limitations.
+      </p>
+
+      <p>
+        The purpose of the site is to make commonly searched phrases easier
+        to understand and compare. A promotion labelled "RM10 free credit",
+        for example, should not automatically be interpreted as RM10 of
+        immediately withdrawable cash.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         WHY THE SITE EXISTS
+         ====================================================== -->
+
+    <section id="why-we-exist">
+      <h2>Why FreeKreditRM10 Exists</h2>
+
+      <p>
+        Search results for free credit in Malaysia contain many similar
+        phrases that can describe very different promotions. Readers may
+        encounter free credit for registering, promotional balances linked
+        to a deposit, provider-specific campaigns or bonuses that require
+        turnover before withdrawal.
+      </p>
+
+      <p>
+        Even apparently similar terms such as
+        <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">
+          free credit no deposit
+        </a>
+        and free credit RM10 no deposit can have different eligibility,
+        expiry, game and withdrawal rules depending on the platform offering
+        the promotion.
+      </p>
+
+      <p>
+        FreeKreditRM10 exists to separate these concepts and give readers a
+        clearer framework for evaluating what they find.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         WHAT WE COVER
+         ====================================================== -->
+
+    <section id="coverage">
+      <h2>What We Cover</h2>
+
+      <p>
+        Our content is organised around four major areas: promotional
+        amounts, no-deposit conditions, game and provider context, and the
+        rules that affect whether promotional credit can ultimately be used
+        or withdrawn.
+      </p>
+
+      <div class="coverage-grid">
+
+        <section>
+          <h3>Free Credit by Amount</h3>
+
+          <p>
+            We explain the difference between promotional amounts instead
+            of assuming a larger headline amount automatically represents a
+            better offer.
+          </p>
+
+          <ul>
+            <li>
+              <a href="https://freekreditrm10.com/">
+                free kredit RM10
+              </a>
+            </li>
+            <li>
+              <a href="https://freekreditrm10.com/free-kredit-rm3/">
+                free kredit RM3
+              </a>
+            </li>
+            <li>
+              <a href="https://freekreditrm10.com/free-kredit-rm5/">
+                Free Kredit RM5
+              </a>
+            </li>
+            <li>
+              <a href="https://freekreditrm10.com/free-kredit-rm88/">
+                freekredit88
+              </a>
+            </li>
+            <li>
+              <a href="https://freekreditrm10.com/free-kredit-rm100/">
+                free slot RM100
+              </a>
+            </li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h3>No-Deposit Free Credit</h3>
+
+          <p>
+            The phrase
+            <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">
+              free kredit tanpa deposit
+            </a>
+            generally describes promotional credit that does not require a
+            qualifying deposit to receive it. However, "no deposit" does
+            not necessarily mean "no conditions".
+          </p>
+
+          <p>
+            Searches such as free credit tanpa deposit,
+            kredit percuma tanpa deposit,
+            free kredit tanpa deposit Malaysia and
+            free credit no deposit RM10 should therefore be evaluated
+            against the actual promotion rules.
+          </p>
+        </section>
+
+
+        <section>
+          <h3>Registration &amp; Eligibility</h3>
+
+          <p>
+            We also explain searches such as
+            <a href="https://freekreditrm10.com/free-kredit-eligibility/">
+              register free kredit
+            </a>,
+            register dapat free credit, new register free RM3 and
+            claim free credit RM3.
+          </p>
+
+          <p>
+            Registration alone should never be interpreted as proof that a
+            user qualifies for a reward. New-member status, account
+            verification, campaign dates and other restrictions may apply.
+          </p>
+        </section>
+
+
+        <section>
+          <h3>Wagering &amp; Withdrawals</h3>
+
+          <p>
+            A headline bonus amount tells only part of the story. We examine
+            wagering or turnover requirements, eligible games, validity
+            periods and withdrawal limits where this information is
+            available.
+          </p>
+
+          <p>
+            Readers can use our
+            <a href="https://freekreditrm10.com/free-kredit-turnover-requirements/">
+              free credit turnover guide
+            </a>
+            and
+            <a href="https://freekreditrm10.com/can-you-withdraw-free-kredit/">
+              free credit withdrawal guide
+            </a>
+            to understand these concepts before comparing promotions.
+          </p>
+        </section>
+
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         IMPORTANT DEFINITIONS — AI EXTRACTABLE
+         ====================================================== -->
+
+    <section id="definitions">
+      <h2>Free Credit Terms We Keep Separate</h2>
+
+      <p>
+        Clear definitions are important because several phrases that appear
+        interchangeable in search results can represent different things.
+      </p>
+
+      <dl>
+        <dt><strong>Free Credit</strong></dt>
+        <dd>
+          Promotional account value provided under the rules of a specific
+          campaign. It should not automatically be treated as cash.
+        </dd>
+
+        <dt><strong>No-Deposit Free Credit</strong></dt>
+        <dd>
+          Promotional credit that does not require a qualifying deposit to
+          receive. Other conditions can still apply.
+        </dd>
+
+        <dt><strong>Wagering or Turnover Requirement</strong></dt>
+        <dd>
+          A requirement to generate a specified amount of qualifying play
+          before certain withdrawal conditions are satisfied.
+        </dd>
+
+        <dt><strong>Maximum Withdrawal</strong></dt>
+        <dd>
+          A promotion-specific limit on the amount that may be withdrawn
+          after its applicable conditions have been completed.
+        </dd>
+
+        <dt><strong>Eligible Games</strong></dt>
+        <dd>
+          Games or categories permitted under a particular promotion.
+          Availability of a game does not automatically make that game
+          eligible for every promotion.
+        </dd>
+      </dl>
+    </section>
+
+
+    <!-- ======================================================
+         PROVIDER ENTITY SECTION
+         ====================================================== -->
+
+    <section id="providers">
+      <h2>Game Providers and Free Credit</h2>
+
+      <p>
+        Free credit is normally a platform-level promotion rather than a
+        reward issued automatically by a game developer. This distinction
+        matters when users search by provider name.
+      </p>
+
+      <h3>JILI</h3>
+
+      <p>
+        Searches including
+        <a href="https://freekreditrm10.com/providers/jili-free-kredit/">
+          JILI free kredit
+        </a>,
+        free kredit JILI, free credit JILI and JILI slot free kredit
+        combine a game-provider entity with promotional intent.
+      </p>
+
+      <p>
+        The presence of a JILI game on a platform does not by itself prove
+        that the game qualifies for a free-credit promotion. Provider
+        availability and promotion eligibility should be verified
+        separately.
+      </p>
+
+
+      <h3>Joker Gaming</h3>
+
+      <p>
+        The same principle applies to searches such as
+        <a href="https://freekreditrm10.com/providers/joker-gaming-free-kredit/">
+          Joker free credit
+        </a>
+        and Joker free RM10. The game provider and the platform promotion
+        should be treated as separate entities unless the promotion terms
+        explicitly connect them.
+      </p>
+
+
+      <h3>AceWin and Other Brands</h3>
+
+      <p>
+        We may also research terms including
+        <a href="https://freekreditrm10.com/providers/acewin-free-kredit/">
+          AceWin free credit
+        </a>,
+        AceWinCuci and 100Cuci free kredit where there is sufficient
+        information to explain the search intent responsibly.
+      </p>
+
+      <p>
+        Our provider coverage is designed to answer a simple question:
+        <strong>what belongs to the game provider, and what belongs to the
+        promotion or platform?</strong>
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         JADIKING ENTITY / EXTERNAL CONTEXTUAL LINK
+         ====================================================== -->
+
+    <section id="jadiking">
+      <h2>How Jadiking Fits Into Our Coverage</h2>
+
+      <p>
+        FreeKreditRM10 also covers brand-related searches when they overlap
+        with the site's free-credit research.
+      </p>
+
+      <p>
+        One example is
+        <a href="https://jadiking.my/"
+           rel="external"
+           title="Jadiking official website">
+          Jadiking
+        </a>.
+        Readers may encounter related searches for Jadiking88,
+        Jadiking 2.0 and promotions associated with the Jadiking name.
+      </p>
+
+      <p>
+        When discussing a brand, our objective is to distinguish the
+        <strong>brand</strong>, the <strong>game provider</strong> and the
+        <strong>promotion</strong>. These should not automatically be
+        treated as the same entity.
+      </p>
+
+      <aside class="key-point">
+        <p>
+          <strong>Important:</strong> A platform offering a particular game
+          does not automatically mean that game qualifies for every
+          promotion available on the platform.
+        </p>
+      </aside>
+    </section>
+
+
+    <!-- ======================================================
+         JOYLINK
+         ====================================================== -->
+
+    <section id="joylink">
+      <h2>Joylink and Link-Based Free Credit Searches</h2>
+
+      <p>
+        Link-based discovery is another significant part of Malaysia's
+        free-credit search landscape. Queries can combine a link or
+        discovery service with a specific promotional amount.
+      </p>
+
+      <p>
+        Our guides therefore cover topics such as
+        <a href="https://freekreditrm10.com/joy-link-free-credit-rm10/">
+          link free kredit RM10
+        </a>
+        and
+        <a href="https://freekreditrm10.com/how-to-claim-link-free-credit-rm3/">
+          link free kredit RM3
+        </a>,
+        as well as Joylink88-related searches.
+      </p>
+
+      <p>
+        A link or directory should not automatically be interpreted as the
+        issuer of a promotion. The destination platform's current terms are
+        the important source for determining eligibility, wagering,
+        validity and withdrawal conditions.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         E-WALLET CLARIFICATION
+         ====================================================== -->
+
+    <section id="ewallet">
+      <h2>What Does "Free Kredit Ewallet" Mean?</h2>
+
+      <p>
+        Searches for free kredit ewallet can be ambiguous. Within gaming
+        promotions, "e-wallet" may sometimes refer informally to an account
+        balance or promotional wallet rather than a regulated consumer
+        electronic-money account.
+      </p>
+
+      <p>
+        FreeKreditRM10 therefore avoids assuming that every promotional
+        wallet described as an e-wallet has the same characteristics as a
+        conventional financial e-wallet.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         EDITORIAL METHOD / EEAT
+         ====================================================== -->
+
+    <section id="research-method">
+      <h2>How We Research Free Credit Information</h2>
+
+      <p>
+        Our goal is not simply to reproduce promotional headlines. When
+        reviewing a topic, we try to identify the information a reader
+        would need to make sense of the offer.
+      </p>
+
+      <ol>
+        <li>
+          <strong>Identify the offer.</strong>
+          Determine the advertised amount and the platform associated with
+          it.
+        </li>
+
+        <li>
+          <strong>Identify the promotion type.</strong>
+          Determine whether the offer is described as no-deposit,
+          registration-based, deposit-related, provider-specific or another
+          type of promotion.
+        </li>
+
+        <li>
+          <strong>Check eligibility.</strong>
+          Look for new-member restrictions, account requirements,
+          verification conditions and campaign validity.
+        </li>
+
+        <li>
+          <strong>Check wagering conditions.</strong>
+          Determine whether turnover requirements or game restrictions are
+          disclosed.
+        </li>
+
+        <li>
+          <strong>Check withdrawal conditions.</strong>
+          Look for maximum withdrawal rules and other conditions that may
+          affect promotional winnings.
+        </li>
+
+        <li>
+          <strong>Separate provider from platform.</strong>
+          A game provider such as JILI or Joker Gaming is not automatically
+          the issuer of a platform's promotional credit.
+        </li>
+
+        <li>
+          <strong>Prefer current information.</strong>
+          Promotions can change. Where a claim is time-sensitive, readers
+          should verify the latest conditions on the relevant platform
+          before acting.
+        </li>
+      </ol>
+
+      <p>
+        You can read more about our process in our
+        <a href="https://freekreditrm10.com/methodology/">
+          research methodology
+        </a>
+        and
+        <a href="https://freekreditrm10.com/editorial-policy/">
+          editorial policy
+        </a>.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         WHAT WE DON'T CLAIM
+         ====================================================== -->
+
+    <section id="what-we-dont-claim">
+      <h2>What FreeKreditRM10 Does Not Assume</h2>
+
+      <p>
+        Promotional terminology can easily create incorrect expectations.
+        Our editorial approach follows several basic distinctions:
+      </p>
+
+      <ul>
+        <li>
+          <strong>Free credit ≠ automatically withdrawable cash.</strong>
+        </li>
+        <li>
+          <strong>No deposit ≠ no conditions.</strong>
+        </li>
+        <li>
+          <strong>Registration ≠ guaranteed free credit.</strong>
+        </li>
+        <li>
+          <strong>A larger bonus ≠ automatically a better promotion.</strong>
+        </li>
+        <li>
+          <strong>Game availability ≠ promotion eligibility.</strong>
+        </li>
+        <li>
+          <strong>A provider ≠ the platform issuing a promotion.</strong>
+        </li>
+        <li>
+          <strong>A promotional wallet ≠ automatically a conventional financial e-wallet.</strong>
+        </li>
+        <li>
+          <strong>Past promotion terms ≠ current promotion terms.</strong>
+        </li>
+      </ul>
+    </section>
+
+
+    <!-- ======================================================
+         HOW TO EVALUATE AN OFFER — SXO
+         ====================================================== -->
+
+    <section id="evaluation-checklist">
+      <h2>How to Evaluate a Free Credit Offer</h2>
+
+      <p>
+        Before acting on a free kredit slot promotion or free kredit slot
+        for new users, readers should be able to answer the following:
+      </p>
+
+      <div class="checklist">
+        <ul>
+          <li>Who is actually providing the promotion?</li>
+          <li>What is the advertised promotional amount?</li>
+          <li>Is a deposit required?</li>
+          <li>Is the offer limited to new members?</li>
+          <li>Is identity or account verification required?</li>
+          <li>What is the wagering or turnover requirement?</li>
+          <li>Which games contribute to the requirement?</li>
+          <li>Does the promotional balance expire?</li>
+          <li>Is there a maximum withdrawal?</li>
+          <li>Are there country or age restrictions?</li>
+        </ul>
+      </div>
+
+      <p>
+        If these conditions are unclear, the headline amount alone is not
+        enough information to evaluate the promotion.
+      </p>
+
+      <p>
+        Use our
+        <a href="https://freekreditrm10.com/free-kredit-checklist/">
+          free credit checklist
+        </a>
+        for a more detailed evaluation framework.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         RESPONSIBLE GAMING
+         ====================================================== -->
+
+    <section id="responsible-gaming">
+      <h2>Responsible Gaming Comes Before a Bonus</h2>
+
+      <p>
+        Promotional credit should never be viewed as guaranteed income or a
+        way to recover financial losses. Gaming involves risk, and
+        promotional conditions do not change the underlying uncertainty of
+        game outcomes.
+      </p>
+
+      <p>
+        Readers should only participate where legally permitted, meet the
+        applicable age requirements, understand the financial risks and use
+        discretionary funds they can afford to lose.
+      </p>
+
+      <p>
+        If gaming stops being entertainment or becomes difficult to control,
+        stop participating and seek appropriate support.
+      </p>
+
+      <p>
+        Read our
+        <a href="https://freekreditrm10.com/responsible-gaming/">
+          responsible gaming policy
+        </a>
+        for more information.
+      </p>
+    </section>
+
+
+    <!-- ======================================================
+         AI / KNOWLEDGE GRAPH SUMMARY
+         ====================================================== -->
+
+    <section id="entity-summary">
+      <h2>FreeKreditRM10 at a Glance</h2>
+
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">Website</th>
+            <td>FreeKreditRM10</td>
+          </tr>
+          <tr>
+            <th scope="row">Primary Focus</th>
+            <td>Free credit information and promotional terminology</td>
+          </tr>
+          <tr>
+            <th scope="row">Audience</th>
+            <td>Malaysia-focused readers</td>
+          </tr>
+          <tr>
+            <th scope="row">Core Topic</th>
+            <td>Free kredit RM10 and related free-credit searches</td>
+          </tr>
+          <tr>
+            <th scope="row">Other Amounts Covered</th>
+            <td>RM3, RM5, RM88 and RM100</td>
+          </tr>
+          <tr>
+            <th scope="row">Topics Covered</th>
+            <td>
+              No-deposit offers, eligibility, registration, wagering,
+              expiry, withdrawal conditions, providers and game
+              compatibility
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Editorial Purpose</th>
+            <td>
+              To explain and contextualise free-credit terminology and
+              promotional conditions
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Important Principle</th>
+            <td>
+              Free credit is promotional value and should not automatically
+              be interpreted as withdrawable cash
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+    <!-- ======================================================
+         VISIBLE Q&A — AEO
+         No FAQPage schema because Google removed FAQ rich results.
+         ====================================================== -->
+
+    <section id="questions">
+      <h2>Common Questions About FreeKreditRM10</h2>
+
+      <details>
+        <summary>What is FreeKreditRM10?</summary>
+        <p>
+          FreeKreditRM10 is a Malaysia-focused informational website that
+          explains free-credit amounts, no-deposit conditions, eligibility,
+          wagering, withdrawal rules, providers and related promotional
+          terminology.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does free kredit RM10 mean RM10 cash?</summary>
+        <p>
+          Not necessarily. Free kredit RM10 generally describes promotional
+          account value. Whether any resulting balance can be withdrawn
+          depends on the specific promotion's terms.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does no-deposit free credit have wagering requirements?</summary>
+        <p>
+          It can. "No deposit" describes the deposit condition for receiving
+          an offer; it does not guarantee that wagering, verification,
+          expiry or withdrawal conditions are absent.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does registering guarantee free credit?</summary>
+        <p>
+          No. A registration may still need to meet eligibility,
+          verification, campaign and other promotion-specific requirements.
+        </p>
+      </details>
+
+      <details>
+        <summary>Does a JILI game automatically qualify for JILI free credit?</summary>
+        <p>
+          No. JILI identifies the game provider. Free-credit eligibility is
+          determined by the platform and the specific promotion.
+        </p>
+      </details>
+
+      <details>
+        <summary>How often can free credit promotions change?</summary>
+        <p>
+          Promotions may change, expire or be replaced. Time-sensitive
+          information should therefore be checked against the current
+          conditions published by the platform offering the promotion.
+        </p>
+      </details>
+    </section>
+
+
+    <!-- ======================================================
+         NEXT STEPS / INTERNAL LINKING
+         ====================================================== -->
+
+    <section id="next-steps">
+      <h2>Explore the FreeKreditRM10 Knowledge Base</h2>
+
+      <p>
+        If you are new to the topic, start with our core
+        <a href="https://freekreditrm10.com/">
+          free kredit RM10
+        </a>
+        guide and then explore the subject that matches your search intent.
+      </p>
+
+      <nav aria-label="FreeKreditRM10 related guides">
+        <ul>
+          <li>
+            <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">
+              Free Kredit Tanpa Deposit Malaysia
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/how-free-kredit-works-malaysia/">
+              How Free Kredit Works in Malaysia
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/free-kredit-eligibility/">
+              Free Kredit Eligibility
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/free-kredit-terms-conditions/">
+              Free Kredit Terms &amp; Conditions
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/compare-free-kredit-malaysia/">
+              Compare Free Kredit Malaysia
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/free-kredit-by-amount/">
+              Compare Free Credit by Amount
+            </a>
+          </li>
+          <li>
+            <a href="https://freekreditrm10.com/free-kredit-by-provider/">
+              Compare Free Credit by Provider
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+
+    <!-- ======================================================
+         TRANSPARENCY / EEAT
+         ====================================================== -->
+
+    <footer class="editorial-footer">
+      <hr>
+
+      <h2>Editorial Transparency</h2>
+
+      <p>
+        FreeKreditRM10 aims to provide informational content rather than
+        guarantees about promotional availability, eligibility or
+        withdrawals. Promotions can change and should be verified against
+        the current terms of the platform providing them.
+      </p>
+
+      <p>
+        We distinguish between historical information, general explanatory
+        information and time-sensitive promotional claims wherever
+        possible.
+      </p>
+
+      <p>
+        <strong>Published by:</strong> FreeKreditRM10<br>
+        <strong>Content type:</strong> About / Editorial Transparency<br>
+        <strong>Audience:</strong> Malaysia<br>
+        <strong>Language:</strong> English (Malaysia)
+      </p>
+
+      <nav aria-label="Editorial policies">
+        <a href="https://freekreditrm10.com/editorial-policy/">
+          Editorial Policy
+        </a>
+        |
+        <a href="https://freekreditrm10.com/methodology/">
+          Methodology
+        </a>
+        |
+        <a href="https://freekreditrm10.com/corrections-policy/">
+          Corrections Policy
+        </a>
+        |
+        <a href="https://freekreditrm10.com/affiliate-disclosure/">
+          Affiliate Disclosure
+        </a>
+        |
+        <a href="https://freekreditrm10.com/authors/">
+          Authors
+        </a>
+        |
+        <a href="https://freekreditrm10.com/contact-us/">
+          Contact Us
+        </a>
+      </nav>
+    </footer>
+
+  </article>
+
+</main>
+
+</body>
+</html>

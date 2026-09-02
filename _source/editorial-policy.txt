@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Editorial Policy | FreeKreditRM10 Malaysia</title>
+
+  <meta name="description"
+        content="Read the FreeKreditRM10 editorial policy covering research, source verification, free credit claims, corrections, editorial independence and content updates.">
+
+  <meta name="keywords"
+        content="free kredit RM10, free kredit 10, RM10 free credit casino, free kredit casino, casino free kredit, slot free credit RM10, free kredit tanpa deposit, free kredit RM3, link free kredit RM3, link free kredit RM10, JILI free kredit, Jadiking, Jadiking88">
+
+  <meta name="robots"
+        content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+
+  <link rel="canonical"
+        href="https://freekreditrm10.com/editorial-policy/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title"
+        content="Editorial Policy | FreeKreditRM10">
+  <meta property="og:description"
+        content="How FreeKreditRM10 researches, verifies, writes, updates and corrects Malaysia free credit information.">
+  <meta property="og:url"
+        content="https://freekreditrm10.com/editorial-policy/">
+  <meta property="og:site_name" content="FreeKreditRM10">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title"
+        content="FreeKreditRM10 Editorial Policy">
+  <meta name="twitter:description"
+        content="Our standards for researching, verifying and updating free credit information for Malaysian readers.">
+
+  <!-- ========================================================
+       STRUCTURED DATA
+
+       WebPage is used because this is an editorial policy page,
+       not a promotional offer or product review.
+
+       No Review, AggregateRating, Offer or FAQPage markup.
+       ======================================================== -->
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://freekreditrm10.com/#organization",
+        "name": "FreeKreditRM10",
+        "url": "https://freekreditrm10.com/",
+        "description": "FreeKreditRM10 is a Malaysia-focused informational website covering free credit terminology, promotional conditions, providers, eligibility, wagering and withdrawal considerations."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://freekreditrm10.com/#website",
+        "url": "https://freekreditrm10.com/",
+        "name": "FreeKreditRM10",
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://freekreditrm10.com/editorial-policy/#webpage",
+        "url": "https://freekreditrm10.com/editorial-policy/",
+        "name": "FreeKreditRM10 Editorial Policy",
+        "description": "The editorial standards FreeKreditRM10 uses when researching, writing, verifying, updating and correcting free credit information.",
+        "isPartOf": {
+          "@id": "https://freekreditrm10.com/#website"
+        },
+        "about": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "publisher": {
+          "@id": "https://freekreditrm10.com/#organization"
+        },
+        "inLanguage": "en-MY"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://freekreditrm10.com/editorial-policy/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "FreeKreditRM10",
+            "item": "https://freekreditrm10.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Editorial Policy",
+            "item": "https://freekreditrm10.com/editorial-policy/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+<main id="main-content">
+
+<article class="editorial-policy">
+
+  <!-- ========================================================
+       HERO
+       ======================================================== -->
+
+  <header>
+    <p class="eyebrow">EDITORIAL STANDARDS &amp; TRANSPARENCY</p>
+
+    <h1>FreeKreditRM10 Editorial Policy</h1>
+
+    <p class="lead">
+      FreeKreditRM10 publishes independent informational content
+      designed to help Malaysian readers understand free credit
+      terminology, promotional conditions, providers, platforms,
+      eligibility requirements and withdrawal considerations.
+    </p>
+
+    <p>
+      This Editorial Policy explains how we research topics,
+      evaluate promotional claims, distinguish facts from
+      advertising language, update information and correct
+      material errors.
+    </p>
+
+    <p>
+      Our goal is simple:
+      <strong>make free-credit information easier to understand
+      without presenting promotional claims as guaranteed facts.</strong>
+    </p>
+  </header>
+
+
+  <!-- ========================================================
+       QUICK ANSWER — AEO / AI EXTRACTABLE
+       ======================================================== -->
+
+  <section id="quick-answer">
+    <h2>What Is the FreeKreditRM10 Editorial Policy?</h2>
+
+    <p>
+      <strong>The FreeKreditRM10 Editorial Policy is the framework
+      we use to research, write, review, update and correct content
+      published on FreeKreditRM10.com.</strong>
+    </p>
+
+    <p>
+      It applies to our coverage of topics including
+      <a href="https://freekreditrm10.com/">free kredit RM10</a>,
+      free kredit 10, RM10 free credit casino,
+      free kredit casino, casino free kredit,
+      slot free credit RM10 and
+      <a href="https://freekreditrm10.com/free-kredit-no-deposit-malaysia/">
+        free kredit tanpa deposit
+      </a>.
+    </p>
+
+    <p>
+      The policy also applies when we discuss specific platforms,
+      game providers, promotional amounts or third-party discovery
+      services.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       EDITORIAL PRINCIPLES
+       ======================================================== -->
+
+  <section id="principles">
+    <h2>Our Editorial Principles</h2>
+
+    <p>
+      FreeKreditRM10 content is guided by six core principles.
+    </p>
+
+    <ol>
+      <li>
+        <strong>Accuracy before promotion.</strong>
+        We aim to explain what can reasonably be established rather
+        than repeating the most attractive promotional headline.
+      </li>
+
+      <li>
+        <strong>Separate facts from claims.</strong>
+        A platform's promotional statement is identified as a
+        promotional claim unless independently established as a
+        broader fact.
+      </li>
+
+      <li>
+        <strong>Separate entities.</strong>
+        Platforms, game providers, directories, individual games
+        and promotions are not automatically treated as the same
+        entity.
+      </li>
+
+      <li>
+        <strong>Explain important conditions.</strong>
+        Where relevant, our content considers eligibility,
+        deposits, wagering, expiry, game restrictions and
+        withdrawal limitations.
+      </li>
+
+      <li>
+        <strong>Avoid guarantees.</strong>
+        We do not treat a promotional amount, game outcome or
+        withdrawal as guaranteed simply because it appears in a
+        headline or advertisement.
+      </li>
+
+      <li>
+        <strong>Update when information changes.</strong>
+        Time-sensitive promotional information may be revised,
+        qualified or removed when newer information becomes
+        available.
+      </li>
+    </ol>
+  </section>
+
+
+  <!-- ========================================================
+       WHY THIS MATTERS
+       ======================================================== -->
+
+  <section id="why-policy-matters">
+    <h2>Why Editorial Standards Matter for Free Credit Content</h2>
+
+    <p>
+      Free-credit searches often combine promotional amounts,
+      platforms, game providers and conditions in a single query.
+      This creates opportunities for misunderstanding.
+    </p>
+
+    <p>
+      For example, a reader searching for free credit no deposit
+      RM10 may see an offer described differently from another
+      reader searching for free credit RM10 no deposit.
+      Similar wording does not prove that the two promotions have
+      identical terms.
+    </p>
+
+    <p>
+      Likewise, free credit no deposit, free credit tanpa deposit,
+      kredit percuma tanpa deposit and free kredit tanpa deposit
+      Malaysia can express closely related search intent without
+      establishing one universal promotion.
+    </p>
+
+    <p>
+      Our job is therefore not to turn every search phrase into a
+      claim. Our job is to explain the subject behind the search.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       RESEARCH PROCESS
+       ======================================================== -->
+
+  <section id="research">
+    <h2>How We Research an Article</h2>
+
+    <p>
+      The exact research process depends on the subject, but our
+      editorial workflow follows a consistent framework.
+    </p>
+
+    <h3>1. Identify the Search Intent</h3>
+
+    <p>
+      We first determine what a reader is actually trying to find.
+      Searches can have very different intent even when they share
+      similar words.
+    </p>
+
+    <p>
+      For example:
+    </p>
+
+    <ul>
+      <li>
+        <a href="https://freekreditrm10.com/free-kredit-rm3/">
+          free kredit RM3
+        </a>
+        expresses amount-based intent.
+      </li>
+
+      <li>
+        <a href="https://freekreditrm10.com/how-to-claim-link-free-credit-rm3/">
+          link free kredit RM3
+        </a>
+        combines amount and link-discovery intent.
+      </li>
+
+      <li>
+        <a href="https://freekreditrm10.com/joy-link-free-credit-rm10/">
+          link free kredit RM10
+        </a>
+        targets a different amount and potentially a different
+        promotional destination.
+      </li>
+
+      <li>
+        <a href="https://freekreditrm10.com/free-kredit-rm100/">
+          free slot RM100
+        </a>
+        expresses higher-value promotional intent.
+      </li>
+    </ul>
+
+
+    <h3>2. Identify the Entity Behind the Claim</h3>
+
+    <p>
+      We determine whether the subject is a platform, game
+      provider, individual game, discovery service or promotion.
+    </p>
+
+    <p>
+      This distinction is particularly important for searches
+      involving brands and providers.
+    </p>
+
+
+    <h3>3. Check the Promotion Type</h3>
+
+    <p>
+      We look for information indicating whether the promotion is:
+    </p>
+
+    <ul>
+      <li>no-deposit;</li>
+      <li>registration-based;</li>
+      <li>deposit-related;</li>
+      <li>provider-specific;</li>
+      <li>game-specific;</li>
+      <li>time-limited; or</li>
+      <li>subject to another qualifying action.</li>
+    </ul>
+
+
+    <h3>4. Examine Important Conditions</h3>
+
+    <p>
+      When information is available and relevant, we look for:
+    </p>
+
+    <ul>
+      <li>new-member requirements;</li>
+      <li>registration requirements;</li>
+      <li>verification requirements;</li>
+      <li>minimum deposits;</li>
+      <li>wagering or turnover requirements;</li>
+      <li>eligible or excluded games;</li>
+      <li>promotion validity;</li>
+      <li>maximum withdrawal conditions; and</li>
+      <li>other material restrictions.</li>
+    </ul>
+
+
+    <h3>5. Write for the Reader, Not the Keyword</h3>
+
+    <p>
+      Search data can help us understand what readers want to
+      know, but keywords do not replace editorial judgment.
+    </p>
+
+    <p>
+      We may cover phrases such as freekredit88,
+      free kredit ewallet, free kredit jackpot,
+      slot online free kredit and best free credit slot Malaysia
+      when they are relevant to the subject.
+    </p>
+
+    <p>
+      We do not intentionally repeat a phrase merely to increase
+      keyword frequency.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       SOURCE HIERARCHY — EEAT
+       ======================================================== -->
+
+  <section id="sources">
+    <h2>What Sources Do We Prefer?</h2>
+
+    <p>
+      The reliability of a statement depends partly on the source
+      supporting it. Where possible, we prefer information closest
+      to the entity responsible for the claim.
+    </p>
+
+    <div class="source-levels">
+
+      <section>
+        <h3>Primary Sources</h3>
+
+        <p>
+          These may include official platform pages, official
+          promotion terms, official game-provider information,
+          policies and other first-party documentation.
+        </p>
+      </section>
+
+      <section>
+        <h3>Secondary Sources</h3>
+
+        <p>
+          Secondary sources may be used for additional context,
+          discovery or comparison when primary information is
+          unavailable or when multiple perspectives are useful.
+        </p>
+      </section>
+
+      <section>
+        <h3>Historical Sources</h3>
+
+        <p>
+          Historical material can help explain an older indexed
+          page or previous promotion, but it should not
+          automatically be presented as evidence of a current
+          offer.
+        </p>
+      </section>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       EXAMPLE: JADIKING
+       External keyword anchor requested by user
+       ======================================================== -->
+
+  <section id="brand-verification">
+    <h2>How We Handle Brand-Specific Information</h2>
+
+    <p>
+      When an article discusses a specific platform, we prefer to
+      distinguish information published by that platform from
+      general market information.
+    </p>
+
+    <p>
+      For example, when researching
+      <a href="https://jadiking.my/"
+         rel="external"
+         title="Jadiking">
+        Jadiking
+      </a>,
+      its first-party website can provide direct context about the
+      Jadiking brand.
+    </p>
+
+    <p>
+      Related searches may include Jadiking88 and Jadiking 2.0,
+      but similar brand names should not automatically be treated
+      as evidence that every account, promotion, provider or
+      condition is identical.
+    </p>
+
+    <aside class="editorial-note">
+      <p>
+        <strong>Editorial rule:</strong>
+        brand relationship does not automatically establish
+        promotion eligibility.
+      </p>
+    </aside>
+  </section>
+
+
+  <!-- ========================================================
+       ANGPAO RAIN
+       ======================================================== -->
+
+  <section id="campaign-verification">
+    <h2>How We Handle Campaigns and Promotional Experiences</h2>
+
+    <p>
+      Campaigns require additional care because availability,
+      participation requirements and rewards can change over time.
+    </p>
+
+    <p>
+      A campaign such as
+      <a href="https://gengcuci.com/"
+         rel="external"
+         title="Angpao Rain">
+        Angpao Rain
+      </a>
+      should therefore be evaluated according to its current
+      campaign information rather than assumptions based on its
+      name or an older promotion.
+    </p>
+
+    <p>
+      When FreeKreditRM10 refers to a current campaign, we aim to
+      distinguish between:
+    </p>
+
+    <ul>
+      <li>the campaign itself;</li>
+      <li>the website or platform hosting it;</li>
+      <li>the advertised reward;</li>
+      <li>participation requirements;</li>
+      <li>eligibility conditions; and</li>
+      <li>time-sensitive campaign rules.</li>
+    </ul>
+
+    <p>
+      We do not assume that participation guarantees a particular
+      reward unless the applicable rules clearly establish that
+      outcome.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       PROVIDER POLICY
+       ======================================================== -->
+
+  <section id="provider-policy">
+    <h2>How We Cover Game Providers</h2>
+
+    <p>
+      Provider-related searches are one of the areas where entity
+      clarity matters most.
+    </p>
+
+    <p>
+      Queries such as
+      <a href="https://freekreditrm10.com/providers/jili-free-kredit/">
+        JILI free kredit
+      </a>,
+      free kredit JILI, free credit JILI and JILI slot free kredit
+      combine a provider name with promotional intent.
+    </p>
+
+    <p>
+      Our editorial policy separates three questions:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Does the game or provider exist?</strong>
+      </li>
+      <li>
+        <strong>Is the provider currently available on the
+        platform being discussed?</strong>
+      </li>
+      <li>
+        <strong>Are those games eligible for the specific
+        promotion?</strong>
+      </li>
+    </ol>
+
+    <p>
+      One answer does not automatically establish the other two.
+    </p>
+
+    <p>
+      We apply the same principle to topics involving AceWinCuci,
+      AceWin free credit, 100Cuci free kredit, Joylink88,
+      Joker free credit and Joker free RM10.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       PROMOTIONAL CLAIM POLICY
+       ======================================================== -->
+
+  <section id="promotion-claims">
+    <h2>How We Evaluate Free Credit Claims</h2>
+
+    <p>
+      A headline amount is not enough to determine the actual
+      value or usability of a promotion.
+    </p>
+
+    <p>
+      For that reason, our articles distinguish between the
+      advertised promotional amount and the conditions attached
+      to that amount.
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Claim</th>
+          <th scope="col">What We Check</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Free kredit RM10</td>
+          <td>
+            Eligibility, deposit requirement, wagering,
+            expiry and withdrawal conditions
+          </td>
+        </tr>
+        <tr>
+          <td>Free credit no deposit</td>
+          <td>
+            Whether a qualifying deposit is genuinely unnecessary
+          </td>
+        </tr>
+        <tr>
+          <td>Register dapat free credit</td>
+          <td>
+            Whether registration alone qualifies or additional
+            conditions apply
+          </td>
+        </tr>
+        <tr>
+          <td>New register free RM3</td>
+          <td>
+            New-member definition, verification and campaign
+            validity
+          </td>
+        </tr>
+        <tr>
+          <td>Claim free credit RM3</td>
+          <td>
+            Claim steps, eligibility and subsequent conditions
+          </td>
+        </tr>
+        <tr>
+          <td>Free kredit slot promotion</td>
+          <td>
+            Eligible games, turnover contribution and promotion
+            restrictions
+          </td>
+        </tr>
+        <tr>
+          <td>Free kredit slot for new users</td>
+          <td>
+            New-user criteria, account requirements and promotion
+            availability
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- ========================================================
+       DEFINITIONS / AEO
+       ======================================================== -->
+
+  <section id="editorial-definitions">
+    <h2>Important Definitions Used in Our Content</h2>
+
+    <dl>
+      <dt><strong>Free Credit</strong></dt>
+      <dd>
+        Promotional account value made available under the terms
+        of a specific promotion. It should not automatically be
+        interpreted as cash.
+      </dd>
+
+      <dt><strong>No Deposit</strong></dt>
+      <dd>
+        A condition indicating that a qualifying deposit is not
+        required to receive the promotion. Other conditions may
+        still apply.
+      </dd>
+
+      <dt><strong>Wagering or Turnover</strong></dt>
+      <dd>
+        A requirement to generate a specified amount of qualifying
+        play before certain promotion or withdrawal conditions
+        are satisfied.
+      </dd>
+
+      <dt><strong>Promotional Claim</strong></dt>
+      <dd>
+        A statement made in connection with an offer that may
+        require verification before being presented as a fact.
+      </dd>
+
+      <dt><strong>Provider</strong></dt>
+      <dd>
+        The entity responsible for supplying game content. A
+        provider is not automatically the issuer of a platform's
+        free-credit promotion.
+      </dd>
+
+      <dt><strong>Platform</strong></dt>
+      <dd>
+        The service through which an account, game or promotion
+        may be accessed.
+      </dd>
+    </dl>
+  </section>
+
+
+  <!-- ========================================================
+       WHAT WE WILL NOT DO
+       ======================================================== -->
+
+  <section id="prohibited-editorial-practices">
+    <h2>Claims We Do Not Make Without Evidence</h2>
+
+    <p>
+      FreeKreditRM10 does not intentionally present the following
+      as facts without appropriate supporting information:
+    </p>
+
+    <ul>
+      <li>guaranteed winnings;</li>
+      <li>guaranteed withdrawals;</li>
+      <li>guaranteed promotion eligibility;</li>
+      <li>guaranteed registration rewards;</li>
+      <li>permanent promotion availability;</li>
+      <li>unverified licensing or regulatory status;</li>
+      <li>unverified partnerships;</li>
+      <li>fake user reviews or ratings;</li>
+      <li>invented first-hand testing;</li>
+      <li>invented author credentials;</li>
+      <li>unverified payment methods;</li>
+      <li>unverified security certifications; or</li>
+      <li>predictions that a particular game is due to win.</li>
+    </ul>
+  </section>
+
+
+  <!-- ========================================================
+       CORE DISTINCTIONS
+       Highly extractable for AI search
+       ======================================================== -->
+
+  <section id="editorial-distinctions">
+    <h2>Core Editorial Distinctions</h2>
+
+    <div class="key-points">
+
+      <p>
+        <strong>Free credit ≠ automatically withdrawable cash.</strong>
+      </p>
+
+      <p>
+        <strong>No deposit ≠ no conditions.</strong>
+      </p>
+
+      <p>
+        <strong>Registration ≠ guaranteed bonus.</strong>
+      </p>
+
+      <p>
+        <strong>Game availability ≠ promotion eligibility.</strong>
+      </p>
+
+      <p>
+        <strong>Provider ≠ promotion issuer.</strong>
+      </p>
+
+      <p>
+        <strong>Historical promotion ≠ current promotion.</strong>
+      </p>
+
+      <p>
+        <strong>Promotional e-wallet balance ≠ automatically a
+        conventional financial e-wallet.</strong>
+      </p>
+
+      <p>
+        <strong>Large headline amount ≠ automatically better
+        value.</strong>
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ========================================================
+       E-WALLET POLICY
+       ======================================================== -->
+
+  <section id="ewallet-policy">
+    <h2>How We Use the Term "E-Wallet"</h2>
+
+    <p>
+      Searches for free kredit ewallet can refer to different
+      concepts depending on context.
+    </p>
+
+    <p>
+      In gaming-related promotional material, the word "wallet"
+      may sometimes describe an internal account or promotional
+      balance. We do not automatically describe such a balance as
+      equivalent to a regulated consumer electronic-money account.
+    </p>
+
+    <p>
+      Where the distinction matters, our articles should explain
+      what type of balance is actually being discussed.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       UPDATE POLICY
+       ======================================================== -->
+
+  <section id="updates">
+    <h2>How We Keep Content Current</h2>
+
+    <p>
+      Some subjects on FreeKreditRM10 are evergreen, while others
+      can change quickly.
+    </p>
+
+    <p>
+      Definitions of wagering, withdrawal limits and bonus
+      mechanics can remain useful for long periods. Individual
+      promotional amounts, campaign dates and eligibility rules
+      may change much faster.
+    </p>
+
+    <p>
+      When reviewing existing content, we may:
+    </p>
+
+    <ul>
+      <li>update materially changed information;</li>
+      <li>remove expired promotional claims;</li>
+      <li>clarify historical information;</li>
+      <li>replace outdated sources;</li>
+      <li>correct inaccurate statements;</li>
+      <li>improve explanations when reader intent becomes clearer; and</li>
+      <li>retain an old URL when preserving its established subject is useful.</li>
+    </ul>
+
+    <p>
+      A "last updated" date should only be changed when a page
+      receives a meaningful editorial update.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       CORRECTIONS POLICY
+       ======================================================== -->
+
+  <section id="corrections">
+    <h2>Corrections and Material Errors</h2>
+
+    <p>
+      Accuracy matters more than preserving an outdated statement.
+      When a material factual error is identified, our goal is to
+      review the underlying evidence and correct the page when
+      appropriate.
+    </p>
+
+    <p>
+      Minor spelling, formatting or readability changes may be
+      made without a formal correction notice. Material changes
+      that alter the meaning of a claim should be handled more
+      carefully.
+    </p>
+
+    <p>
+      Read our
+      <a href="https://freekreditrm10.com/corrections-policy/">
+        Corrections Policy
+      </a>
+      for the complete process.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       COMMERCIAL / AFFILIATE INDEPENDENCE
+       ======================================================== -->
+
+  <section id="commercial-independence">
+    <h2>Editorial Independence and Commercial Relationships</h2>
+
+    <p>
+      Readers should be able to distinguish editorial information
+      from commercial relationships.
+    </p>
+
+    <p>
+      If FreeKreditRM10 uses affiliate links, referral
+      relationships, sponsored placements or another commercial
+      arrangement, that relationship should not be presented as
+      evidence that a promotion is objectively superior.
+    </p>
+
+    <p>
+      Commercial relationships do not change our basic editorial
+      distinctions regarding eligibility, wagering, withdrawal
+      conditions, provider identity or promotional availability.
+    </p>
+
+    <p>
+      Read our
+      <a href="https://freekreditrm10.com/affiliate-disclosure/">
+        Affiliate Disclosure
+      </a>
+      for more information.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       RESPONSIBLE GAMING
+       ======================================================== -->
+
+  <section id="responsible-gaming">
+    <h2>Responsible Gaming Editorial Standard</h2>
+
+    <p>
+      Free credit should not be framed as income, an investment or
+      a reliable way to recover losses.
+    </p>
+
+    <p>
+      Gambling outcomes involve uncertainty. A bonus does not
+      eliminate that risk.
+    </p>
+
+    <p>
+      Our content should therefore avoid language suggesting that
+      a promotion or game provides guaranteed profit.
+    </p>
+
+    <p>
+      Readers should participate only where legally permitted,
+      meet applicable age requirements and use discretionary funds
+      they can afford to lose.
+    </p>
+
+    <p>
+      See our
+      <a href="https://freekreditrm10.com/responsible-gaming/">
+        Responsible Gaming
+      </a>
+      page for further information.
+    </p>
+  </section>
+
+
+  <!-- ========================================================
+       EDITORIAL DECISION TABLE — SXO / AI EXTRACTION
+       ======================================================== -->
+
+  <section id="decision-framework">
+    <h2>FreeKreditRM10 Editorial Decision Framework</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Question</th>
+          <th scope="col">Editorial Approach</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Who is making the claim?</td>
+          <td>Identify the platform, provider, campaign or source.</td>
+        </tr>
+
+        <tr>
+          <td>Is the promotion current?</td>
+          <td>Prefer current information and label historical context.</td>
+        </tr>
+
+        <tr>
+          <td>Is a deposit required?</td>
+          <td>Do not label an offer no-deposit unless supported.</td>
+        </tr>
+
+        <tr>
+          <td>Who can claim it?</td>
+          <td>Check new-member and other eligibility requirements.</td>
+        </tr>
+
+        <tr>
+          <td>Can the credit be withdrawn?</td>
+          <td>Check wagering and withdrawal conditions first.</td>
+        </tr>
+
+        <tr>
+          <td>Is a provider mentioned?</td>
+          <td>Separate provider identity from platform promotion.</td>
+        </tr>
+
+        <tr>
+          <td>Is the information uncertain?</td>
+          <td>Qualify the statement rather than present uncertainty as fact.</td>
+        </tr>
+
+        <tr>
+          <td>Has information changed?</td>
+          <td>Update, clarify or correct the affected content.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- ========================================================
+       AEO Q&A
+       Visible Q&A, intentionally no FAQPage schema
+       ======================================================== -->
+
+  <section id="editorial-questions">
+    <h2>Questions About Our Editorial Standards</h2>
+
+    <details>
+      <summary>Does FreeKreditRM10 guarantee free credit offers?</summary>
+      <p>
+        No. Promotional availability and eligibility can change.
+        Readers should verify current conditions with the platform
+        responsible for an offer.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does free kredit RM10 always mean no deposit?</summary>
+      <p>
+        No. RM10 describes an amount, while "no deposit" describes
+        a separate promotion condition. The two should not be
+        treated as interchangeable.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does no deposit mean there are no wagering requirements?</summary>
+      <p>
+        No. A promotion can require no qualifying deposit while
+        still applying wagering, verification, game, expiry or
+        withdrawal conditions.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does registering guarantee free credit?</summary>
+      <p>
+        No. Registration and promotion eligibility are separate.
+        New-member, verification and other requirements may apply.
+      </p>
+    </details>
+
+    <details>
+      <summary>Does JILI issue every JILI free credit promotion?</summary>
+      <p>
+        Not necessarily. JILI is a game provider. A platform may
+        run a promotion involving JILI games, but the provider and
+        promotion issuer should be identified separately.
+      </p>
+    </details>
+
+    <details>
+      <summary>How does FreeKreditRM10 handle outdated promotions?</summary>
+      <p>
+        When material information has changed, we may update the
+        article, clarify that information is historical or remove
+        claims that can no longer be adequately supported.
+      </p>
+    </details>
+  </section>
+
+
+  <!-- ========================================================
+       POLICY SUMMARY — GEO
+       ======================================================== -->
+
+  <section id="policy-summary">
+    <h2>Editorial Policy Summary</h2>
+
+    <table>
+      <tbody>
+        <tr>
+          <th scope="row">Publisher</th>
+          <td>FreeKreditRM10</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Primary Audience</th>
+          <td>Malaysia-focused readers</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Core Subject</th>
+          <td>Free credit information and promotional terminology</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Research Priority</th>
+          <td>Primary and first-party information where available</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Promotional Claims</th>
+          <td>Evaluated separately from verified facts</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Provider Policy</th>
+          <td>Provider and promotion issuer are treated as separate entities</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Historical Content</th>
+          <td>Not automatically presented as current information</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Corrections</th>
+          <td>Material factual errors are reviewed and corrected where appropriate</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Responsible Gaming</th>
+          <td>Promotional credit is not presented as guaranteed income</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <!-- ========================================================
+       RELATED EDITORIAL PAGES
+       ======================================================== -->
+
+  <section id="related-policies">
+    <h2>FreeKreditRM10 Transparency &amp; Editorial Pages</h2>
+
+    <nav aria-label="FreeKreditRM10 editorial and trust pages">
+      <ul>
+        <li>
+          <a href="https://freekreditrm10.com/about-us/">
+            About FreeKreditRM10
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/methodology/">
+            Research Methodology
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/authors/">
+            Authors
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/corrections-policy/">
+            Corrections Policy
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/affiliate-disclosure/">
+            Affiliate Disclosure
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/responsible-gaming/">
+            Responsible Gaming
+          </a>
+        </li>
+
+        <li>
+          <a href="https://freekreditrm10.com/contact-us/">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+
+  <!-- ========================================================
+       FINAL EDITORIAL STATEMENT
+       ======================================================== -->
+
+  <footer class="editorial-footer">
+    <hr>
+
+    <h2>Our Commitment</h2>
+
+    <p>
+      FreeKreditRM10 aims to make free-credit information more
+      understandable by separating promotional language from
+      conditions that materially affect readers.
+    </p>
+
+    <p>
+      We cannot guarantee that every promotion remains available
+      indefinitely. Where information is time-sensitive, readers
+      should verify the latest terms with the entity responsible
+      for the promotion.
+    </p>
+
+    <p>
+      If you believe an article contains a material factual error,
+      please use our
+      <a href="https://freekreditrm10.com/contact-us/">
+        Contact Us
+      </a>
+      page so the information can be reviewed.
+    </p>
+
+    <p>
+      <strong>Published by:</strong> FreeKreditRM10<br>
+      <strong>Page type:</strong> Editorial Policy<br>
+      <strong>Audience:</strong> Malaysia<br>
+      <strong>Language:</strong> English (Malaysia)
+    </p>
+
+  </footer>
+
+</article>
+
+</main>
+
+</body>
+</html>
