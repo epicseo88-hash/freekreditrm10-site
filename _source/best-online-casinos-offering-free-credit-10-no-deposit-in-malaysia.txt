@@ -95,7 +95,7 @@
 
 
 <meta property="article:modified_time"
-      content="2026-08-28T00:00:00+08:00">
+      content="2026-09-15T00:00:00+08:00">
 
 
 
@@ -291,7 +291,7 @@
 
       "datePublished": "2026-08-28",
 
-      "dateModified": "2026-08-28",
+      "dateModified": "2026-09-15",
 
       "inLanguage": "en-MY",
 
@@ -330,7 +330,7 @@
 
       "datePublished": "2026-08-28",
 
-      "dateModified": "2026-08-28",
+      "dateModified": "2026-09-15",
 
       "inLanguage": "en-MY",
 
@@ -397,6 +397,36 @@
   ]
 }
 </script>
+
+
+<style id="fkr-cro-styles">
+/* Contextual CRO additions only */
+.fkr-cro-box{
+  margin:24px 0;
+  padding:20px;
+  border:1px solid #d8d8d8;
+  border-radius:12px;
+  background:#fafafa;
+}
+.fkr-cro-box h3{margin:0 0 8px;font-size:1.25rem;line-height:1.35}
+.fkr-cro-box p{margin:0 0 14px}
+.fkr-cro-button{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:8px;
+  background:#111;
+  color:#fff !important;
+  font-weight:700;
+  text-decoration:none !important;
+  line-height:1.2;
+}
+.fkr-cro-button:hover,.fkr-cro-button:focus{opacity:.88;color:#fff !important}
+.fkr-cro-note{display:block;margin-top:10px;font-size:.82rem;line-height:1.45;opacity:.75}
+@media(max-width:600px){
+  .fkr-cro-box{padding:16px}
+  .fkr-cro-button{display:block;text-align:center;width:100%;box-sizing:border-box}
+}
+</style>
 
 </head>
 
@@ -619,6 +649,22 @@
     </ul>
 
 </section>
+
+
+<aside class="fkr-cro-box" aria-label="Jadiking promotion information">
+  <h3>Check Current Jadiking Offers</h3>
+  <p>Want to compare this guide with a current offer? Visit Jadiking directly to review its latest promotion information, eligibility and applicable terms.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=rm10_no_deposit_guide&utm_content=after_quick_answer"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="after_quick_answer">Check Current Jadiking Offers</a>
+  <small class="fkr-cro-note">
+    Jadiking promotion availability, eligibility and terms can change.
+    Check the current information on the destination site before registering.
+  </small>
+</aside>
+
 
 
 
@@ -1568,6 +1614,22 @@
     </div>
 
 </section>
+
+
+<aside class="fkr-cro-box" aria-label="Jadiking promotion information">
+  <h3>Compare With Jadiking's Current Promotion</h3>
+  <p>Use the comparison framework above, then check Jadiking's current promotion details before deciding whether an offer matches what you are looking for.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=rm10_no_deposit_guide&utm_content=after_comparison"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="after_comparison">View Jadiking Current Promotions</a>
+  <small class="fkr-cro-note">
+    Jadiking promotion availability, eligibility and terms can change.
+    Check the current information on the destination site before registering.
+  </small>
+</aside>
+
 
 
 
@@ -2531,6 +2593,23 @@
         <strong>evaluate the conditions behind the promotional headline.</strong>
     </p>
 
+
+
+
+<aside class="fkr-cro-box" aria-label="Jadiking promotion information">
+  <h3>Ready to Check the Current Offer?</h3>
+  <p>If you have finished reviewing the eligibility, turnover, game and withdrawal conditions, you can visit Jadiking to see its current promotion and registration information.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=rm10_no_deposit_guide&utm_content=before_conclusion_end"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="before_conclusion_end">Visit Jadiking</a>
+  <small class="fkr-cro-note">
+    Jadiking promotion availability, eligibility and terms can change.
+    Check the current information on the destination site before registering.
+  </small>
+</aside>
+
 </section>
 
 
@@ -2567,9 +2646,9 @@
         <strong>Last updated:</strong>
 
         <time itemprop="dateModified"
-              datetime="2026-08-28">
+              datetime="2026-09-15">
 
-            28 August 2026
+            15 September 2026
 
         </time>
     </p>

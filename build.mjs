@@ -18,7 +18,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, "_source");
 const SITE = "https://freekreditrm10.com";
-const TODAY = "2026-09-02";
+const TODAY = "2026-09-15";
 
 // Lock page zoom. Meta covers Android Chrome + desktop pinch; the script blocks
 // iOS Safari pinch + double-tap zoom (iOS ignores user-scalable=no).

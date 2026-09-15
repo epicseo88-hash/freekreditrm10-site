@@ -75,7 +75,7 @@
           content="2026-08-28T00:00:00+08:00">
 
     <meta property="article:modified_time"
-          content="2026-08-28T00:00:00+08:00">
+          content="2026-09-15T00:00:00+08:00">
 
 
     <!-- =========================================================
@@ -251,7 +251,7 @@
 
           "datePublished": "2026-08-28",
 
-          "dateModified": "2026-08-28",
+          "dateModified": "2026-09-15",
 
           "description": "An evergreen guide explaining Joylink free credit searches in Malaysia, including joylink free kredit, Joylink88, no deposit promotions, eligibility, claim conditions and bonus terms."
         },
@@ -287,7 +287,7 @@
 
           "datePublished": "2026-08-28",
 
-          "dateModified": "2026-08-28",
+          "dateModified": "2026-09-15",
 
           "inLanguage": "en-MY",
 
@@ -355,6 +355,36 @@
       ]
     }
     </script>
+
+
+<style id="fkr-joylink-cro-styles">
+/* CRO additions for /joylink-free-credit/ */
+.fkr-cro-box{
+  margin:24px 0;
+  padding:20px;
+  border:1px solid #d8d8d8;
+  border-radius:12px;
+  background:#fafafa;
+}
+.fkr-cro-box h3{margin:0 0 8px;font-size:1.25rem;line-height:1.35}
+.fkr-cro-box p{margin:0 0 14px}
+.fkr-cro-button{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:8px;
+  background:#111;
+  color:#fff !important;
+  font-weight:700;
+  text-decoration:none !important;
+  line-height:1.2;
+}
+.fkr-cro-button:hover,.fkr-cro-button:focus{opacity:.88;color:#fff !important}
+.fkr-cro-note{display:block;margin-top:10px;font-size:.82rem;line-height:1.45;opacity:.75}
+@media(max-width:600px){
+  .fkr-cro-box{padding:16px}
+  .fkr-cro-button{display:block;text-align:center;width:100%;box-sizing:border-box}
+}
+</style>
 
 </head>
 
@@ -554,6 +584,23 @@
     </ul>
 
 </section>
+
+
+<aside class="fkr-cro-box" aria-label="Alternative promotion information">
+  <h3>Looking for a Current Free-Credit Offer?</h3>
+  <p>Joylink pages can lead to different promotions and some links may change or expire. If you want to compare with another current destination, you can check Jadiking's latest promotion information directly.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=joylink_free_credit&utm_content=after_direct_answer"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="after_direct_answer">Check Jadiking Current Offers</a>
+  <small class="fkr-cro-note">
+    Jadiking is a separate destination from Joylink. Promotion availability,
+    eligibility and terms can change, so review the current information on the
+    destination site before registering.
+  </small>
+</aside>
+
 
 
 
@@ -1328,6 +1375,23 @@
 </section>
 
 
+<aside class="fkr-cro-box" aria-label="Alternative promotion information">
+  <h3>Compare the Promotion Before You Claim</h3>
+  <p>After checking the credit value, deposit requirement, turnover and withdrawal conditions, compare those details with Jadiking's current promotion information.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=joylink_free_credit&utm_content=after_terms"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="after_terms">Compare With Jadiking</a>
+  <small class="fkr-cro-note">
+    Jadiking is a separate destination from Joylink. Promotion availability,
+    eligibility and terms can change, so review the current information on the
+    destination site before registering.
+  </small>
+</aside>
+
+
+
 
 <!-- =========================================================
      SXO DECISION CHECKLIST
@@ -2029,6 +2093,24 @@
         only on the promotional headline.
     </p>
 
+
+
+
+<aside class="fkr-cro-box" aria-label="Alternative promotion information">
+  <h3>Want to Check Another Current Option?</h3>
+  <p>If the Joylink offer you found is outdated or does not match what you need, visit Jadiking directly and review its current promotion and registration information.</p>
+  <a class="fkr-cro-button"
+     href="https://jadiking.my/?utm_source=freekreditrm10&utm_medium=referral&utm_campaign=joylink_free_credit&utm_content=before_conclusion_end"
+     target="_blank"
+     rel="noopener noreferrer"
+     data-cro-placement="before_conclusion_end">Visit Jadiking</a>
+  <small class="fkr-cro-note">
+    Jadiking is a separate destination from Joylink. Promotion availability,
+    eligibility and terms can change, so review the current information on the
+    destination site before registering.
+  </small>
+</aside>
+
 </section>
 
 
@@ -2057,8 +2139,8 @@
     <p>
         <strong>Last updated:</strong>
         <time itemprop="dateModified"
-              datetime="2026-08-28">
-            28 August 2026
+              datetime="2026-09-15">
+            15 September 2026
         </time>
     </p>
 
