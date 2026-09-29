@@ -24,6 +24,7 @@ const TODAY = "2026-09-15";
 // iOS Safari pinch + double-tap zoom (iOS ignores user-scalable=no).
 const VIEWPORT = '<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">';
 const ZOOM_LOCK = '<script>(function(){function p(e){e.preventDefault()}document.addEventListener("gesturestart",p,{passive:false});document.addEventListener("gesturechange",p,{passive:false});document.addEventListener("gestureend",p,{passive:false});document.addEventListener("touchmove",function(e){if(e.touches.length>1||(e.scale&&e.scale!==1))e.preventDefault()},{passive:false});var t=0;document.addEventListener("touchend",function(e){var n=Date.now();if(n-t<=350)e.preventDefault();t=n},{passive:false});})();</script>';
+const GA_SNIPPET = '<script async src="https://www.googletagmanager.com/gtag/js?id=G-3673N5GMHG"></script>\n<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-3673N5GMHG");</script>';
 
 /* ---------------------------------------------------------------------------
  * 1. filename -> clean URL path
@@ -498,7 +499,8 @@ for (const [file, path] of Object.entries(PATHMAP)) {
   body = body.replace(/(<body[^>]*>)/i, `$1\n${siteHeader()}`);
   body = body.replace(/<\/body>/i, `${siteNav(current)}\n</body>`);
   head = head.replace(/<meta\s+name="viewport"[^>]*>/i, VIEWPORT);
-  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n${CHROME_CSS}\n${ZOOM_LOCK}\n</head>`);
+  head = head.replace(/<\/head>/i, `${SITE_NAV_CSS}\n${CHROME_CSS}\n${ZOOM_LOCK}
+${GA_SNIPPET}\n</head>`);
 
   writeOut(path, head + body);
 }
@@ -567,6 +569,7 @@ footer.f{padding:24px 18px 40px;border-top:1px solid var(--line);color:var(--mut
 </style>
 ${CHROME_CSS}
 ${ZOOM_LOCK}
+${GA_SNIPPET}
 </head>
 <body>
 ${siteHeader()}
@@ -624,6 +627,7 @@ ul.cards .d{display:block;color:var(--muted);font-size:12px;margin-top:4px}
 </style>
 ${CHROME_CSS}
 ${ZOOM_LOCK}
+${GA_SNIPPET}
 </head>
 <body>
 ${siteHeader()}
@@ -674,6 +678,7 @@ p{color:#B7A688;margin:0}
 a{display:inline-block;margin-top:8px;padding:11px 20px;border:1px solid #E7B92E;border-radius:10px;color:#F5D46B;text-decoration:none;font-size:.9rem}
 </style>
 ${ZOOM_LOCK}
+${GA_SNIPPET}
 </head>
 <body>
 <h1>Page not found</h1>
@@ -816,6 +821,7 @@ ${JSON.stringify(jsonld)}
 ${styleBlock}
 ${CHROME_CSS}
 ${ZOOM_LOCK}
+${GA_SNIPPET}
 </head>
 <body>${previewBanner}
 ${siteHeader()}`;
@@ -946,6 +952,7 @@ ${style}
 ${supplement}
 ${CHROME_CSS}
 ${ZOOM_LOCK}
+${GA_SNIPPET}
 </head>
 <body>
 ${siteHeader()}
