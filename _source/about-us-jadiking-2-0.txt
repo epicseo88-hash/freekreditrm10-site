@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-MY">
-
-<head>
+<html lang="en-MY"><head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 
 <!-- =========================================================
 SEO TARGETING
@@ -57,25 +55,19 @@ platform before use.
 ========================================================= -->
 
 
-<title>Jadiking 2.0 Malaysia 2026: Jadiking88 Platform & Brand Guide</title>
+<title>Jadiking 2.0 Malaysia 2026: Jadiking88 Platform &amp; Brand Guide</title>
 
-<meta name="description"
-content="Jadiking 2.0 Malaysia guide covering Jadiking88, its relationship with Jadiking and Jadiking Group, platform features, security, payments, customer support and what to check before registering.">
+<meta name="description" content="Jadiking 2.0 Malaysia guide covering Jadiking88, its relationship with Jadiking and Jadiking Group, platform features, security, payments, customer support and what to check before registering.">
 
-<meta name="keywords"
-content="Jadiking 2.0, Jadiking88, Jadiking Malaysia, Jadiking review, Jadiking, Jadiking Group, Jadiking 2.0 Malaysia, Jadiking88 Malaysia, Jadiking platform, Jadiking security, Jadiking payment, Jadiking customer support">
+<meta name="keywords" content="Jadiking 2.0, Jadiking88, Jadiking Malaysia, Jadiking review, Jadiking, Jadiking Group, Jadiking 2.0 Malaysia, Jadiking88 Malaysia, Jadiking platform, Jadiking security, Jadiking payment, Jadiking customer support">
 
-<meta name="robots"
-content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
-<meta name="googlebot"
-content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
-<meta name="bingbot"
-content="index,follow,max-image-preview:large,max-snippet:-1">
+<meta name="bingbot" content="index,follow,max-image-preview:large,max-snippet:-1">
 
-<link rel="canonical"
-href="https://freekreditrm10.com/about-us-jadiking-2-0/">
+<link rel="canonical" href="https://freekreditrm10.com/about-us-jadiking-2-0/">
 
 <meta http-equiv="content-language" content="en-MY">
 
@@ -85,11 +77,9 @@ href="https://freekreditrm10.com/about-us-jadiking-2-0/">
 <meta name="author" content="FreeKreditRM10 Editorial">
 <meta name="publisher" content="FreeKreditRM10">
 
-<meta name="subject"
-content="Jadiking 2.0 Malaysia and Jadiking88 Platform Guide">
+<meta name="subject" content="Jadiking 2.0 Malaysia and Jadiking88 Platform Guide">
 
-<meta name="classification"
-content="Jadiking 2.0, Jadiking88, Jadiking Malaysia, Brand Information, Platform Features, Security, Payments and Customer Support">
+<meta name="classification" content="Jadiking 2.0, Jadiking88, Jadiking Malaysia, Brand Information, Platform Features, Security, Payments and Customer Support">
 
 
 <!-- =========================================================
@@ -97,11 +87,9 @@ DATES
 Update dateModified only after a meaningful content review.
 ========================================================= -->
 
-<meta property="article:published_time"
-content="2026-08-28T00:00:00+08:00">
+<meta property="article:published_time" content="2026-08-28T00:00:00+08:00">
 
-<meta property="article:modified_time"
-content="2026-08-28T00:00:00+08:00">
+<meta property="article:modified_time" content="2026-10-01T00:00:00+08:00">
 
 
 <!-- =========================================================
@@ -112,23 +100,11 @@ OPEN GRAPH
 <meta property="og:locale" content="en_MY">
 <meta property="og:site_name" content="FreeKreditRM10">
 
-<meta property="og:title"
-content="Jadiking 2.0 Malaysia 2026: Jadiking88 Platform & Brand Guide">
+<meta property="og:title" content="Jadiking 2.0 Malaysia 2026: Jadiking88 Platform &amp; Brand Guide">
 
-<meta property="og:description"
-content="Understand Jadiking 2.0, Jadiking88, its Jadiking Group relationship, platform features, security, payments, promotions and customer support.">
+<meta property="og:description" content="Understand Jadiking 2.0, Jadiking88, its Jadiking Group relationship, platform features, security, payments, promotions and customer support.">
 
-<meta property="og:url"
-content="https://freekreditrm10.com/about-us-jadiking-2-0/">
-
-<meta property="og:image"
-content="https://freekreditrm10.com/wp-content/uploads/jadiking-2-0-malaysia-guide.webp">
-
-<meta property="og:image:alt"
-content="Jadiking 2.0 Malaysia Jadiking88 Platform Brand Guide">
-
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://freekreditrm10.com/about-us-jadiking-2-0/">
 
 
 <!-- =========================================================
@@ -137,14 +113,9 @@ TWITTER / X
 
 <meta name="twitter:card" content="summary_large_image">
 
-<meta name="twitter:title"
-content="Jadiking 2.0 Malaysia: Jadiking88 Platform Guide">
+<meta name="twitter:title" content="Jadiking 2.0 Malaysia: Jadiking88 Platform Guide">
 
-<meta name="twitter:description"
-content="Jadiking 2.0 explained: Jadiking Group relationship, platform features, security, payments, promotions and customer support.">
-
-<meta name="twitter:image"
-content="https://freekreditrm10.com/wp-content/uploads/jadiking-2-0-malaysia-guide.webp">
+<meta name="twitter:description" content="Jadiking 2.0 explained: Jadiking Group relationship, platform features, security, payments, promotions and customer support.">
 
 
 <!-- =========================================================
@@ -192,8 +163,8 @@ We deliberately do not fabricate:
       "logo": {
         "@type": "ImageObject",
         "@id": "https://freekreditrm10.com/#logo",
-        "url": "https://freekreditrm10.com/wp-content/uploads/freekreditrm10-logo.png",
-        "contentUrl": "https://freekreditrm10.com/wp-content/uploads/freekreditrm10-logo.png",
+        "url": "https://freekreditrm10.com/brand/logo.png",
+        "contentUrl": "https://freekreditrm10.com/brand/logo.png",
         "caption": "FreeKreditRM10"
       }
     },
@@ -259,7 +230,7 @@ We deliberately do not fabricate:
         }
       ],
       "datePublished": "2026-08-28",
-      "dateModified": "2026-08-28",
+      "dateModified": "2026-10-01",
       "inLanguage": "en-MY"
     },
 
@@ -280,12 +251,12 @@ We deliberately do not fabricate:
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://freekreditrm10.com/wp-content/uploads/jadiking-2-0-malaysia-guide.webp",
+        "url": "https://freekreditrm10.com/brand/cover.svg",
         "width": 1200,
         "height": 630
       },
       "datePublished": "2026-08-28",
-      "dateModified": "2026-08-28",
+      "dateModified": "2026-10-01",
       "inLanguage": "en-MY",
       "articleSection": [
         "Jadiking 2.0",
@@ -341,14 +312,14 @@ We deliberately do not fabricate:
 }
 </script>
 
+
 </head>
 
 
 <body>
-
 <main id="main-content">
 
-<article itemscope itemtype="https://schema.org/Article">
+<article itemscope="" itemtype="https://schema.org/Article">
 
 
 <!-- =========================================================
@@ -358,11 +329,11 @@ HERO
 <header class="article-hero">
 
 <p class="eyebrow">
-Jadiking Platform & Brand Guide
+Jadiking Platform &amp; Brand Guide
 </p>
 
 <h1 itemprop="headline">
-Jadiking 2.0 Malaysia 2026: Jadiking88 Platform, Features, Security & Support Guide
+Jadiking 2.0 Malaysia 2026: Jadiking88 Platform, Features, Security &amp; Support Guide
 </h1>
 
 <p class="intro">
@@ -374,9 +345,9 @@ terms.
 </p>
 
 <p>
-Searches for <strong>Jadiking88</strong>,
-<strong>Jadiking Malaysia</strong> and
-<strong>Jadiking review</strong> can overlap, which makes it
+Searches for <a href="/game/jadiking88-x-jili/" title="Jadiking88 guide"><strong>Jadiking88</strong></a>,
+<a href="/how-to-register-dapat-free-credit-e-wallet-with-jadiking/" title="Jadiking Malaysia registration guide"><strong>Jadiking Malaysia</strong></a> and
+<a href="/rm10-free-credit-casino-jadiking8-online-gaming/" title="Jadiking review guide"><strong>Jadiking review</strong></a> can overlap, which makes it
 important to understand how the different Jadiking names relate
 to one another.
 </p>
@@ -389,8 +360,7 @@ promotions, customer support and the differences between
 </p>
 
 
-<nav class="table-of-contents"
-aria-label="Jadiking 2.0 Guide">
+<nav class="table-of-contents" aria-label="Jadiking 2.0 Guide">
 
 <strong>In this guide:</strong>
 
@@ -398,7 +368,7 @@ aria-label="Jadiking 2.0 Guide">
 
 <li><a href="#quick-answer">What Is Jadiking 2.0?</a></li>
 
-<li><a href="#brand-relationship">Jadiking, Jadiking 2.0 & Jadiking Group</a></li>
+<li><a href="#brand-relationship">Jadiking, Jadiking 2.0 &amp; Jadiking Group</a></li>
 
 <li><a href="#jadiking88">What Does Jadiking88 Mean?</a></li>
 
@@ -406,13 +376,13 @@ aria-label="Jadiking 2.0 Guide">
 
 <li><a href="#features">Platform Features to Check</a></li>
 
-<li><a href="#registration">Registration & Account Access</a></li>
+<li><a href="#registration">Registration &amp; Account Access</a></li>
 
-<li><a href="#games">Games & Providers</a></li>
+<li><a href="#games">Games &amp; Providers</a></li>
 
-<li><a href="#promotions">Promotions & Rewards</a></li>
+<li><a href="#promotions">Promotions &amp; Rewards</a></li>
 
-<li><a href="#payments">Deposits & Payments</a></li>
+<li><a href="#payments">Deposits &amp; Payments</a></li>
 
 <li><a href="#withdrawals">Withdrawals</a></li>
 
@@ -566,7 +536,7 @@ the <strong>group</strong> from the individual
 <p>
 <strong>Jadiking Group</strong><br>
 ↓<br>
-<strong>Jadiking / Jadiking Malaysia</strong><br>
+<a href="/how-to-register-dapat-free-credit-e-wallet-with-jadiking/" title="Jadiking Malaysia"><strong>Jadiking / Jadiking Malaysia</strong></a><br>
 <strong>Jadiking 2.0</strong><br>
 + other participating ecosystem brands
 </p>
@@ -629,7 +599,7 @@ What Does Jadiking88 Mean?
 </h2>
 
 <p>
-<strong>Jadiking88</strong> is an important search term associated
+<a href="/game/jadiking88-x-jili/" title="Jadiking88 JILI guide"><strong>Jadiking88</strong></a> is an important search term associated
 with Jadiking-related platform searches.
 </p>
 
@@ -792,7 +762,7 @@ What Platform Features Should You Check on Jadiking 2.0?
 </h2>
 
 <p>
-A useful <strong>Jadiking review</strong> should look beyond a
+A useful <a href="/rm10-free-credit-casino-jadiking8-online-gaming/" title="Jadiking review"><strong>Jadiking review</strong></a> should look beyond a
 promotion banner and evaluate the complete platform experience.
 </p>
 
@@ -986,8 +956,7 @@ A promotion may require:
 
 <p>
 For the broader registration process, see our
-<a href="https://freekreditrm10.com/how-to-register-dapat-free-credit-e-wallet-with-jadiking/"
-title="Register Dapat Free Credit With Jadiking">
+<a href="/how-to-register-dapat-free-credit-e-wallet-with-jadiking/" title="Register Dapat Free Credit With Jadiking">
 <strong>register dapat free credit with Jadiking</strong>
 </a>
 guide.
@@ -1051,7 +1020,7 @@ That means:
 <strong>
 Platform → Provides Access<br>
 Provider → Creates Game<br>
-Game → Has Its Own RTP, Volatility & Mechanics
+Game → Has Its Own RTP, Volatility &amp; Mechanics
 </strong>
 </p>
 
@@ -1062,8 +1031,7 @@ Provider Guides
 
 <p>
 For example, our
-<a href="https://freekreditrm10.com/game/jadiking88-x-pragmatic-play/"
-title="Jadiking88 Pragmatic Play">
+<a href="/game/jadiking88-x-pragmatic-play/" title="Jadiking88 Pragmatic Play">
 <strong>Jadiking88 Pragmatic Play</strong>
 </a>
 guide explains Pragmatic Play provider intent separately.
@@ -1071,8 +1039,7 @@ guide explains Pragmatic Play provider intent separately.
 
 <p>
 You can also read our
-<a href="https://freekreditrm10.com/game/jadiking88-x-playtech/"
-title="Jadiking88 Playtech">
+<a href="/game/jadiking88-x-playtech/" title="Jadiking88 Playtech">
 <strong>Jadiking88 Playtech</strong>
 </a>
 guide for Playtech-related searches.
@@ -1080,8 +1047,7 @@ guide for Playtech-related searches.
 
 <p>
 For JILI, visit the
-<a href="https://freekreditrm10.com/game/jadiking88-x-jili/"
-title="Jadiking88 JILI">
+<a href="/game/jadiking88-x-jili/" title="Jadiking88 JILI">
 <strong>Jadiking88 JILI</strong>
 </a>
 provider guide.
@@ -1089,8 +1055,7 @@ provider guide.
 
 <p>
 For Joker-related searches, see
-<a href="https://freekreditrm10.com/game/jadiking88-x-joker-gaming/"
-title="Jadiking88 Joker Gaming">
+<a href="/game/jadiking88-x-joker-gaming/" title="Jadiking88 Joker Gaming">
 <strong>Jadiking88 Joker Gaming</strong>
 </a>.
 </p>
@@ -1259,8 +1224,7 @@ funds.
 
 <p>
 For a broader explanation, read our
-<a href="https://freekreditrm10.com/how-to-register-dapat-free-credit-e-wallet/"
-title="Register Dapat Free Credit E-Wallet">
+<a href="/how-to-register-dapat-free-credit-e-wallet/" title="Register Dapat Free Credit E-Wallet">
 <strong>register dapat free credit e-wallet</strong>
 </a>
 guide.
@@ -2210,7 +2174,7 @@ Frequently Asked Questions About Jadiking 2.0
 </h2>
 
 
-<details open>
+<details open="">
 
 <summary>
 <strong>What is Jadiking 2.0?</strong>
@@ -2401,8 +2365,18 @@ INTERNAL LINK HUB
 
 <section id="related-guides">
 
+<div class="direct-answer" aria-label="Jadiking keyword guides">
+<p><strong>Explore by topic:</strong>
+<a href="/how-to-register-dapat-free-credit-e-wallet-with-jadiking/">Jadiking Malaysia</a> ·
+<a href="/game/jadiking88-x-jili/">Jadiking88</a> ·
+<a href="/rm10-free-credit-casino-jadiking8-online-gaming/">Jadiking review</a> ·
+<a href="/free-kredit-rm10-malaysia-guide/">free kredit RM10 Malaysia</a>
+</p>
+</div>
+
+
 <h2>
-Related Jadiking & Platform Guides
+Related Jadiking &amp; Platform Guides
 </h2>
 
 <ul>
@@ -2410,8 +2384,7 @@ Related Jadiking & Platform Guides
 
 <li>
 
-<a href="https://freekreditrm10.com/rm10-free-credit-casino-jadiking8-online-gaming/"
-title="RM10 Free Credit Casino Jadiking">
+<a href="/rm10-free-credit-casino-jadiking8-online-gaming/" title="RM10 Free Credit Casino Jadiking">
 
 <strong>RM10 free credit casino Jadiking</strong>
 
@@ -2425,8 +2398,7 @@ game eligibility and withdrawal requirements.
 
 <li>
 
-<a href="https://freekreditrm10.com/how-to-register-dapat-free-credit-e-wallet-with-jadiking/"
-title="Register Dapat Free Credit With Jadiking">
+<a href="/how-to-register-dapat-free-credit-e-wallet-with-jadiking/" title="Register Dapat Free Credit With Jadiking">
 
 <strong>register dapat free credit with Jadiking</strong>
 
@@ -2440,8 +2412,7 @@ explained.
 
 <li>
 
-<a href="https://freekreditrm10.com/game/jadiking88-x-pragmatic-play/"
-title="Jadiking88 Pragmatic Play">
+<a href="/game/jadiking88-x-pragmatic-play/" title="Jadiking88 Pragmatic Play">
 
 <strong>Jadiking88 Pragmatic Play</strong>
 
@@ -2455,8 +2426,7 @@ game mechanics.
 
 <li>
 
-<a href="https://freekreditrm10.com/game/jadiking88-x-playtech/"
-title="Jadiking88 Playtech">
+<a href="/game/jadiking88-x-playtech/" title="Jadiking88 Playtech">
 
 <strong>Jadiking88 Playtech</strong>
 
@@ -2470,8 +2440,7 @@ guide.
 
 <li>
 
-<a href="https://freekreditrm10.com/game/jadiking88-x-joker-gaming/"
-title="Jadiking88 Joker Gaming">
+<a href="/game/jadiking88-x-joker-gaming/" title="Jadiking88 Joker Gaming">
 
 <strong>Jadiking88 Joker Gaming</strong>
 
@@ -2484,8 +2453,7 @@ title="Jadiking88 Joker Gaming">
 
 <li>
 
-<a href="https://freekreditrm10.com/game/jadiking88-x-jili/"
-title="Jadiking88 JILI">
+<a href="/game/jadiking88-x-jili/" title="Jadiking88 JILI">
 
 <strong>Jadiking88 JILI</strong>
 
@@ -2498,8 +2466,7 @@ title="Jadiking88 JILI">
 
 <li>
 
-<a href="https://freekreditrm10.com/game/sky-queen-free-kredit-rm10/"
-title="Sky Queen Free Kredit RM10">
+<a href="/game/sky-queen-free-kredit-rm10/" title="Sky Queen Free Kredit RM10">
 
 <strong>Sky Queen free kredit RM10</strong>
 
@@ -2513,8 +2480,7 @@ promotional-credit context.
 
 <li>
 
-<a href="https://freekreditrm10.com/game/golden-empire/"
-title="Golden Empire Slot">
+<a href="/game/golden-empire/" title="Golden Empire Slot">
 
 <strong>Golden Empire slot</strong>
 
@@ -2528,8 +2494,7 @@ paytable guide.
 
 <li>
 
-<a href="https://freekreditrm10.com/"
-title="Free Kredit RM10 Malaysia">
+<a href="/" title="Free Kredit RM10 Malaysia">
 
 <strong>Free Kredit RM10 Malaysia</strong>
 
@@ -2624,9 +2589,7 @@ claiming a promotion or making a transaction.
 
 <!-- =========================================================
 EDITORIAL FOOTER
-========================================================= -->
-
-<footer class="article-footer">
+========================================================= --><footer class="article-footer">
 
 <hr>
 
@@ -2638,8 +2601,7 @@ FreeKreditRM10 Editorial
 <p>
 <strong>Published:</strong>
 
-<time itemprop="datePublished"
-datetime="2026-08-28">
+<time itemprop="datePublished" datetime="2026-08-28">
 28 August 2026
 </time>
 
@@ -2648,9 +2610,8 @@ datetime="2026-08-28">
 <p>
 <strong>Last updated:</strong>
 
-<time itemprop="dateModified"
-datetime="2026-08-28">
-28 August 2026
+<time itemprop="dateModified" datetime="2026-10-01">
+1 October 2026
 </time>
 
 </p>
@@ -2728,6 +2689,79 @@ not chase losses.
 
 </main>
 
-</body>
+<style id="fkr-jk2-cro-style">
+.fkr-jk2-overlay[hidden]{display:none!important}
+.fkr-jk2-overlay{position:fixed;inset:0;z-index:10030;background:rgba(0,0,0,.80);display:grid;place-items:center;padding:18px}
+.fkr-jk2-card{position:relative;width:min(100%,410px);max-height:88dvh;overflow:auto;background:linear-gradient(155deg,#351307,#140a05 78%);border:1px solid #E7B92E;border-radius:22px;padding:28px 22px 24px;text-align:center;color:#F6EFE1;box-shadow:0 20px 70px #000c;font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.fkr-jk2-close{position:absolute;right:12px;top:8px;border:0;background:transparent;color:#fff;font-size:29px;cursor:pointer;padding:3px 8px}
+.fkr-jk2-crown{width:118px;height:92px;margin:12px auto 18px;display:grid;place-items:center;color:#F5D46B;animation:fkr-jk2-pulse 1.55s ease-in-out infinite}
+.fkr-jk2-crown svg{width:100%;height:100%;filter:drop-shadow(0 7px 18px rgba(231,185,46,.35))}
+.fkr-jk2-card h2{border:0;margin:4px 0 10px;padding:0;color:#F5D46B;font:800 27px/1.15 system-ui,-apple-system,"Segoe UI",sans-serif}
+.fkr-jk2-card p{margin:10px 0;color:#F6EFE1}
+.fkr-jk2-cta{display:block;width:100%;margin:16px 0 5px;padding:13px 15px;border-radius:11px;background:#F5D46B;color:#160D07!important;font-weight:800;text-decoration:none!important}
+.fkr-jk2-later{border:0;background:transparent;color:#D8C9AE;text-decoration:underline;padding:11px;cursor:pointer}
+.fkr-jk2-note{font-size:12px;color:#B7A688!important}
+@keyframes fkr-jk2-pulse{0%,100%{transform:scale(1);opacity:.88}50%{transform:scale(1.08);opacity:1}}
+@media(prefers-reduced-motion:reduce){.fkr-jk2-crown{animation:none}}
+</style>
 
-</html>
+<div class="fkr-jk2-overlay" id="fkr-jk2-overlay" hidden>
+<section class="fkr-jk2-card" role="dialog" aria-modal="true" aria-labelledby="fkr-jk2-title">
+<button class="fkr-jk2-close" id="fkr-jk2-close" type="button" aria-label="Close popup">×</button>
+<div class="fkr-jk2-crown" aria-hidden="true">
+<svg viewBox="0 0 120 90" fill="none">
+<path d="M10 25l22 20 28-35 28 35 22-20-12 52H22L10 25z" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/>
+<path d="M25 68h70" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+</svg>
+</div>
+<h2 id="fkr-jk2-title">Explore Jadiking</h2>
+<p>You've seen the Jadiking 2.0 guide. Check the current platform and promotion conditions directly.</p>
+<a class="fkr-jk2-cta" id="fkr-jk2-cta" href="https://jadiking.my/RF28605599" target="_blank" rel="noopener noreferrer">Visit Jadiking ↗</a>
+<button class="fkr-jk2-later" id="fkr-jk2-later" type="button">Continue reading</button>
+<p class="fkr-jk2-note">Check current eligibility, promotion, wagering and withdrawal conditions on the destination website. Eligible adults only.</p>
+</section>
+</div>
+
+<script id="fkr-jk2-cro-script">
+(function(){
+var overlay=document.getElementById('fkr-jk2-overlay'),
+close=document.getElementById('fkr-jk2-close'),
+later=document.getElementById('fkr-jk2-later'),
+cta=document.getElementById('fkr-jk2-cta'),
+shown=false,previous=null;
+
+function track(name){
+ if(typeof window.gtag==='function') window.gtag('event',name,{
+  cro_variant:'jadiking_review_crown_v1',
+  source_page:location.pathname,
+  destination_url:'https://jadiking.my/RF28605599'
+ });
+}
+function openPopup(){
+ if(shown) return;
+ shown=true;
+ previous=document.activeElement;
+ overlay.hidden=false;
+ close.focus();
+ track('popup_view');
+}
+function closePopup(){
+ overlay.hidden=true; if(previous&&previous.focus) previous.focus(); track('popup_close');
+}
+function schedulePopup(){
+ window.setTimeout(openPopup,1000);
+}
+close.addEventListener('click',closePopup);
+later.addEventListener('click',closePopup);
+overlay.addEventListener('click',function(e){if(e.target===overlay)closePopup();});
+cta.addEventListener('click',function(){track('referral_click');});
+document.addEventListener('keydown',function(e){if(!overlay.hidden&&e.key==='Escape')closePopup();});
+if(document.readyState==='loading'){
+ document.addEventListener('DOMContentLoaded',schedulePopup,{once:true});
+}else{
+ schedulePopup();
+}
+})();
+</script>
+
+</body></html>

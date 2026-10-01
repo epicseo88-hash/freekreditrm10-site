@@ -18,7 +18,9 @@ import { fileURLToPath } from "node:url";
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const SRC = join(ROOT, "_source");
 const SITE = "https://freekreditrm10.com";
-const TODAY = "2026-09-15";
+const TODAY = "2026-10-01";
+// Jadiking referral link used by every Register CTA in the shared header/nav.
+const REF_URL = "https://jadiking.my/RF28605599";
 
 // Lock page zoom. Meta covers Android Chrome + desktop pinch; the script blocks
 // iOS Safari pinch + double-tap zoom (iOS ignores user-scalable=no).
@@ -384,12 +386,12 @@ function siteHeader() {
 <a class="item" href="/winningtips/">Winning Tips</a>
 <a class="item" href="/about-us-jadiking-2-0/">Jadiking88 Review</a>
 <a class="item" href="https://jadiking.my/promotion" target="_blank" rel="noopener">Offers</a>
-<a class="item hl" href="https://jadiking.my/" target="_blank" rel="noopener">Register at Jadiking</a>
+<a class="item hl" href="${REF_URL}" target="_blank" rel="noopener">Register at Jadiking</a>
 </nav>
 <header class="fkrhdr">
 <label class="fkr-burger" for="fkr-drawer" aria-label="Open menu"><i></i><i></i><i></i></label>
 <a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>
-<a class="fkrhdr-grp" href="https://jadiking.my/" target="_blank" rel="noopener">REGISTER<br>HERE</a>
+<a class="fkrhdr-grp" href="${REF_URL}" target="_blank" rel="noopener">REGISTER<br>HERE</a>
 </header>`;
 }
 
@@ -399,7 +401,7 @@ function siteNav(current) {
     ["/" + GUIDE_PATH + "/", "guide", "Guide", false],
     ["https://jadiking.my/promotion", "offers", "Offers", true],
     ["/blog/", "blog", "Blog", false],
-    ["https://jadiking.my/", "register", "Register", true],
+    [REF_URL, "register", "Register", true],
   ];
   return `<nav class="fkrnav" aria-label="Site">` +
     items.map(([href, key, label, ext]) =>
@@ -647,7 +649,8 @@ ${siteNav("")}
  *    /                          -> category-first homepage (recommended, live)
  *    /preview/jadiking-doorway/ -> Jadiking88 brand doorway (noindex, kept for review)
  * ------------------------------------------------------------------------- */
-writeOut("", buildHomepage());
+// "/" comes from the user-supplied _source/home.txt; buildHomepage() is kept as fallback
+writeOut("", existsSync(join(SRC, "home.txt")) ? buildHomepageFromSource() : buildHomepage());
 writeOut("preview/jadiking-doorway", buildDoorway({ preview: true }));
 
 /* ---------------------------------------------------------------------------
@@ -836,6 +839,19 @@ ${siteHeader()}`;
  * the "free kredit RM10" category promise and positions Jadiking88 as the
  * featured recommendation rather than the whole page.
  * ===================================================================== */
+function buildHomepageFromSource() {
+  const raw = readFileSync(join(SRC, "home.txt"), "utf8").replace(/\r\n/g, "\n");
+  const bodyIdx = raw.search(/<body[^>]*>/i);
+  let head = raw.slice(0, bodyIdx);
+  let body = raw.slice(bodyIdx);
+  body = body.replace(/href="https:\/\/freekreditrm10\.com\//gi, 'href="/');
+  head = head.replace(/<meta\s+name="viewport"[^>]*>/i, VIEWPORT);
+  head = head.replace(/<\/head>/i, `${CHROME_CSS}\n${ZOOM_LOCK}\n${GA_SNIPPET}\n</head>`);
+  body = body.replace(/(<body[^>]*>)/i, `$1\n${siteHeader()}`);
+  body = body.replace(/<\/body>/i, `${siteNav("home")}\n</body>`);
+  return head + body;
+}
+
 function buildHomepage() {
   const style = getJadikingStyle();
   const L = (p) => esc(META[p].label);

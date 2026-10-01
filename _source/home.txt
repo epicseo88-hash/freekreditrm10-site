@@ -259,57 +259,8 @@
 @media (prefers-reduced-motion:reduce){.cta-get{animation:none;background-position:0 50%}.cta-get::after{display:none}}
 </style>
 
-
-<style id="fkr-chrome">
-:root{--fkr-bg:#0C0704;--fkr-gold:#E7B92E;--fkr-gold2:#F5D46B;--fkr-ink:#160D07;--fkr-muted:#B7A688;--fkr-line:rgba(231,185,46,.22)}
-body{padding-top:46px!important;padding-bottom:64px!important}
-.fkrhdr{position:fixed;inset:0 0 auto 0;z-index:10000;display:flex;align-items:center;gap:10px;padding:7px 12px;background:var(--fkr-ink);border-bottom:1px solid var(--fkr-line);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.fkrhdr-logo{display:flex;align-items:center;text-decoration:none;flex:none;margin:0 auto 0 4px}
-.fkrhdr-logo img{height:21px;width:auto;display:block}
-.fkrhdr-grp{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:8px;line-height:1.15;letter-spacing:.05em;color:var(--fkr-gold2);border:1px solid var(--fkr-line);border-radius:6px;padding:5px 7px;text-align:center;white-space:nowrap;text-decoration:none;flex:none}
-.fkr-burger{display:flex;flex-direction:column;gap:4px;padding:6px 4px;cursor:pointer;flex:none}
-.fkr-burger i{display:block;width:20px;height:2px;background:var(--fkr-gold);border-radius:2px}
-#fkr-drawer{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
-.fkr-scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);opacity:0;pointer-events:none;transition:opacity .25s;z-index:10001}
-.fkr-drawer{position:fixed;top:0;bottom:0;left:0;width:82%;max-width:300px;background:var(--fkr-bg);border-right:1px solid var(--fkr-line);transform:translateX(-100%);transition:transform .28s ease;z-index:10002;display:flex;flex-direction:column;padding-bottom:20px;overflow-y:auto;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-#fkr-drawer:checked~.fkr-drawer{transform:none}
-#fkr-drawer:checked~.fkr-scrim{opacity:1;pointer-events:auto}
-.fkr-dh{display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border-bottom:1px solid var(--fkr-line)}
-.fkr-dh img{height:20px;width:auto;display:block}
-.fkr-x{color:var(--fkr-muted);font-size:22px;line-height:1;cursor:pointer;text-decoration:none;padding:0 4px}
-.fkr-drawer a.item{display:block;padding:13px 16px;font-size:14px;font-weight:500;color:var(--fkr-text);text-decoration:none;border-bottom:1px solid rgba(246,239,225,.06)}
-.fkr-drawer a.item:hover{background:var(--fkr-ink);color:var(--fkr-gold2)}
-.fkr-drawer a.hl{color:var(--fkr-gold2);font-weight:700}
-.fkrnav{position:fixed;inset:auto 0 0 0;z-index:10000;background:var(--fkr-ink);border-top:1px solid var(--fkr-line);display:grid;grid-template-columns:repeat(5,1fr);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.fkrnav a{display:flex;flex-direction:column;align-items:center;gap:3px;padding:8px 3px 9px;font-size:9.5px;letter-spacing:.02em;color:var(--fkr-muted);text-decoration:none}
-.fkrnav a:hover{text-decoration:none;color:var(--fkr-gold2)}
-.fkrnav a svg{width:19px;height:19px;color:var(--fkr-gold)}
-.fkrnav a[aria-current="page"]{color:var(--fkr-gold2)}
-</style>
-<script>(function(){function p(e){e.preventDefault()}document.addEventListener("gesturestart",p,{passive:false});document.addEventListener("gesturechange",p,{passive:false});document.addEventListener("gestureend",p,{passive:false});document.addEventListener("touchmove",function(e){if(e.touches.length>1||(e.scale&&e.scale!==1))e.preventDefault()},{passive:false});var t=0;document.addEventListener("touchend",function(e){var n=Date.now();if(n-t<=350)e.preventDefault();t=n},{passive:false});})();</script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3673N5GMHG"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-3673N5GMHG");</script>
 </head>
 <body>
-<input id="fkr-drawer" type="checkbox">
-<label class="fkr-scrim" for="fkr-drawer" aria-hidden="true"></label>
-<nav class="fkr-drawer" aria-label="Menu">
-<div class="fkr-dh"><img src="/brand/logo.png" alt="FreeKreditRM10"><label class="fkr-x" for="fkr-drawer" aria-label="Close menu">&times;</label></div>
-<a class="item" href="/">Home</a>
-<a class="item" href="/free-kredit-rm10-malaysia-guide/">Free Kredit RM10 Guide</a>
-<a class="item" href="/blog/">All Guides</a>
-<a class="item" href="/game/">Slot Games</a>
-<a class="item" href="/bonus/">Bonus Offers</a>
-<a class="item" href="/winningtips/">Winning Tips</a>
-<a class="item" href="/about-us-jadiking-2-0/">Jadiking88 Review</a>
-<a class="item" href="https://jadiking.my/promotion" target="_blank" rel="noopener">Offers</a>
-<a class="item hl" href="https://jadiking.my/RF28605599" target="_blank" rel="noopener">Register at Jadiking</a>
-</nav>
-<header class="fkrhdr">
-<label class="fkr-burger" for="fkr-drawer" aria-label="Open menu"><i></i><i></i><i></i></label>
-<a class="fkrhdr-logo" href="/" aria-label="FreeKreditRM10 home"><img src="/brand/logo.png" alt="FreeKreditRM10" width="640" height="140"></a>
-<a class="fkrhdr-grp" href="https://jadiking.my/RF28605599" target="_blank" rel="noopener">REGISTER<br>HERE</a>
-</header>
 <div class="page">
 
   <header class="hero" id="top">
@@ -451,5 +402,4 @@ body{padding-top:46px!important;padding-bottom:64px!important}
   </section>
 </div>
 <script id="fkr-home-cro-script">(function(){var modal=document.getElementById('fkr-home-cro'),env=document.getElementById('fkr-envelope'),openBtn=document.getElementById('fkr-open-btn'),intro=document.getElementById('fkr-home-intro'),reveal=document.getElementById('fkr-home-reveal'),close=document.getElementById('fkr-home-x'),later=document.getElementById('fkr-home-later'),offer=document.getElementById('fkr-home-offer'),opened=false;function track(n,e){if(typeof window.gtag==='function')window.gtag('event',n,Object.assign({cro_variant:'homepage_angpao_interactive_v2',source_page:location.pathname,destination_url:'https://jadiking.my/RF28605599'},e||{}));}function openGift(){if(opened)return;opened=true;env.classList.add('open');track('angpao_open');setTimeout(function(){intro.hidden=true;reveal.hidden=false;offer.focus();},360);}function dismiss(){modal.hidden=true;track('popup_close');}env.addEventListener('click',openGift);openBtn.addEventListener('click',openGift);close.addEventListener('click',dismiss);later.addEventListener('click',dismiss);offer.addEventListener('click',function(){track('referral_click',{link_location:'homepage_popup'});});modal.addEventListener('click',function(e){if(e.target===modal)dismiss();});document.addEventListener('keydown',function(e){if(!modal.hidden&&e.key==='Escape')dismiss();});track('popup_view');})();</script>
-<nav class="fkrnav" aria-label="Site"><a href="/" aria-current="page"><svg viewBox="0 0 24 24" fill="none"><path d="M4 11l8-6 8 6v9a1 1 0 01-1 1h-4v-6H9v6H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Home</a><a href="/free-kredit-rm10-malaysia-guide/"><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 8h7M9 12h7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Guide</a><a href="https://jadiking.my/promotion" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M4 9h16v10a1 1 0 01-1 1H5a1 1 0 01-1-1z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 6.5A1.5 1.5 0 014.5 5h15A1.5 1.5 0 0121 6.5V9H3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 5v15" stroke="currentColor" stroke-width="1.6"/></svg>Offers</a><a href="/blog/"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>Blog</a><a href="https://jadiking.my/RF28605599" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none"><path d="M3 8l3 3 6-7 6 7 3-3-2 11H5L3 8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>Register</a></nav>
 </body></html>
