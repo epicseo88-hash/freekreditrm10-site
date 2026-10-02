@@ -254,7 +254,6 @@ Visible FAQ is intentionally not marked up with FAQPage schema.
 ]
 }
 </script>
-<script>window\.dataLayer=window\.dataLayer\
 </head>
 <body>
 <main id="main-content">
